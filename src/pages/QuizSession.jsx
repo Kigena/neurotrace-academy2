@@ -415,62 +415,70 @@ function QuizSession() {
     setCurrentIndex(index);
   };
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleFinishQuiz = async () => {
-    if (!session) return;
+    if (!session || isSubmitting) return;
+    setIsSubmitting(true);
 
-    // Save all attempt events
-    // Save all attempt events
-    await Promise.all(questions.map(async (q) => {
-      const answer = selectedAnswers[q.id];
-      if (answer !== undefined) {
-        const isCorrect = answer === q.answerIndex;
-        const timeMs = timeSpent[q.id] || 0;
+    try {
+      // Save all attempt events
+      // Use Promise.allSettled to ensure one failure doesn't block the rest
+      await Promise.allSettled(questions.map(async (q) => {
+        const answer = selectedAnswers[q.id];
+        if (answer !== undefined) {
+          const isCorrect = answer === q.answerIndex;
+          const timeMs = timeSpent[q.id] || 0;
 
-        await saveAttemptEvent({
-          questionId: q.id,
-          domainId: q.domainId,
-          sectionId: q.sectionId,
-          topicTags: q.topicTags || [],
-          difficulty: q.difficulty,
-          isCorrect,
-          timestamp: Date.now(),
-          timeMs,
+          await saveAttemptEvent({
+            questionId: q.id,
+            domainId: q.domainId,
+            sectionId: q.sectionId,
+            topicTags: q.topicTags || [],
+            difficulty: q.difficulty,
+            isCorrect,
+            timestamp: Date.now(),
+            timeMs,
+            mode: session.mode,
+          });
+        }
+      }));
+
+      const finishedSession = await finishQuizSession();
+      setSession(finishedSession);
+
+      // Calculate and save score
+      const score = calculateSessionScore(finishedSession, questions);
+      if (score) {
+        // Save to score history
+        await addScoreToHistory({
+          percent: score.percent,
+          correct: score.correct,
+          total: score.total,
+          attempted: score.attempted,
           mode: session.mode,
+          timestamp: Date.now(),
+        });
+
+        // Save best score if better
+        await saveBestScore({
+          percent: score.percent,
+          correct: score.correct,
+          total: score.total,
+          attempted: score.attempted,
+          mode: session.mode,
+          timestamp: Date.now(),
         });
       }
-    }));
-
-    const finishedSession = await finishQuizSession();
-    setSession(finishedSession);
-
-    // Calculate and save score
-    const score = calculateSessionScore(finishedSession, questions);
-    if (score) {
-      // Save to score history
-      await addScoreToHistory({
-        percent: score.percent,
-        correct: score.correct,
-        total: score.total,
-        attempted: score.attempted,
-        mode: session.mode,
-        timestamp: Date.now(),
-      });
-
-      // Save best score if better
-      await saveBestScore({
-        percent: score.percent,
-        correct: score.correct,
-        total: score.total,
-        attempted: score.attempted,
-        mode: session.mode,
-        timestamp: Date.now(),
-      });
+    } catch (error) {
+      console.error("Error during quiz finish:", error);
+      // Fallback: Show results anyway using local state calculation if needed
+    } finally {
+      setIsSubmitting(false);
+      setShowResults(true);
+      setReviewMode(false);
+      if (timerRef.current) clearInterval(timerRef.current);
     }
-
-    setShowResults(true);
-    setReviewMode(false);
-
-    if (timerRef.current) clearInterval(timerRef.current);
   };
 
   const handleReset = () => {
@@ -1047,9 +1055,10 @@ function QuizSession() {
           )}
           <button
             onClick={handleFinishQuiz}
-            className="px-3 py-1.5 rounded-md border border-slate-300 text-sm text-slate-700 hover:bg-slate-50"
+            disabled={isSubmitting}
+            className="px-3 py-1.5 rounded-md border border-slate-300 text-sm text-slate-700 hover:bg-slate-50 disabled:opacity-70 disabled:cursor-wait"
           >
-            Finish Quiz
+            {isSubmitting ? "Saving..." : "Finish Quiz"}
           </button>
         </div>
       </div>

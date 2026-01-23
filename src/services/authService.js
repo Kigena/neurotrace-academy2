@@ -1,12 +1,12 @@
+import apiService from "./apiService";
 import storageService from "./storageService";
 
 /**
  * Auth Service
  * Manages user profiles and active session
- * Now supports secure email/password authentication
+ * Now connects to Backend API
  */
 
-const USERS_KEY = "neurotrace_users_v1";
 const SESSION_KEY = "neurotrace_active_session_v1";
 
 class AuthService {
@@ -16,32 +16,24 @@ class AuthService {
     }
 
     /**
-     * Restore session from storage
-     * This remains synchronous for initial load, but validation happens async if needed later
+     * Restore session from ID
      */
     tryRestoreSession() {
+        // Optimistic restore from local cache to avoid flicker
+        // Real validation would happen on first API call
         const session = storageService.constructor.getGlobalItem(SESSION_KEY);
-        if (session && session.userId) {
-            const users = this.getUsers();
-            const user = users.find((u) => u.id === session.userId);
-            if (user) {
-                this.currentUser = user;
-                storageService.setUserId(user.id);
-                return user;
-            }
+        if (session && session.user) {
+            this.currentUser = session.user;
+            storageService.setUserId(session.user._id || session.user.id);
+            return session.user;
         }
         return null;
     }
 
     /**
-     * Get all registered users
-     */
-    getUsers() {
-        return storageService.constructor.getGlobalItem(USERS_KEY, []);
-    }
-
-    /**
      * Helper: Hash password using Web Crypto API
+     * (We keep this client-side hashing to match the schema expected by new backend which expects pre-hashed/raw password logic)
+     * Ideally we'd send raw password over HTTPS and hash on server, but to minimize friction we keep the logic similar but send to API.
      */
     async _hashPassword(password) {
         const encoder = new TextEncoder();
@@ -56,69 +48,53 @@ class AuthService {
      * Create a new user profile with email and password
      */
     async createUser(name, email, password) {
-        const users = this.getUsers();
-        const normalizedEmail = email.toLowerCase().trim();
-
-        // Check for duplicate email
-        if (users.some((u) => u.email === normalizedEmail)) {
-            throw new Error("User with this email already exists");
-        }
-
         const passwordHash = await this._hashPassword(password);
 
-        const newUser = {
-            id: `user_${Date.now()}_${Math.random().toString(36).substr(2, 5)}`,
-            name: name.trim(),
-            email: normalizedEmail,
-            passwordHash: passwordHash,
-            createdAt: Date.now(),
-            lastLogin: null
-        };
-
-        users.push(newUser);
-        storageService.constructor.setGlobalItem(USERS_KEY, users);
-
-        // Auto-login
-        return this._setSession(newUser);
+        try {
+            const user = await apiService.post('/auth/register', {
+                name,
+                email,
+                passwordHash
+            });
+            return this._setSession(user);
+        } catch (err) {
+            throw err;
+        }
     }
 
     /**
      * Login with email and password
      */
     async login(email, password) {
-        const users = this.getUsers();
-        const normalizedEmail = email.toLowerCase().trim();
-        const user = users.find((u) => u.email === normalizedEmail);
+        const passwordHash = await this._hashPassword(password);
 
-        if (!user) {
-            throw new Error("Invalid email or password");
+        try {
+            const user = await apiService.post('/auth/login', {
+                email,
+                passwordHash
+            });
+            return this._setSession(user);
+        } catch (err) {
+            throw err;
         }
-
-        // Verify password
-        const inputHash = await this._hashPassword(password);
-
-        // For legacy users without passwordHash (if any), this will fail securely
-        if (user.passwordHash !== inputHash) {
-            throw new Error("Invalid email or password");
-        }
-
-        return this._setSession(user);
     }
 
     /**
      * Internal: Set active session
      */
     _setSession(user) {
-        // Update last login
-        const users = this.getUsers();
-        user.lastLogin = Date.now();
-        const updatedUsers = users.map(u => u.id === user.id ? user : u);
-        storageService.constructor.setGlobalItem(USERS_KEY, updatedUsers);
+        // Normalize ID (Mongo uses _id)
+        const userId = user._id || user.id;
+        user.id = userId; // Ensure .id exists for frontend compatibility
 
-        // Set session
         this.currentUser = user;
-        storageService.setUserId(user.id);
-        storageService.constructor.setGlobalItem(SESSION_KEY, { userId: user.id });
+        storageService.setUserId(userId);
+
+        // Save minimal session info
+        storageService.constructor.setGlobalItem(SESSION_KEY, {
+            userId: userId,
+            user: user
+        });
 
         return user;
     }

@@ -23,10 +23,15 @@ mongoose.connect(MONGODB_URI)
         console.error('❌ MongoDB connection error:', err);
     });
 
+import authRoutes from './routes/auth.js';
+
 // Routes
 app.get('/', (req, res) => {
     res.send('NeuroTrace Academy API is running');
 });
+
+// Auth Routes
+app.use('/api/auth', authRoutes);
 
 import { QuizSession } from './models/QuizSession.js';
 import { AttemptEvent } from './models/AttemptEvent.js';

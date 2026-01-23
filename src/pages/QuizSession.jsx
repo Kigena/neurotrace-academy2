@@ -445,10 +445,31 @@ function QuizSession() {
       }));
 
       const finishedSession = await finishQuizSession();
-      setSession(finishedSession);
+
+      // Construct a reliable session object for scoring using local state
+      // This ensures results show even if backend sync failed or is stale
+      const finalSessionForScore = {
+        ...session,
+        ...(finishedSession || {}),
+        answers: {
+          ...(session?.answers || {}),
+          ...Object.entries(selectedAnswers).reduce((acc, [qId, idx]) => {
+            const q = questions.find(question => question.id === qId);
+            acc[qId] = {
+              chosenIndex: idx,
+              isCorrect: q ? idx === q.answerIndex : false,
+              timeMs: timeSpent[qId] || 0
+            };
+            return acc;
+          }, {})
+        },
+        endTime: Date.now()
+      };
+
+      setSession(finalSessionForScore);
 
       // Calculate and save score
-      const score = calculateSessionScore(finishedSession, questions);
+      const score = calculateSessionScore(finalSessionForScore, questions);
       if (score) {
         // Save to score history
         await addScoreToHistory({

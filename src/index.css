@@ -1,8 +1,32 @@
 @import "tailwindcss";
 
+/* Theme CSS Variables */
+:root {
+  --color-primary: #2563eb;
+  --color-primaryHover: #1d4ed8;
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-textSecondary: #475569;
+  --color-border: #cbd5e1;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+}
+
+/* Smooth theme transitions */
+.theme-transitioning,
+.theme-transitioning * {
+  transition: background-color 300ms ease, 
+              color 300ms ease, 
+              border-color 300ms ease !important;
+}
+
 body {
   @apply bg-slate-50 text-slate-900;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 a {

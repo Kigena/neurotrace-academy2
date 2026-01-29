@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { AuthProvider, useAuth } from "./contexts/AuthContext.jsx";
 import { ThemeProvider } from "./contexts/ThemeContext.jsx";
+import { SocketProvider } from "./contexts/SocketContext.jsx";
 import Home from "./pages/Home.jsx";
 import Patterns from "./pages/Patterns.jsx";
 import PatternDetail from "./pages/PatternDetail.jsx";
@@ -18,8 +19,7 @@ import SyndromeDetail from "./pages/SyndromeDetail.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
-import ChatButton from "./components/Chatbot/ChatButton.jsx";
-import ChatWindow from "./components/Chatbot/ChatWindow.jsx";
+import Chat from "./pages/Chat.jsx";
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -38,11 +38,7 @@ const ProtectedRoute = ({ children }) => {
 
 function AppContent() {
   const { user } = useAuth();
-  const [showChat, setShowChat] = React.useState(false);
   const location = useLocation();
-
-  // Hide chatbot during quiz sessions (prevent cheating)
-  const isQuizSession = location.pathname === '/quiz/session';
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -123,6 +119,11 @@ function AppContent() {
               <SyndromeDetail />
             </ProtectedRoute>
           } />
+          <Route path="/chat" element={
+            <ProtectedRoute>
+              <Chat />
+            </ProtectedRoute>
+          } />
         </Routes>
       </main>
 
@@ -130,14 +131,6 @@ function AppContent() {
         <footer className="border-t border-slate-200 py-4 text-center text-xs text-slate-500">
           NeuroTrace Academy · EEG Patterns · Cases · ABRET Prep
         </footer>
-      )}
-
-      {/* Chatbot - Hidden during quiz sessions to prevent cheating */}
-      {user && !isQuizSession && (
-        <>
-          {showChat && <ChatWindow onClose={() => setShowChat(false)} />}
-          <ChatButton onClick={() => setShowChat(!showChat)} />
-        </>
       )}
     </div>
   );
@@ -147,7 +140,9 @@ function App() {
   return (
     <ThemeProvider>
       <AuthProvider>
-        <AppContent />
+        <SocketProvider>
+          <AppContent />
+        </SocketProvider>
       </AuthProvider>
     </ThemeProvider>
   );

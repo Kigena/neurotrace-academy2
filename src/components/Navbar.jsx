@@ -82,6 +82,9 @@ function Navbar() {
             <NavLink to="/progress" className={navLinkClasses}>
               Progress
             </NavLink>
+            <NavLink to="/chat" className={navLinkClasses}>
+              Chat
+            </NavLink>
           </nav>
         </div>
 
@@ -145,6 +148,9 @@ function Navbar() {
             </NavLink>
             <NavLink to="/progress" className={navLinkClasses} onClick={() => setIsMenuOpen(false)}>
               Progress
+            </NavLink>
+            <NavLink to="/chat" className={navLinkClasses} onClick={() => setIsMenuOpen(false)}>
+              Chat
             </NavLink>
           </nav>
         </div>

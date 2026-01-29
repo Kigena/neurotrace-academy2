@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 5003;
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use('/uploads', express.static('uploads'));
 
 // MongoDB Connection
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/neurotrace';
@@ -125,7 +126,16 @@ app.get('/api/progress', async (req, res) => {
     }
 });
 
+// Socket.io setup
+import { createServer } from 'http';
+import { initializeSocket } from './socket.js';
+
+const httpServer = createServer(app);
+const io = initializeSocket(httpServer);
+
 // Start Server
-app.listen(PORT, () => {
+httpServer.listen(PORT, () => {
     console.log(`🚀 Server running on port ${PORT}`);
+    console.log(`🌐 WebSocket ready for real-time chat`);
 });
+

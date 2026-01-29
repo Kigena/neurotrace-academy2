@@ -74,7 +74,7 @@ Guidelines:
             const chat = this.model.startChat({
                 history: conversationHistory,
                 generationConfig: {
-                    maxOutputTokens: 500,
+                    maxOutputTokens: 2000,
                     temperature: 0.7,
                 },
             });

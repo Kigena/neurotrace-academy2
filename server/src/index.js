@@ -30,6 +30,16 @@ app.get('/', (req, res) => {
     res.send('NeuroTrace Academy API is running');
 });
 
+// Health check endpoint for uptime monitoring
+app.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'ok',
+        timestamp: new Date().toISOString(),
+        uptime: process.uptime(),
+        mongodb: mongoose.connection.readyState === 1 ? 'connected' : 'disconnected'
+    });
+});
+
 // Auth Routes
 app.use('/api/auth', authRoutes);
 

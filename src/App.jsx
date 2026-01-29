@@ -39,6 +39,10 @@ const ProtectedRoute = ({ children }) => {
 function AppContent() {
   const { user } = useAuth();
   const [showChat, setShowChat] = React.useState(false);
+  const location = useLocation();
+
+  // Hide chatbot during quiz sessions (prevent cheating)
+  const isQuizSession = location.pathname === '/quiz/session';
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -128,8 +132,8 @@ function AppContent() {
         </footer>
       )}
 
-      {/* Chatbot */}
-      {user && (
+      {/* Chatbot - Hidden during quiz sessions to prevent cheating */}
+      {user && !isQuizSession && (
         <>
           {showChat && <ChatWindow onClose={() => setShowChat(false)} />}
           <ChatButton onClick={() => setShowChat(!showChat)} />

@@ -17,6 +17,7 @@ import Syndromes from "./pages/Syndromes.jsx";
 import SyndromeDetail from "./pages/SyndromeDetail.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Login from "./pages/Login.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 const ProtectedRoute = ({ children }) => {
   const { user, loading } = useAuth();
@@ -43,6 +44,12 @@ function AppContent() {
       <main className="flex-1 max-w-6xl w-full mx-auto px-4 py-6">
         <Routes>
           <Route path="/login" element={<Login />} />
+
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
 
           <Route path="/" element={
             <ProtectedRoute>

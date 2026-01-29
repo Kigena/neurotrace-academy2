@@ -49,12 +49,14 @@ function Login() {
         } catch (e) {
             // Display user-friendly error messages
             const message = e.message || "An error occurred";
-            if (message.includes("401") || message.includes("Invalid")) {
+            if (message.includes("timeout") || message.includes("starting up")) {
+                setError("⏱️ Server is waking up (this takes ~30-60 seconds on first use). Please try again in a moment.");
+            } else if (message.includes("401") || message.includes("Invalid")) {
                 setError("Invalid email or password");
             } else if (message.includes("409") || message.includes("exists")) {
                 setError("An account with this email already exists");
-            } else if (message.includes("network") || message.includes("fetch")) {
-                setError("Unable to connect to server. Please try again.");
+            } else if (message.includes("network") || message.includes("fetch") || message.includes("Failed to fetch")) {
+                setError("Unable to connect to server. The server may be starting up - please wait 30 seconds and try again.");
             } else {
                 setError(message);
             }

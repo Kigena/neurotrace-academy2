@@ -97,14 +97,15 @@ function Navbar() {
             </svg>
           </button>
 
-          <div className="flex items-center gap-2">
+          <NavLink to="/dashboard" className="flex items-center gap-2 hover:opacity-80 transition-opacity" title="Go to Dashboard">
             <div className="w-8 h-8 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-sm border border-slate-200">
               {user?.name?.charAt(0).toUpperCase()}
             </div>
             <div className="hidden sm:block text-sm font-medium text-slate-700">
               {user?.name}
             </div>
-          </div>
+          </NavLink>
+
           <button
             onClick={handleLogout}
             className="text-xs px-3 py-1.5 rounded-md border border-slate-200 hover:bg-red-50 hover:text-red-600 hover:border-red-200 text-slate-500 transition-colors"

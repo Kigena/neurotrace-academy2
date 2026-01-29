@@ -45,6 +45,12 @@ export const AuthProvider = ({ children }) => {
         return authService.getUsers();
     };
 
+    const updateUser = (updatedUserData) => {
+        setUser(updatedUserData);
+        // Also update in storage
+        authService.updateUserInStorage(updatedUserData);
+    };
+
     const value = {
         user,
         loading,
@@ -52,6 +58,7 @@ export const AuthProvider = ({ children }) => {
         logout,
         createUser,
         getAllUsers,
+        updateUser,
     };
 
     return (

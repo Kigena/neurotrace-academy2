@@ -22,7 +22,7 @@ export const SocketProvider = ({ children }) => {
         // Initialize Socket
         // Use environment variable or default to window.location.origin for production if served together, 
         // or the specific backend URL.
-        const socketUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const socketUrl = import.meta.env.VITE_API_URL || 'http://localhost:5003';
 
         const newSocket = io(socketUrl, {
             query: { userId: user.id },

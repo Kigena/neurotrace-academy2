@@ -120,8 +120,7 @@ const ChatActiveWindow = ({ activeChat, onBack }) => {
                         );
                     })
                 )}
-                    })
-                )}
+
 
                 {/* Typing Indicator */}
                 {isTyping && activeChat.type === 'ai' && (

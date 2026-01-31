@@ -10,14 +10,40 @@ export const SocketProvider = ({ children }) => {
     const { user } = useAuth();
     const [socket, setSocket] = useState(null);
     const [onlineUsers, setOnlineUsers] = useState([]);
-    const [messages, setMessages] = useState([]);
+    const messagesRef = useRef([]);
+    const [messagesTrigger, setMessagesTrigger] = useState(0); // Trigger re-renders
     const [isConnected, setIsConnected] = useState(false);
 
     // Use a ref for messages to avoid dependency cycles in useEffect listeners if needed, 
     // but functional updates setMessages(prev => ...) are usually sufficient.
+    const socketInitialized = useRef(false);
+
+    // Helper to add message and trigger re-render
+    const addMessage = (message) => {
+        console.log('📨 Adding message to ref:', message);
+        messagesRef.current = [...messagesRef.current, message];
+        console.log('📊 Total messages in ref:', messagesRef.current.length);
+        setMessagesTrigger(prev => {
+            const newTrigger = prev + 1;
+            console.log('🔔 Triggering re-render:', newTrigger);
+            return newTrigger;
+        });
+    };
 
     useEffect(() => {
-        if (!user) return;
+        if (!user || !user.id) {
+            console.log('⏸️ Waiting for user to be fully loaded');
+            return;
+        }
+
+        // Prevent re-initialization if socket is already set up for this user
+        if (socketInitialized.current && socket) {
+            console.log('✅ Socket already initialized, skipping re-creation');
+            return;
+        }
+
+        console.log('🔌 Initializing socket for user:', user.id);
+        socketInitialized.current = true;
 
         // Initialize Socket
         // Use environment variable or default to window.location.origin for production if served together, 
@@ -46,23 +72,27 @@ export const SocketProvider = ({ children }) => {
 
         newSocket.on('message:received', (message) => {
             console.log('message:received event', message);
-            setMessages(prev => [...prev, message]);
-            // Optional: Play sound
+            addMessage(message);
         });
 
         newSocket.on('message:public', (message) => {
             console.log('message:public event', message);
-            setMessages(prev => [...prev, message]);
+            addMessage(message);
         });
 
         newSocket.on('message:group', (message) => {
             console.log('message:group event', message);
-            setMessages(prev => [...prev, message]);
+            addMessage(message);
         });
 
         newSocket.on('message:ai', (message) => {
             console.log('message:ai event', message);
-            setMessages(prev => [...prev, message]);
+            console.log('addMessage function exists?', typeof addMessage);
+            try {
+                addMessage(message);
+            } catch (error) {
+                console.error('Error in addMessage:', error);
+            }
         });
 
         // Confirmation of own message sent (if not optimistically added)
@@ -80,9 +110,10 @@ export const SocketProvider = ({ children }) => {
 
         // Cleanup
         return () => {
+            console.log('🔌 Socket cleanup - closing connection');
             newSocket.close();
         };
-    }, [user]);
+    }, [user?.id]); // Only re-run if user ID changes, not the entire user object
 
     // --- Actions ---
 
@@ -148,7 +179,11 @@ export const SocketProvider = ({ children }) => {
     };
 
     const sendAiMessage = (content, attachments = [], userContext = {}) => {
-        if (!socket) return;
+        console.log('sendAiMessage called', { socket: !!socket, content, user });
+        if (!socket) {
+            console.error('Socket not connected for AI message!');
+            return;
+        }
         const msgData = {
             senderId: user.id,
             senderName: user.name,
@@ -161,21 +196,28 @@ export const SocketProvider = ({ children }) => {
                 userId: user.id
             }
         };
+        console.log('Emitting message:ai', msgData);
         socket.emit('message:ai', msgData);
     };
 
+    // Create reactive messages value that updates when messagesTrigger changes
+    // IMPORTANT: Return a NEW array copy so React detects the change
+    const messages = React.useMemo(() => [...messagesRef.current], [messagesTrigger]);
+
+    // Memoize context value to ensure it updates when messages change
+    const contextValue = React.useMemo(() => ({
+        socket,
+        messages,
+        onlineUsers,
+        isConnected,
+        sendPrivateMessage,
+        sendPublicMessage,
+        sendGroupMessage,
+        sendAiMessage
+    }), [socket, messages, onlineUsers, isConnected, sendPrivateMessage, sendPublicMessage, sendGroupMessage, sendAiMessage]);
+
     return (
-        <SocketContext.Provider value={{
-            socket,
-            onlineUsers,
-            messages,
-            isConnected,
-            sendPrivateMessage,
-            sendPublicMessage,
-            sendGroupMessage,
-            sendAiMessage,
-            setMessages // Allow initial history load to populate this
-        }}>
+        <SocketContext.Provider value={contextValue}>
             {children}
         </SocketContext.Provider>
     );

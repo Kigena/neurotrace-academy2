@@ -6,53 +6,43 @@ import MessageInput from './MessageInput';
 
 const ChatActiveWindow = ({ activeChat, onBack }) => {
     const { user } = useAuth();
-    const { socket, messages, sendPrivateMessage, sendPublicMessage, sendAiMessage } = useSocket();
-    const messagesEndRef = useRef(null);
+    const { messages, sendPublicMessage, sendPrivateMessage, sendAiMessage } = useSocket();
     const [localMessages, setLocalMessages] = useState([]);
     const [isTyping, setIsTyping] = useState(false);
-
-    // Initial typing listener
-    useEffect(() => {
-        if (!socket) return;
-
-        const handleAiTyping = (status) => {
-            if (activeChat.type === 'ai') {
-                setIsTyping(status);
-            }
-        };
-
-        socket.on('ai:typing', handleAiTyping);
-        return () => socket.off('ai:typing', handleAiTyping);
-    }, [socket, activeChat]);
+    const messagesEndRef = useRef(null);
 
     // Filter messages for current chat
     useEffect(() => {
-        if (!activeChat) return;
+        console.log('🔍 ChatActiveWindow: Filtering messages', {
+            totalMessages: messages?.length,
+            activeChat: activeChat?.type,
+            messagesArray: messages
+        });
 
-        console.log('Filtering messages. Total messages:', messages.length, 'Active chat:', activeChat);
-        const chatMessages = messages.filter(msg => {
-            console.log('Checking message:', msg);
+        if (!activeChat || !messages) {
+            setLocalMessages([]);
+            return;
+        }
+
+        const filtered = messages.filter(msg => {
             if (activeChat.type === 'public') {
-                const matches = msg.type === 'public' || !msg.type;
-                console.log('Public chat filter result:', matches, 'msg.type:', msg.type);
-                return matches;
+                return msg.type === 'public' || !msg.type;
             } else if (activeChat.type === 'private') {
-                return (msg.type === 'private' && (
+                return msg.type === 'private' && (
                     (msg.senderId === user.id && msg.recipientId === activeChat.id) ||
                     (msg.senderId === activeChat.id && msg.recipientId === user.id)
-                ));
+                );
             } else if (activeChat.type === 'ai') {
-                // Filter for AI messages for this user
                 return msg.type === 'ai' && (msg.senderId === user.id || msg.senderId === 'ai-bot');
             }
             return false;
         });
 
-        console.log('Filtered messages:', chatMessages.length, chatMessages);
-        setLocalMessages(chatMessages);
+        console.log('✅ Filtered messages:', filtered.length, filtered);
+        setLocalMessages(filtered);
     }, [messages, activeChat, user.id]);
 
-    // Scroll to bottom
+    // Auto-scroll to bottom
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, [localMessages]);
@@ -67,22 +57,32 @@ const ChatActiveWindow = ({ activeChat, onBack }) => {
         }
     };
 
-    if (!activeChat) return <div className="flex-1 bg-background"></div>;
+    if (!activeChat) {
+        return (
+            <div className="flex-1 flex items-center justify-center text-textSecondary">
+                <p>Select a chat to start messaging</p>
+            </div>
+        );
+    }
 
     return (
-        <div className="flex flex-col h-full bg-background relative">
+        <div className="flex-1 flex flex-col bg-background">
             {/* Header */}
-            <div className="h-16 border-b border-border bg-surface px-4 flex items-center gap-3 shadow-sm z-10">
+            <div className="h-16 border-b border-border bg-surface px-4 flex items-center gap-3 shadow-sm">
                 <button
                     onClick={onBack}
                     className="md:hidden p-2 -ml-2 text-textSecondary hover:text-text"
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
+                    </svg>
                 </button>
 
                 <div className="relative">
                     {activeChat.type === 'public' ? (
                         <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold">#</div>
+                    ) : activeChat.type === 'ai' ? (
+                        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold">AI</div>
                     ) : (
                         <div className="w-10 h-10 rounded-full bg-secondary/20 flex items-center justify-center text-secondary font-bold">
                             {activeChat.name?.charAt(0).toUpperCase()}
@@ -93,11 +93,9 @@ const ChatActiveWindow = ({ activeChat, onBack }) => {
                 <div>
                     <h2 className="font-bold text-text">{activeChat.name}</h2>
                     <p className="text-xs text-textSecondary">
-                        {activeChat.type === 'public'
-                            ? 'Public Room'
-                            : activeChat.type === 'ai'
-                                ? 'Powered by Gemini 2.5'
-                                : activeChat.isOnline ? 'Active now' : ''}
+                        {activeChat.type === 'public' ? 'Public Room' :
+                            activeChat.type === 'ai' ? 'Powered by Gemini 2.5' :
+                                activeChat.isOnline ? 'Active now' : 'Offline'}
                     </p>
                 </div>
             </div>
@@ -107,25 +105,59 @@ const ChatActiveWindow = ({ activeChat, onBack }) => {
                 {localMessages.length === 0 ? (
                     <div className="h-full flex flex-col items-center justify-center text-textSecondary opacity-50">
                         <div className="w-16 h-16 bg-surface rounded-full flex items-center justify-center mb-4">
-                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+                            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                            </svg>
                         </div>
                         <p>No messages yet. Say hello!</p>
                     </div>
                 ) : (
                     localMessages.map((msg, idx) => {
-                        // Check if previous message was from same sender to group visually
                         const isSequence = idx > 0 && localMessages[idx - 1].senderId === msg.senderId;
+                        const isOwn = msg.senderId === user.id;
                         return (
-                            <MessageBubble
+                            <div
                                 key={msg._id || idx}
-                                message={msg}
-                                isOwn={msg.senderId === user.id}
-                                isSequence={isSequence}
-                            />
+                                style={{
+                                    display: 'flex',
+                                    width: '100%',
+                                    justifyContent: isOwn ? 'flex-end' : 'flex-start',
+                                    marginTop: isSequence ? '4px' : '16px'
+                                }}
+                            >
+                                <div style={{
+                                    maxWidth: '70%',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: isOwn ? 'flex-end' : 'flex-start'
+                                }}>
+                                    {!isOwn && !isSequence && (
+                                        <span style={{ fontSize: '12px', color: '#666', marginLeft: '8px', marginBottom: '4px' }}>
+                                            {msg.senderName || 'User'}
+                                        </span>
+                                    )}
+                                    <div style={{
+                                        padding: '12px 16px',
+                                        borderRadius: '16px',
+                                        background: isOwn ? '#4F46E5' : '#F3F4F6',
+                                        color: isOwn ? 'white' : '#111827',
+                                        wordBreak: 'break-word'
+                                    }}>
+                                        <p style={{ margin: 0, whiteSpace: 'pre-wrap' }}>{msg.content}</p>
+                                        <div style={{
+                                            fontSize: '10px',
+                                            marginTop: '4px',
+                                            opacity: 0.7
+                                        }}>
+                                            {new Date(msg.timestamp || msg.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         );
                     })
-                )}
-
+                )
+                }
 
                 {/* Typing Indicator */}
                 {isTyping && activeChat.type === 'ai' && (
@@ -142,7 +174,7 @@ const ChatActiveWindow = ({ activeChat, onBack }) => {
             </div>
 
             {/* Input Area */}
-            <div className="p-4 bg-surface border-t border-border">
+            <div className="border-t border-border bg-surface p-4">
                 <MessageInput onSend={handleSendMessage} />
             </div>
         </div>

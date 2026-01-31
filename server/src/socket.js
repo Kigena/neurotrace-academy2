@@ -137,6 +137,7 @@ export const initializeSocket = (httpServer) => {
 
         // AI bot message
         socket.on('message:ai', async ({ senderId, senderName, roomId, content, userContext }) => {
+            console.log('📥 Received message:ai event', { senderId, senderName, content });
             try {
                 // Save user's message
                 const userMessage = new Message({
@@ -147,12 +148,13 @@ export const initializeSocket = (httpServer) => {
                     content
                 });
                 await userMessage.save();
+                console.log('💾 User AI message saved:', userMessage._id);
 
-                // Broadcast user message
+                // Broadcast user message - FIXED: use message:ai event
                 if (roomId) {
                     io.to(`room:${roomId}`).emit('message:ai', userMessage);
                 } else {
-                    io.emit('message:public', userMessage);
+                    io.emit('message:ai', userMessage); // Changed from message:public
                 }
 
                 // Generate AI response
@@ -168,17 +170,18 @@ export const initializeSocket = (httpServer) => {
                     content: aiResponse
                 });
                 await aiMessage.save();
+                console.log('💾 AI response saved:', aiMessage._id);
 
                 socket.emit('ai:typing', false);
 
-                // Broadcast AI response
+                // Broadcast AI response - FIXED: use message:ai event
                 if (roomId) {
                     io.to(`room:${roomId}`).emit('message:ai', aiMessage);
                 } else {
-                    io.emit('message:public', aiMessage);
+                    io.emit('message:ai', aiMessage); // Changed from message:public
                 }
 
-                console.log(`🤖 AI response in ${roomId || 'public'}`);
+                console.log(`🤖 AI response in ${roomId || 'global'}`);
             } catch (error) {
                 console.error('AI message error:', error);
                 socket.emit('ai:typing', false);

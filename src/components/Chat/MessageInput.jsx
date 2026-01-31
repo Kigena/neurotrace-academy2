@@ -22,7 +22,7 @@ const MessageInput = ({ onSend }) => {
 
                 // You'll need to add this upload method to apiService or fetch directly
                 // Assuming direct fetch for now based on previous route setup
-                const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5000'}/api/chat/upload`, {
+                const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:5003'}/api/chat/upload`, {
                     method: 'POST',
                     body: formData
                 });

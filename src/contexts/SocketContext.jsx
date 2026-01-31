@@ -95,13 +95,18 @@ export const SocketProvider = ({ children }) => {
     };
 
     const sendPublicMessage = (content, attachments = []) => {
-        if (!socket) return;
+        console.log('sendPublicMessage called', { socket: !!socket, content, user });
+        if (!socket) {
+            console.error('Socket not connected!');
+            return;
+        }
         const msgData = {
             senderId: user.id,
             senderName: user.name,
             content,
             attachments
         };
+        console.log('Emitting message:public', msgData);
         socket.emit('message:public', msgData);
     };
 

@@ -56,7 +56,7 @@ function Sidebar({ isOpen, onClose }) {
       {/* Sidebar */}
       <aside
         className={`fixed top-0 left-0 h-full bg-white border-r border-slate-200 z-50 transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
-          } w-64 md:translate-x-0 md:sticky md:top-0 overflow-y-auto flex flex-col`}
+          } w-64 overflow-y-auto flex flex-col md:translate-x-0 md:static md:h-auto md:min-h-screen md:shrink-0 md:overflow-visible`}
       >
         {/* Sidebar Header */}
         <div className="p-4 border-b border-slate-200 flex items-center justify-between">
@@ -80,7 +80,7 @@ function Sidebar({ isOpen, onClose }) {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
+        <nav className="flex-1 p-4 space-y-1 md:flex-none">
           <div className="mb-4">
             <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-4 mb-2">
               Main

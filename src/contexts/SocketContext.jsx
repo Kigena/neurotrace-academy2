@@ -132,9 +132,7 @@ export const SocketProvider = ({ children }) => {
             // Determine chat ID for this message
             const chatId = message.type === 'private'
                 ? message.senderId  // For private messages, use sender's ID
-                : message.type === 'ai'
-                    ? 'ai-bot'
-                    : 'public';
+                : 'public';
 
             // Only increment unread and notify if this chat is not currently active
             if (chatId !== activeChatId) {
@@ -147,9 +145,7 @@ export const SocketProvider = ({ children }) => {
                 // Show browser notification
                 const title = message.type === 'private'
                     ? `${message.senderName}`
-                    : message.type === 'ai'
-                        ? 'NeuroLinea AI'
-                        : 'Public Chat';
+                    : 'Community room';
 
                 showNotification(
                     title,
@@ -171,16 +167,6 @@ export const SocketProvider = ({ children }) => {
         newSocket.on('message:group', (message) => {
             console.log('message:group event', message);
             addMessage(message);
-        });
-
-        newSocket.on('message:ai', (message) => {
-            console.log('message:ai event', message);
-            console.log('addMessage function exists?', typeof addMessage);
-            try {
-                addMessage(message);
-            } catch (error) {
-                console.error('Error in addMessage:', error);
-            }
         });
 
         // Confirmation of own message sent (if not optimistically added)
@@ -267,28 +253,6 @@ export const SocketProvider = ({ children }) => {
         socket.emit('message:group', msgData);
     };
 
-    const sendAiMessage = (content, attachments = [], userContext = {}) => {
-        console.log('sendAiMessage called', { socket: !!socket, content, attachments, user });
-        if (!socket) {
-            console.error('Socket not connected for AI message!');
-            return;
-        }
-        const msgData = {
-            senderId: user.id,
-            senderName: user.name,
-            roomId: null,
-            content,
-            attachments: attachments || [],
-            userContext: {
-                ...userContext,
-                name: user.name,
-                userId: user.id
-            }
-        };
-        console.log('Emitting message:ai with attachments:', msgData);
-        socket.emit('message:ai', msgData);
-    };
-
     // Load message history from database
     const loadMessageHistory = async (chatType, chatId) => {
         if (!user) return;
@@ -301,8 +265,6 @@ export const SocketProvider = ({ children }) => {
                 messages = await chatService.getPrivateMessages(user.id, chatId);
             } else if (chatType === 'public') {
                 messages = await chatService.getPublicMessages();
-            } else if (chatType === 'ai') {
-                messages = await chatService.getAiMessages(user.id);
             }
 
             console.log(`✅ Loaded ${messages.length} messages from database`);
@@ -356,9 +318,8 @@ export const SocketProvider = ({ children }) => {
         loadMessageHistory,
         sendPrivateMessage,
         sendPublicMessage,
-        sendGroupMessage,
-        sendAiMessage
-    }), [socket, messages, onlineUsers, isConnected, unreadCounts, sendPrivateMessage, sendPublicMessage, sendGroupMessage, sendAiMessage]);
+        sendGroupMessage
+    }), [socket, messages, onlineUsers, isConnected, unreadCounts, sendPrivateMessage, sendPublicMessage, sendGroupMessage]);
 
     return (
         <SocketContext.Provider value={contextValue}>

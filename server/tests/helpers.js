@@ -29,6 +29,7 @@ export function makeApp(options = {}) {
             register: { limit: 1000 },
             passwordChange: { limit: 1000 },
             ai: { limit: 1000 },
+            post: { limit: 1000 },
             ...(options.rateLimits || {}),
         },
     });

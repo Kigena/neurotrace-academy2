@@ -147,7 +147,7 @@ const MessageInput = ({ onSend }) => {
                         }
                     }}
                     placeholder={file ? "Add a caption (optional)..." : "Type a message..."}
-                    className="flex-1 px-4 py-2.5 bg-white border border-slate-300 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder:text-slate-400"
+                    className="min-w-0 flex-1 px-4 py-2.5 bg-white border border-slate-300 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent placeholder:text-slate-400"
                     disabled={isSending}
                 />
 

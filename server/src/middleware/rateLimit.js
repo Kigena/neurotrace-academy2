@@ -6,6 +6,7 @@ const DEFAULTS = {
     register: { windowMs: 60 * 60 * 1000, limit: 10 },
     passwordChange: { windowMs: 15 * 60 * 1000, limit: 10 },
     ai: { windowMs: 60 * 1000, limit: 20 },
+    post: { windowMs: 60 * 1000, limit: 10 },
 };
 
 const tooMany = (req, res) =>
@@ -36,6 +37,14 @@ export function createRateLimiters(overrides = {}) {
         }),
         passwordChange: rateLimit({
             ...cfg('passwordChange'),
+            standardHeaders: 'draft-7',
+            legacyHeaders: false,
+            keyGenerator: (req) => req.user?.id || ipKeyGenerator(req.ip || ''),
+            handler: tooMany,
+        }),
+        // Community posts and comments, per user.
+        post: rateLimit({
+            ...cfg('post'),
             standardHeaders: 'draft-7',
             legacyHeaders: false,
             keyGenerator: (req) => req.user?.id || ipKeyGenerator(req.ip || ''),

@@ -5,13 +5,13 @@ export const THEMES = {
     light: {
         name: 'Light',
         colors: {
-            primary: '#2563eb',      // blue-600
-            primaryHover: '#1d4ed8', // blue-700
-            background: '#ffffff',
-            surface: '#f8fafc',      // slate-50
-            text: '#0f172a',         // slate-900
-            textSecondary: '#475569', // slate-600
-            border: '#cbd5e1',       // slate-300
+            primary: '#0e7c6b',      // accent (deep teal)
+            primaryHover: '#0c6559',
+            background: '#f4f7f6',   // paper
+            surface: '#ffffff',
+            text: '#14211f',         // ink
+            textSecondary: '#5b6b68', // muted
+            border: '#d9e2e0',       // line
             success: '#10b981',      // green-500
             error: '#ef4444',        // red-500
             warning: '#f59e0b',      // amber-500

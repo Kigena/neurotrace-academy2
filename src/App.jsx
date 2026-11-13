@@ -21,6 +21,7 @@ import NeuroSyndromes from "./pages/NeuroSyndromes.jsx";
 import NeurologyEssentials from "./pages/NeurologyEssentials.jsx";
 import LabSafety from "./pages/LabSafety.jsx";
 import SleepStaging from "./pages/SleepStaging.jsx";
+import ThreeDayDrill from "./pages/ThreeDayDrill.jsx";
 import ProfessionalPractice from "./pages/ProfessionalPractice.jsx";
 import PatternsReview from "./pages/PatternsReview.jsx";
 import AcnsGuide from "./pages/AcnsGuide.jsx";
@@ -261,6 +262,12 @@ function AppContent() {
             <Route path="/neurology-essentials" element={
               <ProtectedRoute>
                 <NeurologyEssentials />
+              </ProtectedRoute>
+            } />
+
+            <Route path="/drill" element={
+              <ProtectedRoute>
+                <ThreeDayDrill />
               </ProtectedRoute>
             } />
 

@@ -1,0 +1,2079 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-11-13",
+  "bank": "drill",
+  "description": "The Three-Day Drill: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, and medication effects on the EEG. Kept apart from the main question bank and served only on the drill page.",
+  "totalQuestions": 90,
+  "questions": [
+    {
+      "id": "drill-n01",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A right-handed man has a stroke. He understands what is said to him but speaks in slow, effortful fragments and is frustrated by it. His right face and arm are weak. Where is the lesion?",
+      "options": [
+        "Left inferior frontal gyrus (Broca area)",
+        "Left posterior superior temporal gyrus (Wernicke area)",
+        "Left angular gyrus",
+        "Right inferior frontal gyrus"
+      ],
+      "answerIndex": 0,
+      "explanation": "Non-fluent speech with intact comprehension is Broca (expressive) aphasia. Broca area lies in the dominant inferior frontal gyrus, just in front of the motor strip for the face and hand, which is why right face and arm weakness usually come with it. About 95% of right-handers are left-hemisphere dominant for language. Wernicke aphasia is fluent with poor comprehension; the right hemisphere is not dominant here; the angular gyrus gives alexia with agraphia.",
+      "memoryAid": "BROCA = BROKEN speech, front of the brain. The patient KNOWS it is broken, so they are frustrated.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n02",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient speaks fluently but in nonsense, with made-up words, does not follow commands and seems unaware of the problem. Which area is damaged?",
+      "options": [
+        "Dominant posterior superior temporal gyrus",
+        "Arcuate fasciculus",
+        "Non-dominant parietal lobe",
+        "Dominant inferior frontal gyrus"
+      ],
+      "answerIndex": 0,
+      "explanation": "Fluent speech with paraphasias, poor comprehension and lack of awareness is Wernicke (receptive) aphasia from damage to the posterior superior temporal gyrus of the dominant hemisphere, just behind the primary auditory cortex. There is usually no weakness because the motor strip is far away, though a superior quadrantanopia may occur.",
+      "memoryAid": "WERNICKE = WORDY, WRONG and WON'T understand. Wernicke is in the temporal lobe next to hearing: it is the 'listening' area.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n03",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient speaks fluently and understands well, but cannot repeat a sentence back. Which structure is most likely damaged?",
+      "options": [
+        "Broca area",
+        "Wernicke area",
+        "Arcuate fasciculus",
+        "Primary auditory cortex"
+      ],
+      "answerIndex": 2,
+      "explanation": "Conduction aphasia: fluent speech and good comprehension, but repetition fails because the arcuate fasciculus, the white matter bundle linking Wernicke (posterior) to Broca (anterior), is cut. The two language areas work, but the message cannot travel between them.",
+      "memoryAid": "CONDUCTION = can't COPY. The 'wire' (arcuate fasciculus) between the ear area and the mouth area is cut.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n04",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "After a dominant parietal stroke a patient cannot name her fingers, confuses left and right, cannot write and cannot do simple sums. Where is the lesion?",
+      "options": [
+        "Dominant angular gyrus",
+        "Corpus callosum",
+        "Non-dominant superior parietal lobule",
+        "Dominant precentral gyrus"
+      ],
+      "answerIndex": 0,
+      "explanation": "These four signs form Gerstmann syndrome, from damage to the dominant (usually left) angular gyrus of the inferior parietal lobule. Non-dominant parietal damage instead produces neglect of the left side of space.",
+      "memoryAid": "Gerstmann = 'FALL': Finger agnosia, Acalculia, Left-right confusion, Lettering lost (agraphia).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n05",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "After a right parietal stroke, a woman eats only the food on the right side of her plate, shaves only the right side of her face, and denies anything is wrong. What is this?",
+      "options": [
+        "Gerstmann syndrome",
+        "Wernicke aphasia",
+        "Left hemineglect from non-dominant parietal damage",
+        "Right homonymous hemianopia from occipital damage"
+      ],
+      "answerIndex": 2,
+      "explanation": "Neglect of the left side of space and the body, often with denial of illness (anosognosia), comes from damage to the non-dominant (usually right) parietal lobe. A hemianopia patient knows a field is missing and turns the head to compensate; a neglect patient behaves as if the left side does not exist.",
+      "memoryAid": "RIGHT parietal = the RIGHT side is all that's LEFT. The right hemisphere watches both sides; the left only watches the right, so right damage loses the left.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n06",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient has weakness of the left leg much more than the left arm, with apathy and urinary incontinence. Which artery is blocked?",
+      "options": [
+        "Right anterior cerebral artery",
+        "Right posterior cerebral artery",
+        "Right middle cerebral artery",
+        "Left anterior cerebral artery"
+      ],
+      "answerIndex": 0,
+      "explanation": "The anterior cerebral artery supplies the medial surface of the hemisphere, where the leg and foot are represented on the motor and sensory strips (the homunculus hangs upside down, legs over the top into the midline). Medial frontal damage also causes apathy (abulia) and incontinence. Signs are contralateral, so a left leg points to the right ACA.",
+      "memoryAid": "ACA = ANKLES (leg). MCA = MOUTH and ARM. PCA = PICTURES (vision).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n07",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Which deficit pattern best fits a left middle cerebral artery stroke?",
+      "options": [
+        "Right leg weakness greater than arm, abulia",
+        "Right face and arm weakness greater than leg, aphasia, eyes deviated to the left",
+        "Left face and arm weakness with left neglect",
+        "Right homonymous hemianopia with macular sparing only"
+      ],
+      "answerIndex": 1,
+      "explanation": "The MCA supplies the lateral convexity: the face and arm areas of the motor and sensory strips, language areas (in the dominant hemisphere) and the frontal eye field. A destructive lesion of the left frontal eye field lets the right one push the eyes toward the lesion (left). Leg weakness points to the ACA; isolated hemianopia to the PCA; left-sided signs to the right hemisphere.",
+      "memoryAid": "In a STROKE the eyes LOOK AT the lesion. In a SEIZURE the eyes LOOK AWAY from the focus.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n08",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient can write a paragraph but cannot read it back a minute later. Vision is lost in the right field. Which artery and structures are involved?",
+      "options": [
+        "Left ACA: medial frontal lobe",
+        "Left PCA: left occipital cortex and splenium of the corpus callosum",
+        "Right PCA: right occipital lobe",
+        "Left MCA: angular gyrus"
+      ],
+      "answerIndex": 1,
+      "explanation": "Alexia without agraphia: the left occipital cortex is destroyed (right hemianopia) and the splenium is damaged, so what the intact right occipital lobe sees cannot cross to the left-hemisphere language areas. Writing is intact because the language and motor areas are fine. Both structures are supplied by the left posterior cerebral artery.",
+      "memoryAid": "Can WRITE but can't READ = the visual message can't CROSS the bridge (splenium). PCA = Pictures.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n09",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A hypertensive patient has pure weakness of the right face, arm and leg, equally, with no sensory loss, aphasia or field cut. A routine EEG is most likely to show what?",
+      "options": [
+        "A normal or near-normal record",
+        "Left-sided periodic discharges",
+        "Generalized burst suppression",
+        "Continuous polymorphic delta over the left convexity"
+      ],
+      "answerIndex": 0,
+      "explanation": "Pure motor hemiparesis with face, arm and leg equally involved is a lacunar infarct in the posterior limb of the internal capsule (lenticulostriate branches of the MCA). The lesion is small and deep, below the cortex, so the scalp EEG is often normal or shows only mild changes. Convexity cortex and white matter strokes give focal slowing.",
+      "memoryAid": "LACUNE = LITTLE and LOW (deep): the EEG often LOOKS normal. 'Pure motor, pure capsule.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n10",
+      "domainId": "domain-3",
+      "sectionId": "d3-focal-generalized-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Continuous, irregular (polymorphic) delta over one region, unchanged by eye opening or alerting, most strongly suggests a lesion in which location?",
+      "options": [
+        "The thalamus on the opposite side",
+        "The brainstem",
+        "Subcortical white matter beneath that region",
+        "A purely superficial cortical gray matter lesion"
+      ],
+      "answerIndex": 2,
+      "explanation": "Continuous polymorphic delta activity is the classic sign of a structural lesion involving the subcortical white matter, which disconnects the overlying cortex from its thalamic inputs. Lesions confined to the cortical gray matter tend instead to reduce amplitude and faster activity, and deep midline lesions give intermittent, often bilateral, rhythmic delta.",
+      "memoryAid": "POLYMORPHIC delta = POOR white matter below. 'White matter cut = cortex drifts slow.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n11",
+      "domainId": "domain-3",
+      "sectionId": "d3-focal-generalized-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient's alpha rhythm blocks normally on the right when the eyes open, but persists on the left. What is this, and where is the lesion likely to be?",
+      "options": [
+        "Alpha squeak: no lesion",
+        "Bancaud phenomenon: a lesion on the right",
+        "A normal asymmetry of up to 50%",
+        "Bancaud phenomenon: a lesion on the left"
+      ],
+      "answerIndex": 3,
+      "explanation": "Failure of the alpha rhythm to attenuate on one side with eye opening or mental effort is the Bancaud phenomenon. The side that fails to react is abnormal, usually from a lesion in the parietal, temporal or occipital region of that hemisphere. Amplitude asymmetries are judged differently (the right is often slightly higher in normals); the key here is reactivity.",
+      "memoryAid": "BANCAUD = the side that won't BAN (block) the alpha is the BAD side.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n12",
+      "domainId": "domain-3",
+      "sectionId": "d3-sleep-graphoelements",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Sleep spindles are consistently absent over the left hemisphere in an adult. Which structure is most likely involved?",
+      "options": [
+        "Left cerebellum",
+        "Pons",
+        "Left thalamus",
+        "Right thalamus"
+      ],
+      "answerIndex": 2,
+      "explanation": "Spindles are generated by thalamocortical circuits, paced by the thalamic reticular nucleus. A lesion of the thalamus (or the thalamocortical connections and cortex) on one side reduces spindles on that same side. Persistent unilateral spindle loss is abnormal at any age once spindles have developed.",
+      "memoryAid": "SPINDLES are SPUN by the THALAMUS, same side. 'No spindle on the left = look at the left thalamus.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n13",
+      "domainId": "domain-3",
+      "sectionId": "d3-normal-variants",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "An arch-shaped 9 Hz rhythm at C3 attenuates when the patient makes a fist with the right hand. What is it and where is it generated?",
+      "options": [
+        "Alpha rhythm from the left occipital lobe",
+        "A breach rhythm",
+        "Wicket spikes from the left temporal lobe",
+        "Mu rhythm from the left sensorimotor (Rolandic) cortex"
+      ],
+      "answerIndex": 3,
+      "explanation": "Mu is an arciform 7-11 Hz rhythm over the central regions (C3, C4), generated in the sensorimotor cortex around the central sulcus. It blocks with movement (or the thought of movement) of the opposite limb, not with eye opening. Left-sided mu blocks with right-hand movement.",
+      "memoryAid": "MU = MOVE. Arches like the letter M. Block it by moving the OPPOSITE hand.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n14",
+      "domainId": "domain-3",
+      "sectionId": "d3-normal-variants",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "After a right craniotomy, a patient has higher-amplitude, sharper, faster activity over the right central region. What does this represent?",
+      "options": [
+        "A breach rhythm from the skull defect",
+        "Muscle artifact from the scar",
+        "Right hemisphere encephalopathy",
+        "A right frontal epileptogenic focus"
+      ],
+      "answerIndex": 0,
+      "explanation": "A skull defect removes bone, which normally filters and attenuates high-frequency activity, so the activity under the defect is larger and sharper (breach rhythm). It often looks like mu and can contain sharply contoured waves. It is not epileptiform by itself, though true spikes can coexist and must be judged carefully.",
+      "memoryAid": "BREACH = BONE gone: the EEG is BIGGER and BRIGHTER (faster) over the hole.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n15",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A focal motor seizure starts in the right foot. Where would the focus most likely be?",
+      "options": [
+        "Left occipital lobe",
+        "Right parasagittal cortex, near C4",
+        "Left parasagittal motor cortex, near Cz",
+        "Left lateral frontal lobe, near F7"
+      ],
+      "answerIndex": 2,
+      "explanation": "On the motor homunculus the foot and leg sit at the top of the precentral gyrus and dip into the interhemispheric fissure, close to the midline (Cz). The face is low and lateral (near F7/T3 regions). Motor control is crossed, so the right foot points to the left hemisphere. Parasagittal foci may show best at Cz and can be hard to lateralize.",
+      "memoryAid": "The homunculus HANGS upside down: FEET at the TOP (midline, Cz), FACE at the bottom (lateral).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n16",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "During a temporal lobe seizure a patient has lip-smacking, fumbling movements of the left hand, and a stiff, twisted posture of the right arm. Which side is the seizure focus?",
+      "options": [
+        "Cannot be lateralized",
+        "Both temporal lobes equally",
+        "Right temporal lobe",
+        "Left temporal lobe"
+      ],
+      "answerIndex": 3,
+      "explanation": "Unilateral dystonic posturing of an arm is contralateral to the seizure focus. Manual automatisms (fumbling, picking) tend to involve the hand on the same side as the focus. Both clues point to the left.",
+      "memoryAid": "DYSTONIA is DISTANT (opposite side). AUTOMATISMS stay AT HOME (same side).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n17",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient talks normally throughout a complex partial seizure and has no language problem afterwards. Which lateralization is most likely?",
+      "options": [
+        "Frontal eye field",
+        "Dominant (usually left) temporal lobe",
+        "Occipital lobe",
+        "Non-dominant (usually right) temporal lobe"
+      ],
+      "answerIndex": 3,
+      "explanation": "Preserved, understandable speech during a seizure points to a non-dominant focus. Postictal aphasia (word-finding or comprehension problems after the seizure) points to the dominant hemisphere.",
+      "memoryAid": "TALKS through it = the TALKING side is spared (non-dominant focus). Aphasia afterwards = the language side was hit.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n18",
+      "domainId": "domain-1",
+      "sectionId": "d1-brain-structures-functions",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient has a right third nerve palsy (eye down and out, dilated pupil) and weakness of the left arm and leg. Where is the lesion?",
+      "options": [
+        "Right pons",
+        "Left midbrain",
+        "Right midbrain (Weber syndrome)",
+        "Right internal capsule"
+      ],
+      "answerIndex": 2,
+      "explanation": "Crossed signs (a cranial nerve on one side, limb weakness on the other) mean the brainstem. The third nerve leaves the front of the midbrain next to the cerebral peduncle, which carries corticospinal fibres that have not yet crossed. A right ventral midbrain lesion gives a right III palsy and left hemiparesis (Weber syndrome).",
+      "memoryAid": "CROSSED signs = BRAINSTEM. The nerve tells you the LEVEL and the SIDE (III = midbrain).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n19",
+      "domainId": "domain-1",
+      "sectionId": "d1-brain-structures-functions",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "After a basilar artery stroke, a patient cannot move or speak but blinks and looks up on command. What will the EEG most likely show?",
+      "options": [
+        "Generalized burst suppression",
+        "Alpha coma that does not react",
+        "A normal, reactive posterior alpha rhythm",
+        "Electrocerebral inactivity"
+      ],
+      "answerIndex": 2,
+      "explanation": "This is locked-in syndrome from a lesion of the ventral pons that cuts the corticospinal and corticobulbar tracts but spares the reticular activating system and the cortex. The patient is fully awake and aware, so the EEG is usually normal with a reactive alpha rhythm. The EEG helps tell locked-in from coma.",
+      "memoryAid": "LOCKED IN = the person is still IN there, and so is the ALPHA. Vertical eye movements are the only way out.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n20",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "After cardiac arrest, a comatose patient's EEG shows diffuse, frontally prominent alpha-frequency activity that does not change with stimulation. What does this usually indicate?",
+      "options": [
+        "Drowsiness",
+        "Alpha coma, usually a poor prognosis after hypoxia",
+        "A normal awake record",
+        "Locked-in syndrome"
+      ],
+      "answerIndex": 1,
+      "explanation": "Alpha coma is unreactive alpha-frequency activity in a comatose patient, often diffuse or frontally predominant after hypoxic-ischemic injury, and it usually carries a poor prognosis. It differs from normal alpha by its distribution and lack of reactivity. Drug-induced alpha coma can be reversible, so medications must always be considered.",
+      "memoryAid": "ALPHA in COMA that won't react = ALARM. Normal alpha is POSTERIOR and REACTIVE.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n21",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Generalized sharp-wave complexes repeating about once per second, with rapidly progressive dementia and startle myoclonus, suggest which disease?",
+      "options": [
+        "Subacute sclerosing panencephalitis",
+        "Herpes simplex encephalitis",
+        "Huntington disease",
+        "Creutzfeldt-Jakob disease"
+      ],
+      "answerIndex": 3,
+      "explanation": "Periodic sharp-wave complexes at about 0.5-2 Hz (typically near 1 Hz) with rapidly progressive dementia and myoclonus are characteristic of sporadic CJD, a prion disease. SSPE complexes repeat far more slowly (every 4-15 s). HSV gives temporal lateralized periodic discharges. Huntington disease gives a low-voltage record.",
+      "memoryAid": "CJD ticks like a CLOCK: about 1 per second. 'Creutzfeldt-Jakob = Clock-like Jerks.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n22",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A 10-year-old with a history of measles has declining school performance and periodic jerks. The EEG shows high-voltage complexes repeating every 5-10 seconds. What is the diagnosis?",
+      "options": [
+        "Lennox-Gastaut syndrome",
+        "Creutzfeldt-Jakob disease",
+        "Subacute sclerosing panencephalitis (SSPE)",
+        "Childhood absence epilepsy"
+      ],
+      "answerIndex": 2,
+      "explanation": "SSPE is a late complication of measles. Its periodic complexes (Radermecker complexes) are high-voltage, stereotyped slow-wave complexes repeating every 4-15 seconds, often with each jerk. That long interval separates it from CJD (about 1 per second).",
+      "memoryAid": "SSPE = SLOW, SPACED Periodic complexes. Measles years ago, Spaced complexes now.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n23",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A febrile, confused adult has olfactory hallucinations and a temporal lobe signal on MRI. The EEG shows lateralized periodic discharges over the left temporal region. What is the most likely cause?",
+      "options": [
+        "Creutzfeldt-Jakob disease",
+        "Hepatic encephalopathy",
+        "Absence status",
+        "Herpes simplex encephalitis"
+      ],
+      "answerIndex": 3,
+      "explanation": "Herpes simplex virus has a predilection for the mesial temporal and orbitofrontal lobes. Lateralized periodic discharges (LPDs, formerly PLEDs) over a temporal region in an encephalitic patient strongly suggest HSV and should prompt urgent acyclovir. Metabolic encephalopathy gives generalized patterns such as triphasic waves.",
+      "memoryAid": "HSV HITS the TEMPORAL lobe and makes LPDs: 'Herpes = Hippocampus + LPDs.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n24",
+      "domainId": "domain-3",
+      "sectionId": "d3-artifacts-recognition",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "During an eye blink, why do Fp1 and Fp2 become positive?",
+      "options": [
+        "The retina moves toward Fp1 and Fp2",
+        "The eyelid muscles generate a positive spike",
+        "The frontalis muscle discharges",
+        "The positive cornea rolls upward toward Fp1 and Fp2 (Bell phenomenon)"
+      ],
+      "answerIndex": 3,
+      "explanation": "The eye is a dipole: the cornea is positive relative to the retina. On closing the lids the eyes roll upward (Bell phenomenon), bringing the positive cornea toward the frontopolar electrodes. In a bipolar chain starting Fp1-F3, a positive Fp1 is the first input going positive, which by convention gives a downward deflection.",
+      "memoryAid": "CORNEA is POSITIVE. Eyes roll UP on a blink, so the electrode they roll toward goes POSITIVE.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n25",
+      "domainId": "domain-3",
+      "sectionId": "d3-artifacts-recognition",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient looks to the left. Which pattern appears at F7 and F8?",
+      "options": [
+        "F7 positive, F8 negative",
+        "Both negative",
+        "F7 negative, F8 positive",
+        "Both positive"
+      ],
+      "answerIndex": 0,
+      "explanation": "Looking left brings the positive left cornea toward F7 and moves the negative right retina toward F8. The result is opposite-phase deflections at F7 and F8, which is how lateral eye movements are recognised and separated from cerebral activity.",
+      "memoryAid": "The electrode the eyes LOOK TOWARD goes POSITIVE (cornea leads the way).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n26",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A drowsy, confused patient's EEG shows bifrontal rhythmic 2 Hz delta that comes and goes, with a relatively preserved background between runs. Besides metabolic encephalopathy, what else classically produces it?",
+      "options": [
+        "A breach rhythm",
+        "Raised intracranial pressure or a deep midline lesion",
+        "Locked-in syndrome",
+        "A small cortical lacune"
+      ],
+      "answerIndex": 1,
+      "explanation": "Frontal intermittent rhythmic delta (now called frontally predominant GRDA) is non-specific. It appears with metabolic and toxic encephalopathy and with raised intracranial pressure or deep midline or posterior fossa lesions that disturb diencephalic and brainstem projections. It is not a sign of a focal cortical lesion. The link with deep midline lesions and raised pressure is classical but weak; today it is seen far more often in toxic-metabolic states.",
+      "memoryAid": "FIRDA = FAR away lesion (deep or pressure), not under the electrode. 'Frontal, Intermittent, Remote cause.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n27",
+      "domainId": "domain-1",
+      "sectionId": "d1-brain-structures-functions",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A patient with drop attacks undergoes surgery that cuts the main commissure between the hemispheres. What is the procedure and why does it help?",
+      "options": [
+        "Hemispherectomy: it removes a whole hemisphere",
+        "Corpus callosotomy: it limits spread of seizures between hemispheres",
+        "Vagus nerve stimulation",
+        "Temporal lobectomy: it removes the hippocampus"
+      ],
+      "answerIndex": 1,
+      "explanation": "Corpus callosotomy divides the corpus callosum, the largest commissure, which reduces rapid bilateral spread of seizures and especially helps atonic drop attacks. It is palliative rather than curative.",
+      "memoryAid": "CALLOSOTOMY stops the CROSSING: no crossing = no sudden DROP.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n28",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Postictal weakness of the right arm lasts several hours after a seizure. What does it suggest?",
+      "options": [
+        "Todd paralysis: the seizure arose in the left hemisphere",
+        "Psychogenic weakness",
+        "Todd paralysis: the seizure arose in the right hemisphere",
+        "A new right hemisphere stroke"
+      ],
+      "answerIndex": 0,
+      "explanation": "Todd paralysis is temporary postictal weakness contralateral to the seizure focus, lasting minutes to (rarely) a day or two. It is a useful lateralizing sign. A deficit that does not resolve needs imaging to exclude a structural cause.",
+      "memoryAid": "TODD = TEMPORARY, opposite side. The tired (exhausted) cortex controls the weak side.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n29",
+      "domainId": "domain-1",
+      "sectionId": "d1-neuroanatomy-eeg-localization",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "Where would you expect the clearest scalp evidence of a left mesial temporal (hippocampal) focus?",
+      "options": [
+        "Occipital electrodes (O1)",
+        "Vertex (Cz)",
+        "Anterior temporal electrodes (F7, T3, and T1 or sphenoidal if used)",
+        "Right frontal electrodes (F4)"
+      ],
+      "answerIndex": 2,
+      "explanation": "Mesial temporal discharges project to the basal and anterior temporal surface, so they are best seen at the anterior temporal electrodes (F7/T3 in the 10-20 system; F7 sits over the anterior temporal region), and better still at T1/T2 or sphenoidal electrodes placed closer to the mesial temporal lobe.",
+      "memoryAid": "HIPPOCAMPUS hides LOW and DEEP: look LOW and FRONT on the temporal chain (F7, T1, sphenoidal).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-n30",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-neuro"
+      ],
+      "drillSet": "neuro",
+      "difficulty": "medium",
+      "stem": "A frontal lobe seizure is most typical in which description?",
+      "options": [
+        "Long staring spell with lip-smacking and long confusion afterwards",
+        "Flashing coloured lights in one visual field",
+        "Rising stomach feeling and deja vu",
+        "Brief, often nocturnal, with wild thrashing movements and quick recovery"
+      ],
+      "answerIndex": 3,
+      "explanation": "Frontal lobe seizures are typically brief (under a minute), cluster at night out of sleep, include bizarre hypermotor movements (bicycling, thrashing) and have little postictal confusion. They are often mistaken for psychogenic events, and the scalp EEG may be obscured by movement or show little. Staring with automatisms and long confusion fits temporal; flashes fit occipital; epigastric aura and deja vu fit mesial temporal.",
+      "memoryAid": "FRONTAL = FAST, FRANTIC and at NIGHT. 'Short, sleepy-time, and strange.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p01",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 6-month-old has clusters of sudden flexion of the trunk and arms on waking, and has stopped smiling and babbling. What is the expected interictal EEG?",
+      "options": [
+        "Hypsarrhythmia",
+        "Normal",
+        "3 Hz generalized spike-and-wave",
+        "Centrotemporal spikes"
+      ],
+      "answerIndex": 0,
+      "explanation": "Infantile spasms in clusters (often on waking), developmental regression and hypsarrhythmia make up West syndrome (infantile epileptic spasms syndrome), usually starting at about 3-12 months. Hypsarrhythmia is very high-voltage (often over 200 µV), chaotic slow activity with multifocal spikes and poor organisation.",
+      "memoryAid": "WEST = 'SHR': Spasms, Hypsarrhythmia, Regression. 'Wake-up clusters in a baby.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p02",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "During an infantile spasm, which EEG change is most characteristic?",
+      "options": [
+        "3 Hz spike-and-wave",
+        "Lateralized periodic discharges",
+        "Evolving rhythmic temporal theta",
+        "A generalized slow wave followed by abrupt attenuation (electrodecremental response)"
+      ],
+      "answerIndex": 3,
+      "explanation": "The ictal correlate of a spasm is typically a high-voltage generalized slow wave, sometimes with superimposed fast activity, followed by an electrodecremental response: sudden flattening of the background for a second or more. Hypsarrhythmia is the interictal background.",
+      "memoryAid": "SPASM = SLOW wave then SILENCE (decrement).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p03",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "Which genetic condition is a classic cause of infantile spasms, and which drug is especially effective for spasms in that condition?",
+      "options": [
+        "Down syndrome; ethosuximide",
+        "Rett syndrome; carbamazepine",
+        "Sturge-Weber syndrome; phenytoin",
+        "Tuberous sclerosis complex; vigabatrin"
+      ],
+      "answerIndex": 3,
+      "explanation": "Tuberous sclerosis complex is one of the commonest identifiable causes of infantile spasms (hypoxic-ischaemic injury is the commonest overall), and vigabatrin is first-line for spasms in TSC. Vigabatrin can cause permanent visual field constriction, so vision is monitored. ACTH or high-dose steroids are first-line for most other causes.",
+      "memoryAid": "TSC → VIGABATRIN. 'Tubers need V.' Watch the VISUAL fields with Vigabatrin.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p04",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 4-year-old with developmental delay has tonic seizures in sleep, drop attacks and atypical absences. Which EEG pattern is expected?",
+      "options": [
+        "Hypsarrhythmia",
+        "Centrotemporal spikes only",
+        "Slow spike-and-wave at about 1.5-2.5 Hz, with paroxysmal fast activity in sleep",
+        "3 Hz spike-and-wave with a normal background"
+      ],
+      "answerIndex": 2,
+      "explanation": "Lennox-Gastaut syndrome: multiple seizure types (tonic seizures, especially in sleep, atonic drops and atypical absences), cognitive impairment, and slow spike-and-wave below 2.5 Hz on a slow background. Bursts of generalized paroxysmal fast activity (about 10-25 Hz) in sleep accompany tonic seizures. Onset is usually 1-8 years, and some cases evolve from West syndrome.",
+      "memoryAid": "LGS = LESS than 2.5 Hz, LOTS of seizure types, and it often GROWS from West. 'Tonic in sleep, fast in sleep.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p05",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A healthy 7-year-old has dozens of brief staring spells a day; hyperventilation provokes one in the lab. What is the expected EEG and first-line drug?",
+      "options": [
+        "Polyspike-and-wave with photosensitivity; carbamazepine",
+        "3 Hz generalized spike-and-wave; ethosuximide",
+        "Slow spike-and-wave; vigabatrin",
+        "Centrotemporal spikes; no treatment"
+      ],
+      "answerIndex": 1,
+      "explanation": "Childhood absence epilepsy: typically 4-10 years, many absences a day lasting about 10 seconds, abrupt start and stop, provoked by hyperventilation, with regular 3 Hz generalized spike-and-wave on a normal background. Ethosuximide is first-line for absences alone (valproate also works but has more side effects). Carbamazepine can worsen absences.",
+      "memoryAid": "THREE Hz, THREE syllables: 'ab-sen-ces'. 'HV-provoked, Hundreds a day, ethoSUXimide SUCKS out absences.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p06",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 15-year-old drops her cup in the morning because of arm jerks, especially after late nights, and once had a generalized tonic-clonic seizure. Which EEG fits?",
+      "options": [
+        "Centrotemporal spikes",
+        "3 Hz spike-and-wave with a slow background",
+        "Hypsarrhythmia",
+        "Generalized 4-6 Hz polyspike-and-wave, often photosensitive"
+      ],
+      "answerIndex": 3,
+      "explanation": "Juvenile myoclonic epilepsy: onset usually 12-18 years, myoclonic jerks shortly after waking, generalized tonic-clonic seizures, sometimes absences; provoked by sleep deprivation and alcohol. EEG: generalized polyspike-and-wave at about 4-6 Hz on a normal background, often with a photoparoxysmal response. It is usually lifelong. Valproate or levetiracetam are used; carbamazepine and phenytoin can worsen myoclonus.",
+      "memoryAid": "JME = Jerks in the Morning, Early; 'Coffee cup flies.' POLYspikes, PHOTOsensitive, Party (sleep loss, alcohol) triggers.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p07",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "An 8-year-old has seizures from sleep with twitching of one side of the face, drooling and inability to speak but is aware. What does the EEG show and what is the outlook?",
+      "options": [
+        "Normal EEG; this is not epilepsy",
+        "Slow spike-and-wave; poor prognosis",
+        "Sleep-activated centrotemporal spikes; remits by mid-adolescence",
+        "Occipital spikes; lifelong epilepsy"
+      ],
+      "answerIndex": 2,
+      "explanation": "Self-limited epilepsy with centrotemporal spikes (benign Rolandic epilepsy): onset about 4-12 years, nocturnal focal seizures of the face and throat with drooling and speech arrest, awareness often kept. EEG: high-amplitude diphasic centrotemporal spikes, greatly increased in sleep, often with a horizontal dipole (frontal positivity). It remits by about age 16. Many children need no treatment.",
+      "memoryAid": "ROLANDIC = 'FACE, DROOL, can't TALK, at NIGHT, and it GOES AWAY.' Spikes sit at C3/T3 or C4/T4.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p08",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 4-year-old has a prolonged nocturnal episode of vomiting, pallor and eye deviation, then becomes unresponsive. The EEG shows occipital (and sometimes multifocal) spikes. What is the syndrome?",
+      "options": [
+        "Panayiotopoulos syndrome (self-limited epilepsy with autonomic seizures)",
+        "Juvenile absence epilepsy",
+        "Childhood occipital visual epilepsy (Gastaut type)",
+        "Lennox-Gastaut syndrome"
+      ],
+      "answerIndex": 0,
+      "explanation": "Panayiotopoulos syndrome begins at about 3-6 years with autonomic seizures (vomiting, pallor, sweating, pupil changes), eye deviation and often long duration (autonomic status). The EEG shows occipital or multifocal spikes, often shifting location. The outlook is excellent. The Gastaut type affects older children with visual hallucinations and headache.",
+      "memoryAid": "PANAYIOTOPOULOS = PUKING Preschooler (autonomic). Long name, long seizures, but good outcome.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p09",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 9-year-old has brief seizures that start with coloured circles in one visual field, followed by headache. Occipital spikes disappear when the eyes open. What is the syndrome?",
+      "options": [
+        "Panayiotopoulos syndrome",
+        "Migraine with aura only",
+        "Childhood occipital visual epilepsy (Gastaut type)",
+        "Juvenile myoclonic epilepsy"
+      ],
+      "answerIndex": 2,
+      "explanation": "Childhood occipital visual epilepsy (Gastaut type) starts later (about 8-9 years) with brief elementary visual hallucinations and frequent postictal headache, so it is easily mistaken for migraine. Occipital spikes are blocked by eye opening and appear with eye closure (fixation-off sensitivity).",
+      "memoryAid": "GASTAUT = GLOWING circles, then a GRUMBLING headache. Older child, visual, brief.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p10",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 5-year-old who spoke normally gradually stops understanding speech and then stops talking. Hearing tests are normal. Sleep EEG shows near-continuous temporal spike-and-wave. What is this?",
+      "options": [
+        "Landau-Kleffner syndrome",
+        "Autism spectrum disorder without epilepsy",
+        "Childhood absence epilepsy",
+        "Rett syndrome"
+      ],
+      "answerIndex": 0,
+      "explanation": "Landau-Kleffner syndrome is acquired epileptic aphasia (verbal auditory agnosia) in a previously normal child, usually 3-7 years. Spike-and-wave is markedly activated in NREM sleep, often temporal and sometimes near-continuous (spike-wave activation in sleep). Seizures can be few. A sleep EEG is essential because the awake record can look nearly normal.",
+      "memoryAid": "LKS = LOST KID'S SPEECH. Always record SLEEP.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p11",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "In developmental and epileptic encephalopathy with spike-and-wave activation in sleep (formerly ESES/CSWS), what is the key EEG finding?",
+      "options": [
+        "Near-continuous spike-and-wave during NREM sleep, with cognitive regression",
+        "Normal sleep with awake 3 Hz spike-and-wave",
+        "Spikes only during REM sleep",
+        "Burst suppression awake and asleep"
+      ],
+      "answerIndex": 0,
+      "explanation": "The hallmark is marked activation of spike-and-wave in NREM sleep, classically occupying most of slow sleep (historically 85% or more), together with neurocognitive regression. Spike-wave falls in REM and wakefulness. Landau-Kleffner syndrome is the language-predominant form.",
+      "memoryAid": "ESES = Electrical Status in Slow Sleep: 'Spikes take over the Slow sleep, Skills slip.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p12",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A previously normal 6-month-old has a long one-sided seizure with fever, then more prolonged febrile seizures; by age 2 she has myoclonus and developmental slowing. Which gene and drug class are key?",
+      "options": [
+        "SCN1A; avoid sodium channel blockers such as carbamazepine and lamotrigine",
+        "UBE3A; use phenytoin",
+        "MECP2; use carbamazepine",
+        "TSC2; use vigabatrin only"
+      ],
+      "answerIndex": 0,
+      "explanation": "Dravet syndrome: onset in the first year with prolonged, often hemiclonic febrile seizures, then multiple seizure types and developmental slowing. Most cases have an SCN1A variant. The early EEG is often normal. Sodium channel blockers (carbamazepine, oxcarbazepine, lamotrigine, phenytoin) can worsen seizures.",
+      "memoryAid": "DRAVET: 'DON'T give the SODIUM blockers' (SCN1A is a SODIUM channel). Fever + long seizures in the first year.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p13",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "Which description is a simple febrile seizure?",
+      "options": [
+        "A generalized seizure under 15 minutes, once in 24 hours, in a child aged 6 months to 5 years",
+        "Three seizures in one day with fever",
+        "A focal seizure lasting 20 minutes",
+        "A seizure with fever in a 9-year-old"
+      ],
+      "answerIndex": 0,
+      "explanation": "Simple febrile seizures are generalized, last under 15 minutes and do not recur within 24 hours, in children about 6 months to 5 years old. Focal features, duration of 15 minutes or more, or recurrence within 24 hours make it complex. An EEG is not routinely needed after a simple febrile seizure.",
+      "memoryAid": "SIMPLE = 'GENERAL, SHORT, ONCE' (under 15 minutes, once in 24 hours).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p14",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A newborn in the first weeks of life has frequent tonic spasms. The EEG shows burst suppression awake and asleep. What syndrome is this?",
+      "options": [
+        "Childhood absence epilepsy",
+        "Early infantile developmental and epileptic encephalopathy (Ohtahara syndrome)",
+        "West syndrome",
+        "Benign familial neonatal epilepsy"
+      ],
+      "answerIndex": 1,
+      "explanation": "Ohtahara syndrome (now within early infantile DEE) begins in the first weeks to 3 months with tonic spasms and a burst-suppression pattern present in both waking and sleep. It is often structural or genetic (for example STXBP1, KCNQ2) and may evolve to West syndrome. Early myoclonic encephalopathy, the other classic form, has erratic myoclonus, is often metabolic, and its burst suppression is enhanced in sleep.",
+      "memoryAid": "OHTAHARA = 'OH so early': TONIC spasms, BURST SUPPRESSION all the time. Later it can head WEST.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p15",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A girl developed normally until about 12 months, then lost hand skills and speech and now makes repetitive hand-wringing movements. Which gene is most likely involved?",
+      "options": [
+        "MECP2",
+        "KCNQ2",
+        "UBE3A",
+        "SCN1A"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rett syndrome mainly affects girls, from MECP2 variants on the X chromosome. After apparently normal early development, there is regression with loss of purposeful hand use and speech, stereotyped hand-wringing, breathing irregularities and often seizures. The EEG shows background slowing and often centrotemporal spikes.",
+      "memoryAid": "RETT = girls who WRING their hands. 'MECP2 = Mostly girls, Erasing hand skills.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p16",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A happy, frequently laughing child with severe speech impairment, jerky ataxic gait and seizures has high-amplitude 2-3 Hz frontal delta with spikes. What is the syndrome?",
+      "options": [
+        "Down syndrome",
+        "Angelman syndrome",
+        "Fragile X syndrome",
+        "Rett syndrome"
+      ],
+      "answerIndex": 1,
+      "explanation": "Angelman syndrome (loss of maternal UBE3A on chromosome 15q11-13) causes a happy, excitable demeanour, absent speech, ataxia and seizures. Characteristic EEG patterns include high-amplitude rhythmic 2-3 Hz delta with spikes (often frontally predominant), rhythmic 4-6 Hz theta, and posterior spikes with 3-4 Hz activity on eye closure.",
+      "memoryAid": "ANGELMAN = happy ANGEL with BIG delta. 'Laughing, ataxic, no speech, huge slow waves.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p17",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A child has a port-wine stain over the forehead and upper eyelid and seizures. What is typical on the EEG over the affected hemisphere?",
+      "options": [
+        "Generalized 3 Hz spike-and-wave",
+        "Increased fast activity like a breach rhythm",
+        "A completely normal record",
+        "Reduced amplitude (attenuation), sometimes with epileptiform activity"
+      ],
+      "answerIndex": 3,
+      "explanation": "Sturge-Weber syndrome links a facial port-wine stain (V1 distribution) with a leptomeningeal angioma, cortical calcification and atrophy on the same side. The EEG typically shows reduced amplitude and slowing over the affected hemisphere, with epileptiform discharges.",
+      "memoryAid": "STURGE-WEBER = STAIN on the face, SUPPRESSED EEG on the same side.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p18",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 6-year-old has persistent focal motor seizures of the left hand that do not stop, worsening left-sided weakness and right hemisphere atrophy on serial MRI. What is the likely diagnosis?",
+      "options": [
+        "Rasmussen encephalitis",
+        "Panayiotopoulos syndrome",
+        "Landau-Kleffner syndrome",
+        "Sturge-Weber syndrome"
+      ],
+      "answerIndex": 0,
+      "explanation": "Rasmussen encephalitis is a chronic immune-mediated inflammation of one hemisphere in childhood. It causes drug-resistant focal seizures, often epilepsia partialis continua (continuous focal motor seizures), progressive hemiparesis and progressive hemispheric atrophy. The EEG shows slowing and epileptiform activity over the affected hemisphere. Hemispheric surgery is often needed.",
+      "memoryAid": "RASMUSSEN = ONE hemisphere RUSTS away: continuous jerking (EPC) and growing weakness.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p19",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A child has brief seizures of laughter without mirth and early puberty. Where is the lesion?",
+      "options": [
+        "Corpus callosum agenesis",
+        "Hypothalamic hamartoma",
+        "Mesial temporal sclerosis",
+        "Occipital cortical dysplasia"
+      ],
+      "answerIndex": 1,
+      "explanation": "Gelastic (laughing) seizures with central precocious puberty point to a hypothalamic hamartoma. The scalp EEG is often normal or non-specific because the lesion is deep; it may show generalized or frontotemporal discharges as the epilepsy progresses.",
+      "memoryAid": "HAMARTOMA = HA-HA plus early hormones (puberty).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p20",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A newborn with a family history of neonatal seizures has seizures from day 2-3 of life that remit within weeks to months; development is normal. Which gene is classically involved?",
+      "options": [
+        "MECP2",
+        "UBE3A",
+        "SCN1A",
+        "KCNQ2 (potassium channel)"
+      ],
+      "answerIndex": 3,
+      "explanation": "Self-limited (benign) familial neonatal epilepsy is usually caused by KCNQ2 (less often KCNQ3) potassium channel variants. Seizures start around days 2-7 and remit within weeks to months (usually by 6 months), with normal development in most. KCNQ2 variants can also cause a severe early-onset encephalopathy.",
+      "memoryAid": "KCNQ2 = 'K for Kin' (family) and K for potassium. Day 2-3, gone by months.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p21",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "How does hypsarrhythmia typically change in sleep?",
+      "options": [
+        "It becomes continuous 3 Hz spike-and-wave",
+        "It is unchanged in all states",
+        "It fragments into bursts in NREM sleep and often lessens or disappears in REM",
+        "It appears only in wakefulness and not in sleep"
+      ],
+      "answerIndex": 2,
+      "explanation": "In NREM sleep hypsarrhythmia often becomes more synchronous and fragmented, with bursts separated by lower-voltage periods (a modified pattern). In REM sleep it often lessens or disappears. Spasms cluster on waking, so recording sleep and the wake-up period is useful.",
+      "memoryAid": "HYPS breaks into PIECES in NREM and RESTS in REM.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p22",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A normally developing 3-year-old boy suddenly has many drop attacks with brief myoclonic jerks. The EEG shows generalized 2-3 Hz spike- and polyspike-and-wave with parasagittal 4-7 Hz theta. Which syndrome is likely?",
+      "options": [
+        "Landau-Kleffner syndrome",
+        "Childhood absence epilepsy",
+        "Epilepsy with myoclonic-atonic seizures (Doose syndrome)",
+        "Lennox-Gastaut syndrome"
+      ],
+      "answerIndex": 2,
+      "explanation": "Epilepsy with myoclonic-atonic seizures (Doose syndrome) typically starts at about 2-5 years in previously normal children, more often boys, with myoclonic-atonic drops. The EEG shows generalized 2-6 Hz spike- and polyspike-and-wave and often rhythmic 4-7 Hz parasagittal theta. Unlike LGS, tonic seizures are not prominent early and development was normal before onset.",
+      "memoryAid": "DOOSE = DROPS in a NORMAL toddler boy. LGS = tonic seizures, delay, slow spike-wave.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p23",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "Which feature best separates Lennox-Gastaut syndrome from childhood absence epilepsy?",
+      "options": [
+        "Brief staring spells",
+        "Provocation by hyperventilation",
+        "Generalized discharges",
+        "Slow spike-and-wave under 2.5 Hz with a slow background and cognitive impairment"
+      ],
+      "answerIndex": 3,
+      "explanation": "Both can have staring spells and generalized discharges. CAE has 3 Hz spike-and-wave on a normal background in a normally developing child, strongly provoked by hyperventilation. LGS has slower (under 2.5 Hz) spike-and-wave on a slow background, multiple seizure types (especially tonic) and cognitive impairment.",
+      "memoryAid": "3 Hz and HAPPY (normal kid) = CAE. UNDER 2.5 Hz and STRUGGLING = LGS.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p24",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A toddler cries hard after a minor fall, turns blue, goes limp and briefly stiffens. The EEG during an event shows slowing then flattening without spikes. What is this?",
+      "options": [
+        "Atonic seizure",
+        "Absence seizure",
+        "Cyanotic breath-holding spell (not epileptic)",
+        "Infantile spasm"
+      ],
+      "answerIndex": 2,
+      "explanation": "Breath-holding spells are triggered by crying, pain or frustration, peak at 6-18 months, and are non-epileptic. Reduced brain oxygen causes EEG slowing and then flattening, sometimes with brief stiffening or jerks (an anoxic seizure), but no epileptiform discharges. They are linked with iron-deficiency anaemia.",
+      "memoryAid": "BREATH-HOLDING = TRIGGER first (cry), then COLOUR change, then the EEG goes SLOW then FLAT, no spikes.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p25",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 13-year-old has absences a few times a week (less often than a younger child would) and occasional tonic-clonic seizures on waking. EEG shows generalized 3-4 Hz spike-and-wave, sometimes with polyspikes. Which syndrome?",
+      "options": [
+        "Landau-Kleffner syndrome",
+        "Childhood absence epilepsy",
+        "Juvenile absence epilepsy",
+        "Panayiotopoulos syndrome"
+      ],
+      "answerIndex": 2,
+      "explanation": "Juvenile absence epilepsy begins around 9-13 years (range about 8-20). Absences are less frequent but often longer than in CAE, generalized tonic-clonic seizures are common, and the spike-and-wave is often slightly faster (3-4 Hz) with polyspikes. It tends to be lifelong, whereas CAE usually remits.",
+      "memoryAid": "JUVENILE = fewer, longer absences, plus GTCs; slightly FASTER (3-4 Hz). CHILDHOOD = many short ones at 3 Hz.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p26",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 3-year-old has absences that do not respond to usual treatment, plus a movement disorder. CSF glucose is low. Which treatment is most specific?",
+      "options": [
+        "Ketogenic diet (GLUT1 deficiency)",
+        "Carbamazepine",
+        "Vigabatrin",
+        "ACTH"
+      ],
+      "answerIndex": 0,
+      "explanation": "Early-onset absence epilepsy (before about 4 years), especially when drug-resistant or with movement disorders, should raise suspicion of GLUT1 deficiency syndrome (SLC2A1). Low CSF glucose relative to blood glucose supports it. The ketogenic diet provides ketones as an alternative brain fuel.",
+      "memoryAid": "GLUT1 = brain can't GET GLUCOSE in: feed it KETONES. 'Absences under 4: check the sugar door.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p27",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "Which drug can worsen typical absence and myoclonic seizures and should generally be avoided in childhood absence epilepsy and JME?",
+      "options": [
+        "Carbamazepine",
+        "Levetiracetam",
+        "Ethosuximide",
+        "Valproate"
+      ],
+      "answerIndex": 0,
+      "explanation": "Carbamazepine (and oxcarbazepine, phenytoin, gabapentin, vigabatrin, tiagabine) can aggravate absence and myoclonic seizures in generalized epilepsies. Ethosuximide and valproate treat absences; valproate and levetiracetam treat myoclonic seizures.",
+      "memoryAid": "'CARBAMAZEPINE CARRIES ABSENCES and JERKS further.' Sodium blockers are for FOCAL seizures.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p28",
+      "domainId": "domain-3",
+      "sectionId": "d3-epileptiform-discharges",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "In self-limited epilepsy with centrotemporal spikes, what dipole is typical of the spikes?",
+      "options": [
+        "Horizontal (tangential): negative centrotemporally, positive frontally",
+        "Vertical: negative at the vertex only",
+        "No dipole; purely mesial temporal",
+        "Radial: maximal at O1 and O2"
+      ],
+      "answerIndex": 0,
+      "explanation": "Centrotemporal spikes typically show a horizontal (tangential) dipole: negativity over the centrotemporal region and simultaneous positivity over the frontal region, because the generator lies in the lower Rolandic cortex oriented sideways. This is a supportive feature of the benign syndrome.",
+      "memoryAid": "ROLANDIC spike LIES DOWN sideways: negative at the side (C/T), positive at the front.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p29",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 2-year-old boy with jerks when startled and normal development shows brief myoclonic jerks with no EEG change. What is most likely?",
+      "options": [
+        "Infantile spasms",
+        "Lennox-Gastaut syndrome",
+        "Juvenile myoclonic epilepsy",
+        "A non-epileptic event such as benign myoclonus or exaggerated startle"
+      ],
+      "answerIndex": 3,
+      "explanation": "Epileptic myoclonus is time-locked to EEG discharges (spikes or polyspikes). Jerks without any EEG correlate in a normally developing child suggest a non-epileptic cause, such as benign sleep myoclonus, benign myoclonus of infancy or startle. Video-EEG with a muscle channel helps.",
+      "memoryAid": "A JERK with NO SPIKE in a thriving child is usually NOT epilepsy.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-p30",
+      "domainId": "domain-3",
+      "sectionId": "d3-epileptiform-discharges",
+      "topicTags": [
+        "three-day-drill",
+        "drill-peds"
+      ],
+      "drillSet": "peds",
+      "difficulty": "medium",
+      "stem": "A 2-year-old with tuberous sclerosis has focal seizures. Which EEG finding is most typical?",
+      "options": [
+        "Generalized 3 Hz spike-and-wave only",
+        "A normal record with no abnormalities",
+        "Multifocal epileptiform discharges matching the cortical tubers",
+        "Periodic complexes every 10 seconds"
+      ],
+      "answerIndex": 2,
+      "explanation": "In tuberous sclerosis complex, cortical tubers are multiple epileptogenic lesions, so the EEG often shows multifocal (or focal) spikes and slowing. In infancy, many evolve to infantile spasms with hypsarrhythmia. Associated features include ash-leaf macules, facial angiofibromas and cardiac rhabdomyomas.",
+      "memoryAid": "TUBERS are MANY, so the spikes are MANY (multifocal). 'Ash leaf on the skin, spikes all over the brain.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m01",
+      "domainId": "domain-1",
+      "sectionId": "d1-normal-eeg-rhythms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Shortly after a benzodiazepine is given, what is the most typical EEG change?",
+      "options": [
+        "Electrocerebral inactivity",
+        "Generalized 3 Hz spike-and-wave",
+        "Focal temporal slowing",
+        "Increased diffuse beta activity, frontally predominant"
+      ],
+      "answerIndex": 3,
+      "explanation": "Benzodiazepines produce increased beta activity (roughly 14-30 Hz, often about 20-25 Hz), most prominent over the frontal and central regions and symmetric. At higher doses they cause drowsiness, sleep and slowing. They also suppress epileptiform discharges and raise the photoparoxysmal threshold.",
+      "memoryAid": "BENZOS make BETA: 'B for B'. Front-loaded and symmetric.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m02",
+      "domainId": "domain-3",
+      "sectionId": "d3-focal-generalized-patterns",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient given lorazepam has prominent beta over the right hemisphere but almost none over the left. What does the asymmetry suggest?",
+      "options": [
+        "A right hemisphere seizure",
+        "A normal drug effect",
+        "A right skull defect only",
+        "Left hemisphere dysfunction or a fluid collection over the left (reduced beta)"
+      ],
+      "answerIndex": 3,
+      "explanation": "Drug-induced beta should be symmetric. Consistently less beta on one side points to that side: cortical dysfunction (for example a stroke) or something between cortex and electrode such as a subdural collection that damps fast activity. Increased fast activity on one side can mean a skull defect (breach rhythm) on that side.",
+      "memoryAid": "LESS BETA = the LESSER (damaged) side. 'Fast activity fades over damage and fluid.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m03",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient with refractory status epilepticus is placed in barbiturate coma. What EEG pattern is usually targeted?",
+      "options": [
+        "Continuous 3 Hz spike-and-wave",
+        "Continuous diffuse beta",
+        "Normal posterior alpha",
+        "Burst suppression"
+      ],
+      "answerIndex": 3,
+      "explanation": "At anaesthetic doses barbiturates (pentobarbital, thiopental), like propofol and midazolam, produce burst suppression: bursts of activity alternating with suppressed background. In refractory status epilepticus, infusions are often titrated to seizure suppression or burst suppression. At lower doses barbiturates cause prominent beta activity.",
+      "memoryAid": "BARBITURATES: low dose = BETA, high dose = BURST suppression. 'Barbs go Beta, then Bursts.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m04",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Why are high blood levels of barbiturates or other sedatives a problem for confirming brain death by EEG?",
+      "options": [
+        "They cause continuous alpha",
+        "They can suppress the EEG to apparent electrocerebral inactivity, which is reversible",
+        "They cause a breach rhythm",
+        "They make the EEG impossible to record technically"
+      ],
+      "answerIndex": 1,
+      "explanation": "CNS depressant drugs (barbiturates, high-dose benzodiazepines, propofol and others) and hypothermia can produce a flat EEG that is reversible. Brain death evaluation requires excluding these confounders: drug levels must be cleared or below thresholds and core temperature normal.",
+      "memoryAid": "Before calling it FLAT, rule out the DRUGS and the COLD (sedatives and hypothermia).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m05",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient abruptly stops a long-term benzodiazepine, barbiturate or alcohol. What EEG and clinical risk increases?",
+      "options": [
+        "Electrocerebral inactivity",
+        "Seizures and a photoparoxysmal response from withdrawal",
+        "Burst suppression",
+        "Increased sleep spindles only"
+      ],
+      "answerIndex": 1,
+      "explanation": "Abrupt withdrawal of GABA-ergic sedatives (benzodiazepines, barbiturates) or alcohol lowers the seizure threshold. Withdrawal seizures and photoparoxysmal responses can appear, and generalized discharges may emerge. Alcohol withdrawal seizures usually occur about 6-48 hours after the last drink.",
+      "memoryAid": "WITHDRAWAL WAKES the seizures: stopping a 'downer' fires the brain UP.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m06",
+      "domainId": "domain-2",
+      "sectionId": "d2-s4",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A child is given chloral hydrate for a sleep EEG. What change is expected?",
+      "options": [
+        "Periodic discharges",
+        "Hypsarrhythmia",
+        "Burst suppression at usual doses",
+        "Drowsiness and sleep, with at most a mild increase in beta"
+      ],
+      "answerIndex": 3,
+      "explanation": "Chloral hydrate is a sedative-hypnotic used for paediatric EEG sedation. It induces drowsiness and sleep with relatively little added beta (less than benzodiazepines or barbiturates) and preserves sleep architecture fairly well. It causes little suppression of epileptiform activity compared with benzodiazepines. Whether a child is sedated, and with what, is an institutional decision and must be documented.",
+      "memoryAid": "CHLORAL = CALM child, hardly any BETA. Always WRITE the sedative and time on the record.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m07",
+      "domainId": "domain-2",
+      "sectionId": "d2-s4",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which drug is used in some labs to activate interictal temporal spikes during an EEG?",
+      "options": [
+        "Methohexital",
+        "Valproate",
+        "Phenytoin",
+        "Lorazepam"
+      ],
+      "answerIndex": 0,
+      "explanation": "Methohexital, a short-acting barbiturate, can activate interictal epileptiform discharges, especially in temporal lobe epilepsy, at low doses. Most other barbiturates and benzodiazepines suppress discharges.",
+      "memoryAid": "METHOHEXITAL is the 'ME-THE-EXCITER': the odd barbiturate that BRINGS OUT spikes.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m08",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "What is the typical EEG effect of a therapeutic dose of phenytoin, and of toxicity?",
+      "options": [
+        "Prominent burst suppression at therapeutic levels",
+        "Increased spindles only",
+        "Little change at therapeutic levels; slowing at toxic levels",
+        "Induced 3 Hz spike-and-wave"
+      ],
+      "answerIndex": 2,
+      "explanation": "Phenytoin causes little background change at therapeutic levels. At toxic levels it causes diffuse slowing and clinical cerebellar signs (nystagmus, ataxia, dysarthria), and very high levels can paradoxically increase seizures. Long-term use causes gingival hyperplasia and hirsutism.",
+      "memoryAid": "PHENYTOIN toxicity = the 'CEREBELLAR drunk': nystagmus, ataxia, slurred speech, plus slowing.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m09",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient on valproate becomes drowsy and confused. Ammonia is high and the EEG shows diffuse slowing with triphasic-like waves. What is the cause?",
+      "options": [
+        "Benzodiazepine overdose",
+        "Valproate-induced hyperammonaemic encephalopathy",
+        "Normal valproate effect",
+        "Absence status epilepticus"
+      ],
+      "answerIndex": 1,
+      "explanation": "Valproate can cause hyperammonaemic encephalopathy even at normal drug levels, with lethargy, confusion and EEG slowing, sometimes with triphasic waves. Valproate otherwise changes the background little. Checking ammonia separates it from non-convulsive status.",
+      "memoryAid": "VALPROATE + confusion = check AMMONIA. 'V for VAPOUR of ammonia.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m10",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which antiepileptic drug is used mainly for absence seizures and works on T-type calcium channels in the thalamus?",
+      "options": [
+        "Carbamazepine",
+        "Vigabatrin",
+        "Ethosuximide",
+        "Phenytoin"
+      ],
+      "answerIndex": 2,
+      "explanation": "Ethosuximide blocks T-type calcium channels in thalamic neurons, which drive the 3 Hz thalamocortical rhythm of absence seizures. It is first-line for childhood absence epilepsy but does not protect against tonic-clonic seizures.",
+      "memoryAid": "ETHOSUXIMIDE = 'ETHO-SUCKS-out ABSENCES' via the thalamic T-type (T for Thalamus, T for Three Hz).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m11",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "An infant with tuberous sclerosis starts vigabatrin. What adverse effect must be monitored?",
+      "options": [
+        "Kidney stones",
+        "Hyperammonaemia",
+        "Gingival hyperplasia",
+        "Permanent visual field constriction"
+      ],
+      "answerIndex": 3,
+      "explanation": "Vigabatrin irreversibly inhibits GABA transaminase. It is first-line for infantile spasms in tuberous sclerosis but can cause permanent peripheral (concentric) visual field loss, so vision is monitored. It can worsen absence and myoclonic seizures.",
+      "memoryAid": "VIGABATRIN = VISION. 'Vigabatrin shrinks the View.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m12",
+      "domainId": "domain-3",
+      "sectionId": "d3-eeg-syndromes-classification",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "After ACTH treatment for infantile spasms is successful, what EEG change is hoped for?",
+      "options": [
+        "Resolution of hypsarrhythmia and spasms",
+        "New centrotemporal spikes",
+        "Increased burst suppression",
+        "Appearance of 3 Hz spike-and-wave"
+      ],
+      "answerIndex": 0,
+      "explanation": "ACTH or high-dose oral steroids (and vigabatrin) aim for electroclinical response: cessation of spasms and resolution of hypsarrhythmia on a follow-up EEG, ideally including sleep. Persistent hypsarrhythmia means incomplete response.",
+      "memoryAid": "Treating WEST = the HYPS must go and the SPASMS must stop (both).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m13",
+      "domainId": "domain-1",
+      "sectionId": "d1-normal-eeg-rhythms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "What is the typical EEG effect of tricyclic antidepressants?",
+      "options": [
+        "3 Hz spike-and-wave only",
+        "Prominent burst suppression at usual doses",
+        "Increased theta and beta, reduced alpha; overdose causes slowing and seizures",
+        "No effect at any dose"
+      ],
+      "answerIndex": 2,
+      "explanation": "Tricyclic antidepressants (for example amitriptyline, imipramine) increase theta and beta and reduce alpha. They lower the seizure threshold; in overdose they cause slowing, epileptiform discharges, seizures and cardiac arrhythmias.",
+      "memoryAid": "TRICYCLICS = TRIPLE trouble in overdose: SEIZURES, SLOWING and the HEART.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m14",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient on lithium becomes confused and tremulous. What EEG findings are typical of lithium toxicity?",
+      "options": [
+        "Breach rhythm",
+        "Diffuse slowing, sometimes triphasic waves and sharp waves",
+        "Normal posterior alpha",
+        "Increased spindles only"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lithium can slow the background even at therapeutic levels and may accentuate epileptiform activity. Toxicity causes diffuse slowing, triphasic waves, sharp waves and sometimes seizures, often with tremor, ataxia and confusion. Toxicity can occur even with levels in the reported range.",
+      "memoryAid": "LITHIUM LIGHTS UP the EEG: SLOWING, SHARPS and TRIPHASICS when toxic.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m15",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which antipsychotic has the highest risk of dose-dependent seizures and epileptiform discharges?",
+      "options": [
+        "Clozapine",
+        "Aripiprazole",
+        "Haloperidol",
+        "Risperidone"
+      ],
+      "answerIndex": 0,
+      "explanation": "Clozapine has the highest seizure risk of the antipsychotics, rising with dose. It commonly causes EEG slowing and epileptiform discharges. Phenothiazines such as chlorpromazine also lower the seizure threshold. High-potency drugs such as haloperidol carry a lower seizure risk.",
+      "memoryAid": "CLOZAPINE = 'CLOSE to a seizure'. Higher dose, closer it gets.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m16",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "An elderly patient with kidney failure on cefepime becomes confused. The EEG shows generalized triphasic-like periodic discharges. What should be considered?",
+      "options": [
+        "Creutzfeldt-Jakob disease only",
+        "Cefepime neurotoxicity, possibly non-convulsive status",
+        "Normal ageing",
+        "A benzodiazepine effect"
+      ],
+      "answerIndex": 1,
+      "explanation": "Cefepime (and other beta-lactams) can cause encephalopathy, myoclonus and non-convulsive status epilepticus, especially when kidney function is impaired and the drug accumulates. The EEG may show triphasic waves or generalized periodic discharges. Stopping the drug or adjusting the dose (sometimes dialysis) reverses it.",
+      "memoryAid": "CEFEPIME + KIDNEYS failing = CONFUSION and periodic discharges. 'Cefe-pime Piles up.'",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m17",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which drug used for sedation in intensive care produces beta activity at low doses and burst suppression at high doses, and can cause myoclonus?",
+      "options": [
+        "Ethosuximide",
+        "Propofol",
+        "Phenytoin",
+        "Lithium"
+      ],
+      "answerIndex": 1,
+      "explanation": "Propofol, a GABA-ergic anaesthetic, produces beta at low doses, slowing at moderate doses, and burst suppression or suppression at high doses. It is used for refractory status epilepticus. Involuntary movements and myoclonus can occur, especially at induction and emergence.",
+      "memoryAid": "PROPOFOL: the same staircase as barbiturates: BETA → SLOW → BURST suppression.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m18",
+      "domainId": "domain-1",
+      "sectionId": "d1-normal-eeg-rhythms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "What effect does acute alcohol intoxication have on the waking EEG?",
+      "options": [
+        "Generalized 3 Hz spike-and-wave",
+        "Prominent 14 Hz positive spikes",
+        "Slowing of the alpha rhythm and increased theta",
+        "Electrocerebral inactivity at mild levels"
+      ],
+      "answerIndex": 2,
+      "explanation": "Acute alcohol slows the posterior rhythm and increases theta, with more slowing at higher levels; very high levels can cause coma. In withdrawal, seizures and photoparoxysmal responses can appear.",
+      "memoryAid": "ALCOHOL makes the brain SLOW (on the way in) and FIRE (on the way out, withdrawal).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m19",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "What do cocaine and amphetamines typically do to the EEG and seizure risk?",
+      "options": [
+        "Produce burst suppression",
+        "Abolish the alpha rhythm permanently",
+        "Increase fast activity and raise the risk of seizures",
+        "Cause triphasic waves at usual doses"
+      ],
+      "answerIndex": 2,
+      "explanation": "Stimulants such as cocaine and amphetamines increase arousal with more beta and less slow activity, and they lower the seizure threshold. Cocaine can also cause stroke and vasospasm, leading to focal abnormalities.",
+      "memoryAid": "STIMULANTS SPEED the EEG and can SPARK seizures (and strokes).",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m20",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Flumazenil is given to reverse a benzodiazepine overdose in a patient on long-term benzodiazepines. What is the main risk?",
+      "options": [
+        "Causing burst suppression",
+        "Precipitating seizures",
+        "Causing locked-in syndrome",
+        "Inducing sleep spindles"
+      ],
+      "answerIndex": 1,
+      "explanation": "Flumazenil competitively blocks benzodiazepine receptors. In people on long-term benzodiazepines, or who have taken a seizure-provoking co-ingestant such as a tricyclic, it can precipitate withdrawal and seizures.",
+      "memoryAid": "FLUMAZENIL FLIPS the brake OFF: sudden withdrawal → seizures.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m21",
+      "domainId": "domain-3",
+      "sectionId": "d3-sleep-graphoelements",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "How do benzodiazepines change sleep architecture?",
+      "options": [
+        "Increase slow-wave sleep and REM",
+        "Increase spindle-range activity, reduce slow-wave sleep and REM",
+        "Have no effect on sleep",
+        "Abolish spindles entirely"
+      ],
+      "answerIndex": 1,
+      "explanation": "Benzodiazepines increase spindle-like (sigma and beta) activity, shorten sleep latency, and reduce slow-wave sleep (N3) and REM. This matters when staging sleep in a sedated patient and when judging a reduced N3.",
+      "memoryAid": "BENZOS: MORE spindles, LESS deep sleep and dreams.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m22",
+      "domainId": "domain-3",
+      "sectionId": "d3-sleep-graphoelements",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Many antidepressants (SSRIs, tricyclics, MAO inhibitors) affect REM sleep in which way?",
+      "options": [
+        "They abolish NREM sleep",
+        "They have no effect on REM",
+        "They create sleep-onset REM in everyone",
+        "They suppress REM; stopping them can cause REM rebound"
+      ],
+      "answerIndex": 3,
+      "explanation": "Most antidepressants suppress REM sleep and lengthen REM latency. When they are stopped, REM rebound can follow, with early REM periods that could be confused with narcolepsy. Medication history is essential when interpreting a sleep-onset REM period. Bupropion, trazodone and mirtazapine suppress REM little or not at all.",
+      "memoryAid": "ANTIDEPRESSANTS ANNUL REM; stop them and REM RETURNS early.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m23",
+      "domainId": "domain-1",
+      "sectionId": "d1-normal-eeg-rhythms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which EEG change is typical of antihistamines such as diphenhydramine?",
+      "options": [
+        "Increased alpha reactivity",
+        "Burst suppression at normal doses",
+        "3 Hz spike-and-wave",
+        "Drowsiness and slowing; overdose can cause seizures, especially in children"
+      ],
+      "answerIndex": 3,
+      "explanation": "Sedating antihistamines produce drowsiness and EEG changes of drowsiness and sleep. Children can react paradoxically with excitation. Overdose can cause seizures, delirium and anticholinergic signs.",
+      "memoryAid": "ANTIHISTAMINE: SLEEPY usually, SEIZURES in overdose, WILD in some kids.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m24",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient on theophylline with high blood levels develops seizures. Why?",
+      "options": [
+        "Theophylline is an anticonvulsant",
+        "Theophylline lowers the seizure threshold; toxicity can cause seizures and status",
+        "Theophylline causes locked-in syndrome",
+        "Theophylline causes breach rhythm"
+      ],
+      "answerIndex": 1,
+      "explanation": "Theophylline (a methylxanthine like caffeine) is an adenosine antagonist that lowers the seizure threshold. Toxicity causes tremor, arrhythmias and seizures that can be difficult to control.",
+      "memoryAid": "THEOPHYLLINE = 'THE-O-FILL-up-on-caffeine': too much and the brain over-fires.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m25",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "In an epilepsy monitoring unit, why are antiepileptic drugs often tapered?",
+      "options": [
+        "To prevent artifacts",
+        "To induce burst suppression",
+        "To increase the chance of recording the patient's typical seizures",
+        "To normalise the EEG background"
+      ],
+      "answerIndex": 2,
+      "explanation": "Reducing antiepileptic drugs under supervision increases the likelihood of capturing habitual seizures for diagnosis or surgical localisation. It raises the risk of clusters, generalized seizures and status epilepticus, so seizure precautions and a rescue plan are essential.",
+      "memoryAid": "TAPER to CAPTURE, but have the RESCUE ready.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m26",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "As the dose of a GABA-ergic sedative such as propofol or pentobarbital is raised, which sequence of EEG changes is expected?",
+      "options": [
+        "Increased beta, then slowing, then burst suppression, then suppression",
+        "Increased alpha, then 3 Hz spike-and-wave, then hypsarrhythmia",
+        "Slowing first, then increased beta, then burst suppression",
+        "Burst suppression first, then beta as the dose rises further"
+      ],
+      "answerIndex": 0,
+      "explanation": "GABA-ergic sedatives (benzodiazepines, barbiturates, propofol) follow a predictable staircase with rising dose: increased beta, then drowsiness and slowing, then burst suppression and finally suppression. Recognising the staircase helps you judge sedation depth.",
+      "memoryAid": "The SEDATIVE STAIRCASE: BETA → SLOW → BURSTS → FLAT.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m27",
+      "domainId": "domain-1",
+      "sectionId": "d1-neurophysiology-seizure-mechanisms",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which drug is classically avoided in Dravet syndrome because it can worsen seizures?",
+      "options": [
+        "Clobazam",
+        "Valproate",
+        "Stiripentol",
+        "Lamotrigine"
+      ],
+      "answerIndex": 3,
+      "explanation": "Sodium channel blockers (lamotrigine, carbamazepine, oxcarbazepine, phenytoin) can worsen seizures in Dravet syndrome, which is usually caused by loss-of-function SCN1A (sodium channel) variants. Valproate, clobazam, stiripentol, fenfluramine and cannabidiol are used.",
+      "memoryAid": "DRAVET: 'DON'T block the sodium'. Valproate and Clobazam are the 'VC' (very common) choices.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m28",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "What does intravenous lorazepam do to ongoing generalized spike-and-wave in non-convulsive status?",
+      "options": [
+        "It always converts them to triphasic waves",
+        "It produces hypsarrhythmia",
+        "It increases the discharges",
+        "It usually abolishes the discharges, and clinical improvement supports the diagnosis"
+      ],
+      "answerIndex": 3,
+      "explanation": "A benzodiazepine trial during suspected non-convulsive status: resolution of the discharges together with clinical improvement supports NCSE. EEG improvement without clinical improvement is less conclusive, because benzodiazepines can also abolish triphasic waves in metabolic encephalopathy.",
+      "memoryAid": "BENZO TRIAL: EEG better AND patient better = it was a SEIZURE. EEG better alone = maybe not.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m29",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "A patient on lithium has tremor, confusion, a 6 Hz posterior rhythm and diffuse theta with occasional triphasic waves. The lithium level is high. After lithium is stopped, what is the expected EEG course?",
+      "options": [
+        "Evolution to burst suppression",
+        "Gradual improvement of the slowing, which may lag days behind the fall in serum level",
+        "Permanent slowing, because drug effects on the EEG never reverse",
+        "Immediate normalisation the moment the serum level falls"
+      ],
+      "answerIndex": 1,
+      "explanation": "Lithium toxicity causes diffuse slowing, triphasic and sharp waves. These are reversible, but brain lithium clears more slowly than serum lithium, so EEG and clinical recovery can lag the serum level by days. Toxicity can also occur within the reported therapeutic range.",
+      "memoryAid": "LITHIUM LINGERS: the brain clears it LATER than the blood, so the EEG recovers LATE.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-m30",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "three-day-drill",
+        "drill-meds"
+      ],
+      "drillSet": "meds",
+      "difficulty": "medium",
+      "stem": "Which drug can cause a reversible pattern that mimics electrocerebral inactivity in hypothermic overdose patients?",
+      "options": [
+        "Levetiracetam",
+        "High-dose barbiturates such as pentobarbital",
+        "Ethosuximide",
+        "Low-dose sertraline"
+      ],
+      "answerIndex": 1,
+      "explanation": "Barbiturates at high levels, especially with hypothermia, can suppress the EEG completely, mimicking electrocerebral inactivity; this is reversible as levels fall. Hence the ACNS requirement to exclude drug intoxication and hypothermia before using EEG for brain death.",
+      "memoryAid": "PENTO-BARB + COLD = 'PRETEND flat'. Never confirm brain death until both are gone.",
+      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    }
+  ]
+}

@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import studyApi from "../services/studyApi";
-import { domainTitle, sectionTitle, tagTitle } from "../utils/studyLabels";
+import { DOMAIN_SHORT, domainTitle, sectionTitle, tagTitle } from "../utils/studyLabels";
+import { SOURCE_LABELS, SOURCE_TONE, accuracyTone, groupByDomain } from "../utils/incorrectGroups";
 
 /**
- * Review Incorrect: questions whose most recent attempt was wrong.
+ * Review Incorrect: questions whose most recent attempt was wrong, from any
+ * bank or test, grouped by ABRET domain and section so the weak spots show.
  * Retrying records a NEW attempt; the original incorrect attempt is kept.
  */
 
@@ -35,6 +37,16 @@ function OptionList({ options, selectedIndex, correctIndex, onPick, disabled }) 
           <div key={idx} className={cls}>{content}</div>
         );
       })}
+    </div>
+  );
+}
+
+function MemoryAid({ text }) {
+  if (!text) return null;
+  return (
+    <div className="rounded-md bg-amber-50 p-3 text-sm text-slate-800">
+      <span className="block text-xs font-semibold uppercase tracking-wide text-amber-800">Remember it</span>
+      {text}
     </div>
   );
 }
@@ -73,12 +85,17 @@ function IncorrectCard({ item }) {
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-4 space-y-3">
       <div className="flex flex-wrap items-center gap-2 text-xs">
-        <span className="rounded bg-blue-100 px-2 py-0.5 text-blue-800">{domainTitle(item.domainId)}</span>
+        <span className="rounded bg-indigo-100 px-2 py-0.5 text-indigo-800">{DOMAIN_SHORT[item.domainId] || domainTitle(item.domainId)}</span>
+        {item.source && (
+          <span className={`rounded px-2 py-0.5 ${SOURCE_TONE[item.source] || SOURCE_TONE.bank}`}>
+            Missed in: {SOURCE_LABELS[item.source] || item.source}
+          </span>
+        )}
         {/* Section and topic tags can name the answer: hidden while retrying. */}
         {mode !== "retry" && (
           <>
             <span className="rounded bg-slate-100 px-2 py-0.5 text-slate-700">{sectionTitle(item.sectionId)}</span>
-            {item.topicTags.slice(0, 4).map((t) => (
+            {item.topicTags.filter((t) => !t.startsWith("drill-") && t !== "three-day-drill").slice(0, 4).map((t) => (
               <span key={t} className="rounded bg-slate-50 px-2 py-0.5 text-slate-500">#{tagTitle(t)}</span>
             ))}
           </>
@@ -101,6 +118,7 @@ function IncorrectCard({ item }) {
               <span className="font-semibold">Explanation:</span> {item.explanation}
             </div>
           )}
+          <MemoryAid text={item.memoryAid} />
         </>
       )}
 
@@ -124,6 +142,7 @@ function IncorrectCard({ item }) {
               </div>
             )}
           </div>
+          <MemoryAid text={result.memoryAid} />
         </>
       )}
 
@@ -131,7 +150,7 @@ function IncorrectCard({ item }) {
 
       <div className="flex gap-2">
         {mode !== "retry" && (
-          <button onClick={startRetry} className="rounded-md bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-blue-700">
+          <button onClick={startRetry} className="rounded-md bg-indigo-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-indigo-700">
             {mode === "result" ? "RETRY AGAIN" : "RETRY"}
           </button>
         )}
@@ -145,14 +164,60 @@ function IncorrectCard({ item }) {
   );
 }
 
+/** One card per domain: questions still to review, accuracy over all answers, weakest sections. */
+function DomainSummary({ breakdown, active, onPick }) {
+  if (!breakdown?.length) return null;
+  return (
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+      {breakdown.map((d) => {
+        const isActive = active === d.domainId;
+        const weak = d.sections.filter((s) => s.outstanding > 0).slice(0, 3);
+        return (
+          <button
+            key={d.domainId}
+            type="button"
+            aria-pressed={isActive}
+            onClick={() => onPick(isActive ? null : d.domainId)}
+            className={`rounded-lg border bg-white p-4 text-left space-y-2 hover:border-indigo-400 ${isActive ? "border-indigo-600 ring-2 ring-indigo-600" : "border-slate-200"}`}
+          >
+            <div className="text-xs font-semibold uppercase tracking-wide text-slate-500">{DOMAIN_SHORT[d.domainId] || domainTitle(d.domainId)}</div>
+            <div className="flex items-baseline gap-2">
+              <span className={`text-2xl font-bold ${d.outstanding ? "text-red-700" : "text-emerald-700"}`}>{d.outstanding}</span>
+              <span className="text-sm text-slate-600">to review</span>
+            </div>
+            <div className="h-1.5 rounded-full bg-slate-200 overflow-hidden" aria-hidden="true">
+              <div className={`h-full ${accuracyTone(d.accuracy)}`} style={{ width: `${d.accuracy ?? 0}%` }} />
+            </div>
+            <div className="text-xs text-slate-500">
+              {d.accuracy === null ? "No answers yet" : `${d.accuracy}% right over ${d.attempts} answer${d.attempts === 1 ? "" : "s"}`}
+            </div>
+            {weak.length > 0 && (
+              <ul className="space-y-0.5 text-xs text-slate-700">
+                {weak.map((s) => (
+                  <li key={s.sectionId} className="flex justify-between gap-2">
+                    <span className="truncate">{sectionTitle(s.sectionId)}</span>
+                    <span className="shrink-0 font-semibold text-red-700">{s.outstanding}</span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
 function ReviewIncorrect() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [domain, setDomain] = useState(null);
+  const [source, setSource] = useState("all");
 
   useEffect(() => {
     let cancelled = false;
     studyApi
-      .getIncorrect(50)
+      .getIncorrect(500)
       .then((d) => {
         if (!cancelled) setData(d);
       })
@@ -164,33 +229,85 @@ function ReviewIncorrect() {
     };
   }, []);
 
+  const items = useMemo(() => data?.items || [], [data]);
+  const sourceCounts = useMemo(() => {
+    const c = {};
+    for (const i of items) c[i.source || "bank"] = (c[i.source || "bank"] || 0) + 1;
+    return c;
+  }, [items]);
+  const groups = useMemo(() => {
+    const shown = items.filter((i) => (source === "all" || (i.source || "bank") === source) && (!domain || i.domainId === domain));
+    return groupByDomain(shown, data?.byDomain);
+  }, [items, source, domain, data]);
+  const shownCount = groups.reduce((n, g) => n + g.count, 0);
+
   return (
-    <section className="space-y-4">
+    <section className="space-y-5">
       <div className="flex flex-wrap items-end justify-between gap-2">
         <div>
           <h1 className="text-2xl font-bold text-slate-900">Review Incorrect</h1>
-          <p className="text-sm text-slate-600">
-            Questions you most recently answered incorrectly. A correct retry removes a question from this list; the original
-            wrong answer is kept in your history.
+          <p className="text-sm text-slate-600 max-w-3xl">
+            Every question you last answered wrong, from the question bank, Challenge Bank, mock exams and the Three-Day Drill,
+            grouped by ABRET domain and section so you can see exactly where your weak spots are. The weakest domain comes first.
+            A correct retry takes a question off this list; the original wrong answer stays in your history.
           </p>
         </div>
-        <Link to="/study" className="text-sm text-blue-600 hover:underline">← Study dashboard</Link>
+        <Link to="/study" className="text-sm text-indigo-600 hover:underline">← Study dashboard</Link>
       </div>
 
       {error && <div className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">{error}</div>}
       {!data && !error && <p className="text-sm text-slate-600">Loading…</p>}
-      {data && data.items.length === 0 && (
+      {data && items.length === 0 && (
         <div className="rounded-lg border border-slate-200 bg-white p-6 text-sm text-slate-600">
           Nothing to review — no questions are currently marked incorrect.
         </div>
       )}
-      {data && data.items.length > 0 && (
+
+      {data && items.length > 0 && (
         <>
-          <p className="text-xs text-slate-500">
-            Showing {data.items.length} of {data.total} (most recent first).
-          </p>
-          {data.items.map((item) => (
-            <IncorrectCard key={item.questionId} item={item} />
+          <DomainSummary breakdown={data.byDomain} active={domain} onPick={setDomain} />
+
+          <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Where the question was missed">
+            {["all", "bank", "challenge", "mock", "drill"].filter((k) => k === "all" || sourceCounts[k]).map((k) => (
+              <button
+                key={k}
+                type="button"
+                aria-pressed={source === k}
+                onClick={() => setSource(k)}
+                className={`rounded-full border px-3 py-1 text-xs font-semibold ${source === k ? "border-indigo-600 bg-indigo-600 text-white" : "border-slate-300 bg-white text-slate-700 hover:bg-slate-50"}`}
+              >
+                {k === "all" ? `All (${items.length})` : `${SOURCE_LABELS[k]} (${sourceCounts[k]})`}
+              </button>
+            ))}
+            {domain && (
+              <button type="button" onClick={() => setDomain(null)} className="text-xs text-indigo-600 hover:underline">
+                Show all domains
+              </button>
+            )}
+            <span className="ml-auto text-xs text-slate-500">
+              Showing {shownCount} of {data.total}
+            </span>
+          </div>
+
+          {groups.length === 0 && <p className="text-sm text-slate-600">No missed questions match this filter.</p>}
+
+          {groups.map((g) => (
+            <div key={g.domainId} className="space-y-3">
+              <h2 className="flex items-baseline gap-2 border-b border-slate-200 pb-1 text-lg font-semibold text-slate-900">
+                {domainTitle(g.domainId)}
+                <span className="text-sm font-normal text-slate-500">{g.count} to review</span>
+              </h2>
+              {g.sections.map((s) => (
+                <div key={s.sectionId} className="space-y-2">
+                  <h3 className="text-sm font-semibold text-slate-700">
+                    {sectionTitle(s.sectionId)} <span className="font-normal text-slate-500">· {s.items.length}</span>
+                  </h3>
+                  {s.items.map((item) => (
+                    <IncorrectCard key={item.questionId} item={item} />
+                  ))}
+                </div>
+              ))}
+            </div>
           ))}
         </>
       )}

@@ -20,7 +20,9 @@ import { BLUEPRINT_KEY, BLUEPRINT_SOURCE, DOMAINS, getBlueprint } from '../bluep
 
 export const LEGACY_ORIGIN = 'legacy-neurolinea-bank';
 export const CHALLENGE_ORIGIN = 'neurolinea-challenge-bank';
-export const BANKS = ['foundation', 'challenge'];
+export const DRILL_ORIGIN = 'neurolinea-three-day-drill';
+export const BANKS = ['foundation', 'challenge', 'drill'];
+export const DRILL_SETS = ['neuro', 'peds', 'meds'];
 const COMPETENCIES = ['foundation', 'technical', 'montage', 'troubleshooting', 'clinical'];
 const SAFE_ID = /^[A-Za-z0-9_-]{1,120}$/;
 
@@ -39,6 +41,8 @@ export function contentSnapshot(q) {
         // dropped by JSON.stringify, so legacy hashes are unchanged.
         cognitiveLevel: q.cognitiveLevel ?? undefined,
         competency: q.competency ?? undefined,
+        drillSet: q.drillSet ?? undefined,
+        memoryAid: q.memoryAid ?? undefined,
     };
 }
 
@@ -56,7 +60,11 @@ export function validateSourceQuestion(q, { bank = 'foundation' } = {}) {
         if (!COMPETENCIES.includes(q.competency) || q.competency === 'foundation') {
             problems.push('challenge questions need a higher-order competency');
         }
-    } else if (q.cognitiveLevel !== undefined && (!Number.isInteger(q.cognitiveLevel) || q.cognitiveLevel < 1 || q.cognitiveLevel > 6)) {
+    } else if (bank === 'drill') {
+        if (!DRILL_SETS.includes(q.drillSet)) problems.push(`drill questions need drillSet ${DRILL_SETS.join('/')}`);
+        if (typeof q.memoryAid !== 'string' || !q.memoryAid.trim()) problems.push('drill questions need a memoryAid');
+    }
+    if (bank !== 'challenge' && q.cognitiveLevel !== undefined && (!Number.isInteger(q.cognitiveLevel) || q.cognitiveLevel < 1 || q.cognitiveLevel > 6)) {
         problems.push('cognitiveLevel must be 1-6');
     }
     if (typeof q.id !== 'string' || !SAFE_ID.test(q.id)) problems.push('invalid id');
@@ -162,7 +170,7 @@ export async function importQuestions({ data, sourceFile = 'src/data/abret-quest
     const questions = data.questions;
     const targetBank = bank || data.bank || 'foundation';
     if (!BANKS.includes(targetBank)) throw new Error(`Unknown bank: ${targetBank}`);
-    const originType = targetBank === 'challenge' ? CHALLENGE_ORIGIN : LEGACY_ORIGIN;
+    const originType = { challenge: CHALLENGE_ORIGIN, drill: DRILL_ORIGIN }[targetBank] || LEGACY_ORIGIN;
     const sourceVersion = data.version ?? null;
     const report = {
         sourceFile,

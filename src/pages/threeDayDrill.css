@@ -44,6 +44,10 @@
 .tdd-opt.is-right { background: var(--good-bg); border-color: var(--good); }
 .tdd-opt.is-wrong { background: var(--bad-bg); border-color: var(--bad); }
 .tdd-opt.is-dim { opacity: .6; }
+.tdd-opt.is-pending { border-color: var(--accent); }
+.tdd-day:disabled { cursor: default; opacity: .7; }
+.tdd-where { font: 500 .75rem var(--font-mono); letter-spacing: .04em; color: var(--muted); }
+.tdd-err { color: var(--bad); }
 .tdd-fb { display: grid; gap: 12px; }
 .tdd-verdict { font-family: var(--font-display); font-weight: 600; }
 .tdd-verdict.ok { color: var(--good); }

@@ -24,3 +24,18 @@ describe("Three-Day Drill question bank", () => {
     }
   });
 });
+
+describe("Review Incorrect grouping", () => {
+  it("groups misses by domain and section, weakest domain first", async () => {
+    const { groupByDomain } = await import("../../src/utils/incorrectGroups.js");
+    const item = (questionId, domainId, sectionId) => ({ questionId, domainId, sectionId });
+    const breakdown = [
+      { domainId: "domain-3", sections: [{ sectionId: "d3-b" }, { sectionId: "d3-a" }] },
+      { domainId: "domain-1", sections: [{ sectionId: "d1-a" }] },
+    ];
+    const g = groupByDomain([item("1", "domain-1", "d1-a"), item("2", "domain-3", "d3-a"), item("3", "domain-3", "d3-b"), item("4", "domain-3", "d3-b")], breakdown);
+    expect(g.map((d) => d.domainId)).toEqual(["domain-3", "domain-1"]);
+    expect(g[0].count).toBe(3);
+    expect(g[0].sections.map((s) => [s.sectionId, s.items.length])).toEqual([["d3-b", 2], ["d3-a", 1]]);
+  });
+});

@@ -20,6 +20,49 @@ import { ladderRungs } from '../services/adaptiveLadder.js';
 import { buildMockSchedule, FULL_MOCK_PRESET } from '../services/mockSchedule.js';
 import { diagnosticSummary } from '../services/diagnostic.js';
 
+// Where a missed question was answered: the bank it belongs to, or a mock exam.
+export function attemptSource(event, question) {
+    const bank = question?.bank || event.bank || 'foundation';
+    if (bank === 'drill') return 'drill';
+    if (event.mode === 'mock') return 'mock';
+    return bank === 'challenge' ? 'challenge' : 'bank';
+}
+
+/**
+ * Per-domain and per-section totals over every scored answer: how many were
+ * answered, how many right, and how many questions are still outstanding
+ * (latest answer wrong). Domains and sections are sorted weakest first.
+ */
+export function weaknessBreakdown(events, outstanding) {
+    const domains = new Map();
+    const slot = (domainId) => {
+        if (!domains.has(domainId)) domains.set(domainId, { domainId, attempts: 0, correct: 0, outstanding: 0, sections: new Map() });
+        return domains.get(domainId);
+    };
+    const sectionSlot = (d, sectionId) => {
+        if (!d.sections.has(sectionId)) d.sections.set(sectionId, { sectionId, attempts: 0, correct: 0, outstanding: 0 });
+        return d.sections.get(sectionId);
+    };
+    for (const e of events) {
+        if (!e.domainId) continue;
+        const d = slot(e.domainId);
+        const s = sectionSlot(d, e.sectionId);
+        d.attempts += 1; s.attempts += 1;
+        if (e.isCorrect) { d.correct += 1; s.correct += 1; }
+    }
+    for (const e of outstanding) {
+        if (!e.domainId) continue;
+        const d = slot(e.domainId);
+        d.outstanding += 1;
+        sectionSlot(d, e.sectionId).outstanding += 1;
+    }
+    const finish = (x) => ({ ...x, accuracy: x.attempts ? Math.round((x.correct / x.attempts) * 100) : null });
+    const weakestFirst = (a, b) => b.outstanding - a.outstanding || (a.accuracy ?? 101) - (b.accuracy ?? 101);
+    return [...domains.values()]
+        .map((d) => finish({ ...d, sections: [...d.sections.values()].map(finish).sort(weakestFirst) }))
+        .sort(weakestFirst);
+}
+
 // Single-user study dashboard, incorrect-answer review and retry.
 // Every query is scoped to the authenticated user.
 
@@ -57,7 +100,7 @@ async function mockResults(userId) {
 
 async function sectionDomainMap() {
     const rows = await Question.aggregate([
-        { $match: { status: 'active' } },
+        { $match: { status: 'active', bank: { $ne: 'drill' } } },
         { $group: { _id: '$sectionId', domainId: { $first: '$domainId' } } },
     ]);
     return Object.fromEntries(rows.map((r) => [r._id, r.domainId]));
@@ -67,7 +110,8 @@ async function sectionDomainMap() {
 router.get('/dashboard', async (req, res) => {
     try {
         const [events, mocks, sectionDomains, activeSession, challengeAvailable] = await Promise.all([
-            ownEvents(req.user.id),
+            // The Three-Day Drill stays out of mastery, readiness and reviews.
+            ownEvents(req.user.id).then((all) => all.filter((e) => e.bank !== 'drill')),
             mockResults(req.user.id),
             sectionDomainMap(),
             QuizSession.exists({ userId: req.user.id, status: 'active', engineVersion: 2 }),
@@ -79,7 +123,7 @@ router.get('/dashboard', async (req, res) => {
         const readiness = computeReadiness({ events, mockResults: mocks });
 
         // Spaced review only counts questions that can still be served.
-        const servable = new Set((await Question.find({ status: 'active', qaStatus: { $nin: ['NEEDS_REVISION', 'REJECTED'] } })
+        const servable = new Set((await Question.find({ status: 'active', bank: { $ne: 'drill' }, qaStatus: { $nin: ['NEEDS_REVISION', 'REJECTED'] } })
             .select('questionId').lean()).map((q) => q.questionId));
         const queue = buildReviewQueue(events.filter((e) => servable.has(e.questionId)));
         const reviews = {
@@ -164,21 +208,26 @@ router.get('/dashboard', async (req, res) => {
 
 // Questions whose most recent attempt was incorrect (historical attempts are
 // never modified). Answers are shown here because these were already answered.
+// Every item carries its domain, section and where it was missed, and the
+// response includes a per-domain and per-section breakdown of all answers so
+// the page can show where the weak spots are.
 router.get('/incorrect', async (req, res) => {
     try {
-        const limit = clampInt(req.query.limit, 1, 200, 50);
+        const limit = clampInt(req.query.limit, 1, 500, 50);
         const events = await ownEvents(req.user.id);
-        const outstanding = outstandingIncorrect(events).slice(0, limit);
+        const allOutstanding = outstandingIncorrect(events);
+        const outstanding = allOutstanding.slice(0, limit);
         const wrongCounts = new Map();
         for (const e of events) if (!e.isCorrect) wrongCounts.set(e.questionId, (wrongCounts.get(e.questionId) || 0) + 1);
 
         const docs = await Question.find({ questionId: { $in: outstanding.map((e) => e.questionId) } })
-            .select('questionId domainId sectionId topicTags difficulty stem options +answerIndex +explanation')
+            .select('questionId domainId sectionId topicTags difficulty stem options bank drillSet +answerIndex +explanation +memoryAid')
             .lean();
         const byId = new Map(docs.map((d) => [d.questionId, d]));
 
         res.json({
-            total: outstandingIncorrect(events).length,
+            total: allOutstanding.length,
+            byDomain: weaknessBreakdown(events, allOutstanding),
             items: outstanding
                 .map((e) => {
                     const q = byId.get(e.questionId);
@@ -190,10 +239,12 @@ router.get('/incorrect', async (req, res) => {
                         selectedIndex: Number.isInteger(e.selectedIndex) ? e.selectedIndex : null,
                         correctIndex: q.answerIndex,
                         explanation: q.explanation || '',
+                        memoryAid: q.memoryAid || null,
                         domainId: q.domainId,
                         sectionId: q.sectionId,
                         topicTags: q.topicTags || [],
                         difficulty: q.difficulty,
+                        source: attemptSource(e, q),
                         lastAttemptAt: e.timestamp,
                         timesIncorrect: wrongCounts.get(q.questionId) || 1,
                     };
@@ -231,7 +282,7 @@ router.post('/retry/:questionId', async (req, res) => {
         if (!(await hasPriorIncorrect(req.user.id, questionId))) {
             return res.status(404).json({ error: 'No incorrect attempt found for this question' });
         }
-        const q = await Question.findOne({ questionId }).select('questionId domainId sectionId topicTags difficulty version options bank cognitiveLevel competency +answerIndex +explanation').lean();
+        const q = await Question.findOne({ questionId }).select('questionId domainId sectionId topicTags difficulty version options bank cognitiveLevel competency +answerIndex +explanation +memoryAid').lean();
         if (!q) return res.status(404).json({ error: 'Question not found' });
         if (!Number.isInteger(selectedIndex) || selectedIndex < 0 || selectedIndex >= q.options.length) {
             return res.status(400).json({ error: 'selectedIndex is out of range' });
@@ -266,6 +317,7 @@ router.post('/retry/:questionId', async (req, res) => {
             isCorrect,
             correctIndex: q.answerIndex,
             explanation: q.explanation || '',
+            memoryAid: q.memoryAid || null,
             misconception: errorCode ? describeMisconception(errorCode) : null,
         });
     } catch (error) {

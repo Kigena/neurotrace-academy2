@@ -38,7 +38,12 @@ const questionSchema = new mongoose.Schema({
     //   foundation - the legacy NeuroLinea bank (mostly recall/understanding);
     //                documents imported before this field existed count as foundation
     //   challenge  - higher-order ABRET Challenge Bank (L3-L6)
-    bank: { type: String, enum: ['foundation', 'challenge'], default: 'foundation', index: true },
+    //   drill      - the Three-Day Drill; served only on the drill page, never
+    //                mixed into practice, mocks, reviews or analytics
+    bank: { type: String, enum: ['foundation', 'challenge', 'drill'], default: 'foundation', index: true },
+    // Drill only: which drill set the question belongs to, and its memory aid.
+    drillSet: { type: String, enum: ['neuro', 'peds', 'meds', null], default: null },
+    memoryAid: { type: String, default: null, select: false },
 
     // Editorial QA state. NEEDS_REVISION and REJECTED questions are never
     // served in quiz sessions. Automatic audit flags never change this field.

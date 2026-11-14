@@ -75,7 +75,7 @@ function Home() {
   return (
     <div className="space-y-8 pb-12">
       {/* Hero Section */}
-      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-700 p-8 md:p-12 text-white shadow-lg">
+      <div className="palette-light relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 to-indigo-700 p-8 md:p-12 text-white shadow-lg">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"

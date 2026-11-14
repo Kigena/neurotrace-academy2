@@ -19,17 +19,19 @@ export const THEMES = {
     },
     dark: {
         name: 'Dark',
+        // The Three-Day Drill's dark tokens. The full palette swap lives in
+        // index.css under :root[data-theme="dark"].
         colors: {
-            primary: '#60a5fa',      // blue-400 (brighter for dark mode)
-            primaryHover: '#3b82f6', // blue-500
-            background: '#0f172a',   // slate-900
-            surface: '#1e293b',      // slate-800
-            text: '#f8fafc',         // slate-50 (very bright white)
-            textSecondary: '#e2e8f0', // slate-200 (lighter gray for better contrast)
-            border: '#475569',       // slate-600 (more visible borders)
-            success: '#34d399',      // green-400 (brighter)
-            error: '#f87171',        // red-400 (brighter)
-            warning: '#fbbf24',      // amber-400 (brighter)
+            primary: '#3fc2a8',      // accent
+            primaryHover: '#5fd0b8',
+            background: '#0f1716',   // paper
+            surface: '#16211f',      // card
+            text: '#e3ece9',         // ink
+            textSecondary: '#97a8a4', // muted
+            border: '#2a3836',       // line
+            success: '#5fd38a',
+            error: '#ff8a7d',
+            warning: '#f2b467',
         }
     },
     blue: {
@@ -89,33 +91,33 @@ export const useTheme = () => {
     return context;
 };
 
+// Dark (the Three-Day Drill look) is the default until a member picks another theme.
+export const DEFAULT_THEME = 'dark';
+
+function savedTheme() {
+    try { return localStorage.getItem('neurotrace_theme') || DEFAULT_THEME; } catch { return DEFAULT_THEME; }
+}
+
+function savedCustomColors() {
+    try {
+        const raw = localStorage.getItem('neurotrace_custom_colors');
+        return raw ? JSON.parse(raw) : null;
+    } catch {
+        return null;
+    }
+}
+
 export const ThemeProvider = ({ children }) => {
-    const [currentTheme, setCurrentTheme] = useState('light');
-    const [customColors, setCustomColors] = useState(null);
-
-    // Load theme from localStorage on mount
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('neurotrace_theme');
-        const savedCustomColors = localStorage.getItem('neurotrace_custom_colors');
-
-        if (savedTheme) {
-            setCurrentTheme(savedTheme);
-        }
-        if (savedCustomColors) {
-            try {
-                setCustomColors(JSON.parse(savedCustomColors));
-            } catch (e) {
-                console.error('Failed to parse custom colors:', e);
-            }
-        }
-    }, []);
+    const [currentTheme, setCurrentTheme] = useState(savedTheme);
+    const [customColors, setCustomColors] = useState(savedCustomColors);
 
     // Apply theme CSS variables whenever theme changes
     useEffect(() => {
         const colors = customColors || THEMES[currentTheme]?.colors || THEMES.light.colors;
 
-        // Apply CSS variables to root
+        // Apply CSS variables to root; data-theme switches the full palette (index.css).
         const root = document.documentElement;
+        root.dataset.theme = currentTheme;
         Object.entries(colors).forEach(([key, value]) => {
             root.style.setProperty(`--color-${key}`, value);
         });

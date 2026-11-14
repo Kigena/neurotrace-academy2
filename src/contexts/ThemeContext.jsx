@@ -92,15 +92,17 @@ export const useTheme = () => {
 };
 
 // Dark (the Three-Day Drill look) is the default until a member picks another theme.
+// The storage keys were renamed (v2) when dark became the default, so theme choices
+// saved before the redesign (light, Medical Blue, ...) no longer override it.
 export const DEFAULT_THEME = 'dark';
 
 function savedTheme() {
-    try { return localStorage.getItem('neurotrace_theme') || DEFAULT_THEME; } catch { return DEFAULT_THEME; }
+    try { return localStorage.getItem('neurolinea_theme_v2') || DEFAULT_THEME; } catch { return DEFAULT_THEME; }
 }
 
 function savedCustomColors() {
     try {
-        const raw = localStorage.getItem('neurotrace_custom_colors');
+        const raw = localStorage.getItem('neurolinea_custom_colors_v2');
         return raw ? JSON.parse(raw) : null;
     } catch {
         return null;
@@ -132,15 +134,15 @@ export const ThemeProvider = ({ children }) => {
     const changeTheme = (themeName) => {
         setCurrentTheme(themeName);
         setCustomColors(null);
-        localStorage.setItem('neurotrace_theme', themeName);
-        localStorage.removeItem('neurotrace_custom_colors');
+        localStorage.setItem('neurolinea_theme_v2', themeName);
+        localStorage.removeItem('neurolinea_custom_colors_v2');
     };
 
     const setCustomTheme = (colors) => {
         setCustomColors(colors);
         setCurrentTheme('custom');
-        localStorage.setItem('neurotrace_theme', 'custom');
-        localStorage.setItem('neurotrace_custom_colors', JSON.stringify(colors));
+        localStorage.setItem('neurolinea_theme_v2', 'custom');
+        localStorage.setItem('neurolinea_custom_colors_v2', JSON.stringify(colors));
     };
 
     const value = {

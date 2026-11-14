@@ -19,7 +19,7 @@ export const THEMES = {
     },
     dark: {
         name: 'Dark',
-        // The Three-Day Drill's dark tokens. The full palette swap lives in
+        // The Focus Drills dark tokens. The full palette swap lives in
         // index.css under :root[data-theme="dark"].
         colors: {
             primary: '#3fc2a8',      // accent
@@ -91,7 +91,7 @@ export const useTheme = () => {
     return context;
 };
 
-// Dark (the Three-Day Drill look) is the default until a member picks another theme.
+// Dark (the Focus Drills look) is the default until a member picks another theme.
 // The storage keys were renamed (v2) when dark became the default, so theme choices
 // saved before the redesign (light, Medical Blue, ...) no longer override it.
 export const DEFAULT_THEME = 'dark';

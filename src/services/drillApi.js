@@ -1,5 +1,5 @@
 /**
- * Three-Day Drill API client. The drill's questions live in their own bank
+ * Focus Drills API client. The drill's questions live in their own bank
  * on the server and are scored there.
  */
 import apiService from "./apiService";

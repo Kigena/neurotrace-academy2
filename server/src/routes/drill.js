@@ -5,7 +5,7 @@ import { AttemptEvent } from '../models/AttemptEvent.js';
 import { Question } from '../models/Question.js';
 import { User } from '../models/User.js';
 
-// The Three-Day Drill. Its questions live in the question collection under
+// Focus Drills. Its questions live in the question collection under
 // bank "drill", but they are served only here and never mixed into practice,
 // mocks or study analytics. Answers are scored on the server and recorded as
 // attempt events (bank "drill"), so drill misses also show up, grouped by

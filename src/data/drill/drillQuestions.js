@@ -1,7 +1,9 @@
-// Three-Day Drill question bank (fact-checked).
-// Question bank: t = topic (neuro | peds | meds), q, o = options (first is correct; shuffled at runtime),
-// why = explanation, mem = memory aid.
-export const DRILL = [
+// Focus Drills question bank (fact-checked).
+// Question bank: t = topic (neuro | peds | meds | acns), q, o = options (first is correct; shuffled at runtime),
+// why = explanation, mem = memory aid. The ACNS set lives in acnsQuestions.js.
+import { ACNS_DRILL, ACNS_SHEETS } from "./acnsQuestions.js";
+
+const CORE = [
 // ───────────── DAY 1: NEUROANATOMY AND CLINICAL CORRELATION ─────────────
 {id:"n01",t:"neuro",q:"A right-handed man has a stroke. He understands what is said to him but speaks in slow, effortful fragments and is frustrated by it. His right face and arm are weak. Where is the lesion?",
 o:["Left inferior frontal gyrus (Broca area)","Left posterior superior temporal gyrus (Wernicke area)","Right inferior frontal gyrus","Left angular gyrus"],
@@ -369,8 +371,11 @@ why:"Barbiturates at high levels, especially with hypothermia, can suppress the 
 mem:"PENTO-BARB + COLD = 'PRETEND flat'. Never confirm brain death until both are gone."},
 ];
 
+export const DRILL = [...CORE, ...ACNS_DRILL];
+
 // Memory sheets: [title, head[], rows[][]]
 export const SHEETS = {
+acns: ACNS_SHEETS,
 neuro: [
  ["Arteries and deficits", ["Artery","Deficit (opposite side)","Hook"], [
   ["ACA","Leg > arm weakness and numbness, abulia, incontinence","ACA = Ankles"],

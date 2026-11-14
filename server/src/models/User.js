@@ -34,7 +34,7 @@ const userSchema = new mongoose.Schema({
         default: null,
         select: false
     },
-    // Three-Day Drill: answers before this moment no longer count towards the
+    // Focus Drills: answers before this moment no longer count towards the
     // drill's progress cards (they stay in the attempt history).
     drillResetAt: {
         type: Date,

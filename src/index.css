@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* NeuroLinea design system (from the Three-Day Drill).
+/* NeuroLinea design system (from Focus Drills).
    Accent: deep teal. Neutrals: grey with a slight teal bias. Type: Lexend for headings,
    Source Sans 3 for text, JetBrains Mono for labels and numbers.
    The indigo/blue/violet/purple and slate/gray scales are redefined so every existing
@@ -92,7 +92,7 @@
   --color-warning: #f59e0b;
 }
 
-/* Dark theme (the Three-Day Drill's dark look), app-wide.
+/* Dark theme (the Focus Drills dark look), app-wide.
    ThemeContext sets data-theme on <html>. Redefining the palette here flips every
    white card, grey border and dark text at once: neutrals and white become the
    drill's paper/card/ink tokens, the accent becomes bright teal, and the other

@@ -4,19 +4,20 @@ import { useAuth } from "../contexts/AuthContext";
 import { useTheme } from "../contexts/ThemeContext";
 import drillApi from "../services/drillApi";
 import { domainTitle, sectionTitle } from "../utils/studyLabels";
-import "./threeDayDrill.css";
+import "./focusDrills.css";
 
 // Built-in copy, used only when the server cannot be reached. Option 0 is right.
 const LOCAL = DRILL.map((q) => ({ id: q.id, t: q.t, q: q.q, o: q.o, why: q.why, mem: q.mem }));
 const SETS = [
-  { key: "neuro", tag: "Day 1", name: "Neuroanatomy and correlation" },
-  { key: "peds", tag: "Day 2", name: "Paediatric syndromes" },
-  { key: "meds", tag: "Day 3", name: "Medications and the EEG" },
-  { key: "mixed", tag: "Any day", name: "Mixed: all 90" },
+  { key: "neuro", tag: "Focus 1", name: "Neuroanatomy and correlation" },
+  { key: "peds", tag: "Focus 2", name: "Paediatric syndromes" },
+  { key: "meds", tag: "Focus 3", name: "Medications and the EEG" },
+  { key: "acns", tag: "Focus 4", name: "ACNS guidelines" },
+  { key: "mixed", tag: "All topics", name: "Mixed" },
   { key: "missed", tag: "Review", name: "My missed questions" },
 ];
-const TOPIC = { neuro: "Neuroanatomy", peds: "Paediatrics", meds: "Medications" };
-const SHEET_TABS = [["neuro", "Neuroanatomy"], ["peds", "Paediatrics"], ["meds", "Medications"]];
+const TOPIC = { neuro: "Neuroanatomy", peds: "Paediatrics", meds: "Medications", acns: "ACNS guidelines" };
+const SHEET_TABS = [["neuro", "Neuroanatomy"], ["peds", "Paediatrics"], ["meds", "Medications"], ["acns", "ACNS guidelines"]];
 const EXAM = new Date(2026, 11, 14);
 const EMPTY = { stats: {}, missed: [] };
 
@@ -45,7 +46,7 @@ const present = (by, id) => {
   return q ? { ...q, order: shuffle(q.o.map((text, idx) => ({ text, idx }))) } : null;
 };
 
-export default function ThreeDayDrill() {
+export default function FocusDrills() {
   const { user } = useAuth();
   const { currentTheme } = useTheme() || {};
   const storageKey = `neurolinea.drill.${user?.id || "guest"}`;
@@ -189,9 +190,10 @@ export default function ThreeDayDrill() {
       <div className="tdd-wrap">
         <header className="tdd-head">
           <span className="tdd-eyebrow">R. EEG T. exam prep</span>
-          <h1>Three-Day Drill</h1>
+          <h1>Focus Drills</h1>
           <p className="tdd-lede">
-            Day 1 neuroanatomy and clinical correlation, Day 2 paediatric epilepsy syndromes, Day 3 medication effects on the EEG.
+            Four focused sets: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, medication effects on the EEG,
+            and the ACNS guidelines (Guidelines 1 to 7, the 2021 critical care terminology and cEEG duties).
             Every answer comes with the reasoning and a hook to remember it. Anything you miss goes into your review pile until you get it right.
           </p>
           <span className="tdd-count">{days > 0 ? `${days} days to the exam (14 December 2026)` : "Exam day has arrived. Good luck."}</span>
@@ -201,7 +203,7 @@ export default function ThreeDayDrill() {
           {dayCards.map((s) => (
             <button key={s.key} type="button" className="tdd-day" aria-pressed={mode === s.key} disabled={source === "loading"} onClick={() => start(s.key)}>
               <span className="tdd-tag">{s.tag}</span>
-              <strong>{s.name}</strong>
+              <strong>{s.key === "mixed" ? `Mixed: all ${s.total}` : s.name}</strong>
               {s.key === "missed" ? <small>{s.total} to review</small> : (
                 <>
                   <div className="tdd-bar" aria-hidden="true"><i style={{ width: `${s.total ? Math.round((s.right / s.total) * 100) : 0}%` }} /></div>
@@ -266,7 +268,7 @@ export default function ThreeDayDrill() {
         </section>
 
         <section className="tdd-sheets" aria-labelledby="tdd-sheets-h">
-          <div className="tdd-row"><h2 id="tdd-sheets-h">Memory sheets</h2><span className="tdd-hint">Read these before and after each day's drill.</span></div>
+          <div className="tdd-row"><h2 id="tdd-sheets-h">Memory sheets</h2><span className="tdd-hint">Read these before and after each drill.</span></div>
           <div className="tdd-tabs" role="tablist">
             {SHEET_TABS.map(([k, label]) => (
               <button key={k} type="button" role="tab" aria-selected={sheet === k} onClick={() => setSheet(k)}>{label}</button>

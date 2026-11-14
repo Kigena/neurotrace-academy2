@@ -6,7 +6,7 @@ export const SOURCE_LABELS = {
   bank: "Question bank",
   challenge: "Challenge Bank",
   mock: "Mock exam",
-  drill: "Three-Day Drill",
+  drill: "Focus Drills",
 };
 export const SOURCE_TONE = {
   bank: "bg-slate-100 text-slate-700",

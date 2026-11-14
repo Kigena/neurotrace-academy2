@@ -1,16 +1,16 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-13",
+  "generatedAt": "2026-11-14",
   "bank": "drill",
-  "description": "The Three-Day Drill: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, and medication effects on the EEG. Kept apart from the main question bank and served only on the drill page.",
-  "totalQuestions": 90,
+  "description": "Focus Drills: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, medication effects on the EEG, and the ACNS guidelines (2016 Guidelines 1-7, 2021 Critical Care EEG Terminology, 2015 cEEG consensus). Kept apart from the main question bank and served only on the drill page.",
+  "totalQuestions": 161,
   "questions": [
     {
       "id": "drill-n01",
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -25,7 +25,7 @@
       "answerIndex": 0,
       "explanation": "Non-fluent speech with intact comprehension is Broca (expressive) aphasia. Broca area lies in the dominant inferior frontal gyrus, just in front of the motor strip for the face and hand, which is why right face and arm weakness usually come with it. About 95% of right-handers are left-hemisphere dominant for language. Wernicke aphasia is fluent with poor comprehension; the right hemisphere is not dominant here; the angular gyrus gives alexia with agraphia.",
       "memoryAid": "BROCA = BROKEN speech, front of the brain. The patient KNOWS it is broken, so they are frustrated.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -33,7 +33,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -48,7 +48,7 @@
       "answerIndex": 0,
       "explanation": "Fluent speech with paraphasias, poor comprehension and lack of awareness is Wernicke (receptive) aphasia from damage to the posterior superior temporal gyrus of the dominant hemisphere, just behind the primary auditory cortex. There is usually no weakness because the motor strip is far away, though a superior quadrantanopia may occur.",
       "memoryAid": "WERNICKE = WORDY, WRONG and WON'T understand. Wernicke is in the temporal lobe next to hearing: it is the 'listening' area.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -56,7 +56,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -71,7 +71,7 @@
       "answerIndex": 2,
       "explanation": "Conduction aphasia: fluent speech and good comprehension, but repetition fails because the arcuate fasciculus, the white matter bundle linking Wernicke (posterior) to Broca (anterior), is cut. The two language areas work, but the message cannot travel between them.",
       "memoryAid": "CONDUCTION = can't COPY. The 'wire' (arcuate fasciculus) between the ear area and the mouth area is cut.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -79,7 +79,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -94,7 +94,7 @@
       "answerIndex": 0,
       "explanation": "These four signs form Gerstmann syndrome, from damage to the dominant (usually left) angular gyrus of the inferior parietal lobule. Non-dominant parietal damage instead produces neglect of the left side of space.",
       "memoryAid": "Gerstmann = 'FALL': Finger agnosia, Acalculia, Left-right confusion, Lettering lost (agraphia).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -102,7 +102,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -117,7 +117,7 @@
       "answerIndex": 2,
       "explanation": "Neglect of the left side of space and the body, often with denial of illness (anosognosia), comes from damage to the non-dominant (usually right) parietal lobe. A hemianopia patient knows a field is missing and turns the head to compensate; a neglect patient behaves as if the left side does not exist.",
       "memoryAid": "RIGHT parietal = the RIGHT side is all that's LEFT. The right hemisphere watches both sides; the left only watches the right, so right damage loses the left.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -125,7 +125,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -140,7 +140,7 @@
       "answerIndex": 0,
       "explanation": "The anterior cerebral artery supplies the medial surface of the hemisphere, where the leg and foot are represented on the motor and sensory strips (the homunculus hangs upside down, legs over the top into the midline). Medial frontal damage also causes apathy (abulia) and incontinence. Signs are contralateral, so a left leg points to the right ACA.",
       "memoryAid": "ACA = ANKLES (leg). MCA = MOUTH and ARM. PCA = PICTURES (vision).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -148,7 +148,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -163,7 +163,7 @@
       "answerIndex": 1,
       "explanation": "The MCA supplies the lateral convexity: the face and arm areas of the motor and sensory strips, language areas (in the dominant hemisphere) and the frontal eye field. A destructive lesion of the left frontal eye field lets the right one push the eyes toward the lesion (left). Leg weakness points to the ACA; isolated hemianopia to the PCA; left-sided signs to the right hemisphere.",
       "memoryAid": "In a STROKE the eyes LOOK AT the lesion. In a SEIZURE the eyes LOOK AWAY from the focus.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -171,7 +171,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -186,7 +186,7 @@
       "answerIndex": 1,
       "explanation": "Alexia without agraphia: the left occipital cortex is destroyed (right hemianopia) and the splenium is damaged, so what the intact right occipital lobe sees cannot cross to the left-hemisphere language areas. Writing is intact because the language and motor areas are fine. Both structures are supplied by the left posterior cerebral artery.",
       "memoryAid": "Can WRITE but can't READ = the visual message can't CROSS the bridge (splenium). PCA = Pictures.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -194,7 +194,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -209,7 +209,7 @@
       "answerIndex": 0,
       "explanation": "Pure motor hemiparesis with face, arm and leg equally involved is a lacunar infarct in the posterior limb of the internal capsule (lenticulostriate branches of the MCA). The lesion is small and deep, below the cortex, so the scalp EEG is often normal or shows only mild changes. Convexity cortex and white matter strokes give focal slowing.",
       "memoryAid": "LACUNE = LITTLE and LOW (deep): the EEG often LOOKS normal. 'Pure motor, pure capsule.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -217,7 +217,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-focal-generalized-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -232,7 +232,7 @@
       "answerIndex": 2,
       "explanation": "Continuous polymorphic delta activity is the classic sign of a structural lesion involving the subcortical white matter, which disconnects the overlying cortex from its thalamic inputs. Lesions confined to the cortical gray matter tend instead to reduce amplitude and faster activity, and deep midline lesions give intermittent, often bilateral, rhythmic delta.",
       "memoryAid": "POLYMORPHIC delta = POOR white matter below. 'White matter cut = cortex drifts slow.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -240,7 +240,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-focal-generalized-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -255,7 +255,7 @@
       "answerIndex": 3,
       "explanation": "Failure of the alpha rhythm to attenuate on one side with eye opening or mental effort is the Bancaud phenomenon. The side that fails to react is abnormal, usually from a lesion in the parietal, temporal or occipital region of that hemisphere. Amplitude asymmetries are judged differently (the right is often slightly higher in normals); the key here is reactivity.",
       "memoryAid": "BANCAUD = the side that won't BAN (block) the alpha is the BAD side.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -263,7 +263,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-sleep-graphoelements",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -278,7 +278,7 @@
       "answerIndex": 2,
       "explanation": "Spindles are generated by thalamocortical circuits, paced by the thalamic reticular nucleus. A lesion of the thalamus (or the thalamocortical connections and cortex) on one side reduces spindles on that same side. Persistent unilateral spindle loss is abnormal at any age once spindles have developed.",
       "memoryAid": "SPINDLES are SPUN by the THALAMUS, same side. 'No spindle on the left = look at the left thalamus.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -286,7 +286,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-normal-variants",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -301,7 +301,7 @@
       "answerIndex": 3,
       "explanation": "Mu is an arciform 7-11 Hz rhythm over the central regions (C3, C4), generated in the sensorimotor cortex around the central sulcus. It blocks with movement (or the thought of movement) of the opposite limb, not with eye opening. Left-sided mu blocks with right-hand movement.",
       "memoryAid": "MU = MOVE. Arches like the letter M. Block it by moving the OPPOSITE hand.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -309,7 +309,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-normal-variants",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -324,7 +324,7 @@
       "answerIndex": 0,
       "explanation": "A skull defect removes bone, which normally filters and attenuates high-frequency activity, so the activity under the defect is larger and sharper (breach rhythm). It often looks like mu and can contain sharply contoured waves. It is not epileptiform by itself, though true spikes can coexist and must be judged carefully.",
       "memoryAid": "BREACH = BONE gone: the EEG is BIGGER and BRIGHTER (faster) over the hole.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -332,7 +332,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -347,7 +347,7 @@
       "answerIndex": 2,
       "explanation": "On the motor homunculus the foot and leg sit at the top of the precentral gyrus and dip into the interhemispheric fissure, close to the midline (Cz). The face is low and lateral (near F7/T3 regions). Motor control is crossed, so the right foot points to the left hemisphere. Parasagittal foci may show best at Cz and can be hard to lateralize.",
       "memoryAid": "The homunculus HANGS upside down: FEET at the TOP (midline, Cz), FACE at the bottom (lateral).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -355,7 +355,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-ictal-eeg-seizure-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -370,7 +370,7 @@
       "answerIndex": 3,
       "explanation": "Unilateral dystonic posturing of an arm is contralateral to the seizure focus. Manual automatisms (fumbling, picking) tend to involve the hand on the same side as the focus. Both clues point to the left.",
       "memoryAid": "DYSTONIA is DISTANT (opposite side). AUTOMATISMS stay AT HOME (same side).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -378,7 +378,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-ictal-eeg-seizure-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -393,7 +393,7 @@
       "answerIndex": 3,
       "explanation": "Preserved, understandable speech during a seizure points to a non-dominant focus. Postictal aphasia (word-finding or comprehension problems after the seizure) points to the dominant hemisphere.",
       "memoryAid": "TALKS through it = the TALKING side is spared (non-dominant focus). Aphasia afterwards = the language side was hit.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -401,7 +401,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-brain-structures-functions",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -416,7 +416,7 @@
       "answerIndex": 2,
       "explanation": "Crossed signs (a cranial nerve on one side, limb weakness on the other) mean the brainstem. The third nerve leaves the front of the midbrain next to the cerebral peduncle, which carries corticospinal fibres that have not yet crossed. A right ventral midbrain lesion gives a right III palsy and left hemiparesis (Weber syndrome).",
       "memoryAid": "CROSSED signs = BRAINSTEM. The nerve tells you the LEVEL and the SIDE (III = midbrain).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -424,7 +424,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-brain-structures-functions",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -439,7 +439,7 @@
       "answerIndex": 2,
       "explanation": "This is locked-in syndrome from a lesion of the ventral pons that cuts the corticospinal and corticobulbar tracts but spares the reticular activating system and the cortex. The patient is fully awake and aware, so the EEG is usually normal with a reactive alpha rhythm. The EEG helps tell locked-in from coma.",
       "memoryAid": "LOCKED IN = the person is still IN there, and so is the ALPHA. Vertical eye movements are the only way out.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -447,7 +447,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -462,7 +462,7 @@
       "answerIndex": 1,
       "explanation": "Alpha coma is unreactive alpha-frequency activity in a comatose patient, often diffuse or frontally predominant after hypoxic-ischemic injury, and it usually carries a poor prognosis. It differs from normal alpha by its distribution and lack of reactivity. Drug-induced alpha coma can be reversible, so medications must always be considered.",
       "memoryAid": "ALPHA in COMA that won't react = ALARM. Normal alpha is POSTERIOR and REACTIVE.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -470,7 +470,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -485,7 +485,7 @@
       "answerIndex": 3,
       "explanation": "Periodic sharp-wave complexes at about 0.5-2 Hz (typically near 1 Hz) with rapidly progressive dementia and myoclonus are characteristic of sporadic CJD, a prion disease. SSPE complexes repeat far more slowly (every 4-15 s). HSV gives temporal lateralized periodic discharges. Huntington disease gives a low-voltage record.",
       "memoryAid": "CJD ticks like a CLOCK: about 1 per second. 'Creutzfeldt-Jakob = Clock-like Jerks.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -493,7 +493,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -508,7 +508,7 @@
       "answerIndex": 2,
       "explanation": "SSPE is a late complication of measles. Its periodic complexes (Radermecker complexes) are high-voltage, stereotyped slow-wave complexes repeating every 4-15 seconds, often with each jerk. That long interval separates it from CJD (about 1 per second).",
       "memoryAid": "SSPE = SLOW, SPACED Periodic complexes. Measles years ago, Spaced complexes now.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -516,7 +516,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -531,7 +531,7 @@
       "answerIndex": 3,
       "explanation": "Herpes simplex virus has a predilection for the mesial temporal and orbitofrontal lobes. Lateralized periodic discharges (LPDs, formerly PLEDs) over a temporal region in an encephalitic patient strongly suggest HSV and should prompt urgent acyclovir. Metabolic encephalopathy gives generalized patterns such as triphasic waves.",
       "memoryAid": "HSV HITS the TEMPORAL lobe and makes LPDs: 'Herpes = Hippocampus + LPDs.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -539,7 +539,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-artifacts-recognition",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -554,7 +554,7 @@
       "answerIndex": 3,
       "explanation": "The eye is a dipole: the cornea is positive relative to the retina. On closing the lids the eyes roll upward (Bell phenomenon), bringing the positive cornea toward the frontopolar electrodes. In a bipolar chain starting Fp1-F3, a positive Fp1 is the first input going positive, which by convention gives a downward deflection.",
       "memoryAid": "CORNEA is POSITIVE. Eyes roll UP on a blink, so the electrode they roll toward goes POSITIVE.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -562,7 +562,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-artifacts-recognition",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -577,7 +577,7 @@
       "answerIndex": 0,
       "explanation": "Looking left brings the positive left cornea toward F7 and moves the negative right retina toward F8. The result is opposite-phase deflections at F7 and F8, which is how lateral eye movements are recognised and separated from cerebral activity.",
       "memoryAid": "The electrode the eyes LOOK TOWARD goes POSITIVE (cornea leads the way).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -585,7 +585,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -600,7 +600,7 @@
       "answerIndex": 1,
       "explanation": "Frontal intermittent rhythmic delta (now called frontally predominant GRDA) is non-specific. It appears with metabolic and toxic encephalopathy and with raised intracranial pressure or deep midline or posterior fossa lesions that disturb diencephalic and brainstem projections. It is not a sign of a focal cortical lesion. The link with deep midline lesions and raised pressure is classical but weak; today it is seen far more often in toxic-metabolic states.",
       "memoryAid": "FIRDA = FAR away lesion (deep or pressure), not under the electrode. 'Frontal, Intermittent, Remote cause.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -608,7 +608,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-brain-structures-functions",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -623,7 +623,7 @@
       "answerIndex": 1,
       "explanation": "Corpus callosotomy divides the corpus callosum, the largest commissure, which reduces rapid bilateral spread of seizures and especially helps atonic drop attacks. It is palliative rather than curative.",
       "memoryAid": "CALLOSOTOMY stops the CROSSING: no crossing = no sudden DROP.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -631,7 +631,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-ictal-eeg-seizure-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -646,7 +646,7 @@
       "answerIndex": 0,
       "explanation": "Todd paralysis is temporary postictal weakness contralateral to the seizure focus, lasting minutes to (rarely) a day or two. It is a useful lateralizing sign. A deficit that does not resolve needs imaging to exclude a structural cause.",
       "memoryAid": "TODD = TEMPORARY, opposite side. The tired (exhausted) cortex controls the weak side.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -654,7 +654,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neuroanatomy-eeg-localization",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -669,7 +669,7 @@
       "answerIndex": 2,
       "explanation": "Mesial temporal discharges project to the basal and anterior temporal surface, so they are best seen at the anterior temporal electrodes (F7/T3 in the 10-20 system; F7 sits over the anterior temporal region), and better still at T1/T2 or sphenoidal electrodes placed closer to the mesial temporal lobe.",
       "memoryAid": "HIPPOCAMPUS hides LOW and DEEP: look LOW and FRONT on the temporal chain (F7, T1, sphenoidal).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -677,7 +677,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-ictal-eeg-seizure-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-neuro"
       ],
       "drillSet": "neuro",
@@ -692,7 +692,7 @@
       "answerIndex": 3,
       "explanation": "Frontal lobe seizures are typically brief (under a minute), cluster at night out of sleep, include bizarre hypermotor movements (bicycling, thrashing) and have little postictal confusion. They are often mistaken for psychogenic events, and the scalp EEG may be obscured by movement or show little. Staring with automatisms and long confusion fits temporal; flashes fit occipital; epigastric aura and deja vu fit mesial temporal.",
       "memoryAid": "FRONTAL = FAST, FRANTIC and at NIGHT. 'Short, sleepy-time, and strange.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -700,7 +700,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -715,7 +715,7 @@
       "answerIndex": 0,
       "explanation": "Infantile spasms in clusters (often on waking), developmental regression and hypsarrhythmia make up West syndrome (infantile epileptic spasms syndrome), usually starting at about 3-12 months. Hypsarrhythmia is very high-voltage (often over 200 µV), chaotic slow activity with multifocal spikes and poor organisation.",
       "memoryAid": "WEST = 'SHR': Spasms, Hypsarrhythmia, Regression. 'Wake-up clusters in a baby.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -723,7 +723,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-ictal-eeg-seizure-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -738,7 +738,7 @@
       "answerIndex": 3,
       "explanation": "The ictal correlate of a spasm is typically a high-voltage generalized slow wave, sometimes with superimposed fast activity, followed by an electrodecremental response: sudden flattening of the background for a second or more. Hypsarrhythmia is the interictal background.",
       "memoryAid": "SPASM = SLOW wave then SILENCE (decrement).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -746,7 +746,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -761,7 +761,7 @@
       "answerIndex": 3,
       "explanation": "Tuberous sclerosis complex is one of the commonest identifiable causes of infantile spasms (hypoxic-ischaemic injury is the commonest overall), and vigabatrin is first-line for spasms in TSC. Vigabatrin can cause permanent visual field constriction, so vision is monitored. ACTH or high-dose steroids are first-line for most other causes.",
       "memoryAid": "TSC → VIGABATRIN. 'Tubers need V.' Watch the VISUAL fields with Vigabatrin.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -769,7 +769,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -784,7 +784,7 @@
       "answerIndex": 2,
       "explanation": "Lennox-Gastaut syndrome: multiple seizure types (tonic seizures, especially in sleep, atonic drops and atypical absences), cognitive impairment, and slow spike-and-wave below 2.5 Hz on a slow background. Bursts of generalized paroxysmal fast activity (about 10-25 Hz) in sleep accompany tonic seizures. Onset is usually 1-8 years, and some cases evolve from West syndrome.",
       "memoryAid": "LGS = LESS than 2.5 Hz, LOTS of seizure types, and it often GROWS from West. 'Tonic in sleep, fast in sleep.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -792,7 +792,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -807,7 +807,7 @@
       "answerIndex": 1,
       "explanation": "Childhood absence epilepsy: typically 4-10 years, many absences a day lasting about 10 seconds, abrupt start and stop, provoked by hyperventilation, with regular 3 Hz generalized spike-and-wave on a normal background. Ethosuximide is first-line for absences alone (valproate also works but has more side effects). Carbamazepine can worsen absences.",
       "memoryAid": "THREE Hz, THREE syllables: 'ab-sen-ces'. 'HV-provoked, Hundreds a day, ethoSUXimide SUCKS out absences.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -815,7 +815,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -830,7 +830,7 @@
       "answerIndex": 3,
       "explanation": "Juvenile myoclonic epilepsy: onset usually 12-18 years, myoclonic jerks shortly after waking, generalized tonic-clonic seizures, sometimes absences; provoked by sleep deprivation and alcohol. EEG: generalized polyspike-and-wave at about 4-6 Hz on a normal background, often with a photoparoxysmal response. It is usually lifelong. Valproate or levetiracetam are used; carbamazepine and phenytoin can worsen myoclonus.",
       "memoryAid": "JME = Jerks in the Morning, Early; 'Coffee cup flies.' POLYspikes, PHOTOsensitive, Party (sleep loss, alcohol) triggers.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -838,7 +838,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -853,7 +853,7 @@
       "answerIndex": 2,
       "explanation": "Self-limited epilepsy with centrotemporal spikes (benign Rolandic epilepsy): onset about 4-12 years, nocturnal focal seizures of the face and throat with drooling and speech arrest, awareness often kept. EEG: high-amplitude diphasic centrotemporal spikes, greatly increased in sleep, often with a horizontal dipole (frontal positivity). It remits by about age 16. Many children need no treatment.",
       "memoryAid": "ROLANDIC = 'FACE, DROOL, can't TALK, at NIGHT, and it GOES AWAY.' Spikes sit at C3/T3 or C4/T4.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -861,7 +861,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -876,7 +876,7 @@
       "answerIndex": 0,
       "explanation": "Panayiotopoulos syndrome begins at about 3-6 years with autonomic seizures (vomiting, pallor, sweating, pupil changes), eye deviation and often long duration (autonomic status). The EEG shows occipital or multifocal spikes, often shifting location. The outlook is excellent. The Gastaut type affects older children with visual hallucinations and headache.",
       "memoryAid": "PANAYIOTOPOULOS = PUKING Preschooler (autonomic). Long name, long seizures, but good outcome.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -884,7 +884,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -899,7 +899,7 @@
       "answerIndex": 2,
       "explanation": "Childhood occipital visual epilepsy (Gastaut type) starts later (about 8-9 years) with brief elementary visual hallucinations and frequent postictal headache, so it is easily mistaken for migraine. Occipital spikes are blocked by eye opening and appear with eye closure (fixation-off sensitivity).",
       "memoryAid": "GASTAUT = GLOWING circles, then a GRUMBLING headache. Older child, visual, brief.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -907,7 +907,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -922,7 +922,7 @@
       "answerIndex": 0,
       "explanation": "Landau-Kleffner syndrome is acquired epileptic aphasia (verbal auditory agnosia) in a previously normal child, usually 3-7 years. Spike-and-wave is markedly activated in NREM sleep, often temporal and sometimes near-continuous (spike-wave activation in sleep). Seizures can be few. A sleep EEG is essential because the awake record can look nearly normal.",
       "memoryAid": "LKS = LOST KID'S SPEECH. Always record SLEEP.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -930,7 +930,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -945,7 +945,7 @@
       "answerIndex": 0,
       "explanation": "The hallmark is marked activation of spike-and-wave in NREM sleep, classically occupying most of slow sleep (historically 85% or more), together with neurocognitive regression. Spike-wave falls in REM and wakefulness. Landau-Kleffner syndrome is the language-predominant form.",
       "memoryAid": "ESES = Electrical Status in Slow Sleep: 'Spikes take over the Slow sleep, Skills slip.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -953,7 +953,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -968,7 +968,7 @@
       "answerIndex": 0,
       "explanation": "Dravet syndrome: onset in the first year with prolonged, often hemiclonic febrile seizures, then multiple seizure types and developmental slowing. Most cases have an SCN1A variant. The early EEG is often normal. Sodium channel blockers (carbamazepine, oxcarbazepine, lamotrigine, phenytoin) can worsen seizures.",
       "memoryAid": "DRAVET: 'DON'T give the SODIUM blockers' (SCN1A is a SODIUM channel). Fever + long seizures in the first year.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -976,7 +976,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -991,7 +991,7 @@
       "answerIndex": 0,
       "explanation": "Simple febrile seizures are generalized, last under 15 minutes and do not recur within 24 hours, in children about 6 months to 5 years old. Focal features, duration of 15 minutes or more, or recurrence within 24 hours make it complex. An EEG is not routinely needed after a simple febrile seizure.",
       "memoryAid": "SIMPLE = 'GENERAL, SHORT, ONCE' (under 15 minutes, once in 24 hours).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -999,7 +999,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1014,7 +1014,7 @@
       "answerIndex": 1,
       "explanation": "Ohtahara syndrome (now within early infantile DEE) begins in the first weeks to 3 months with tonic spasms and a burst-suppression pattern present in both waking and sleep. It is often structural or genetic (for example STXBP1, KCNQ2) and may evolve to West syndrome. Early myoclonic encephalopathy, the other classic form, has erratic myoclonus, is often metabolic, and its burst suppression is enhanced in sleep.",
       "memoryAid": "OHTAHARA = 'OH so early': TONIC spasms, BURST SUPPRESSION all the time. Later it can head WEST.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1022,7 +1022,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1037,7 +1037,7 @@
       "answerIndex": 0,
       "explanation": "Rett syndrome mainly affects girls, from MECP2 variants on the X chromosome. After apparently normal early development, there is regression with loss of purposeful hand use and speech, stereotyped hand-wringing, breathing irregularities and often seizures. The EEG shows background slowing and often centrotemporal spikes.",
       "memoryAid": "RETT = girls who WRING their hands. 'MECP2 = Mostly girls, Erasing hand skills.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1045,7 +1045,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1060,7 +1060,7 @@
       "answerIndex": 1,
       "explanation": "Angelman syndrome (loss of maternal UBE3A on chromosome 15q11-13) causes a happy, excitable demeanour, absent speech, ataxia and seizures. Characteristic EEG patterns include high-amplitude rhythmic 2-3 Hz delta with spikes (often frontally predominant), rhythmic 4-6 Hz theta, and posterior spikes with 3-4 Hz activity on eye closure.",
       "memoryAid": "ANGELMAN = happy ANGEL with BIG delta. 'Laughing, ataxic, no speech, huge slow waves.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1068,7 +1068,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1083,7 +1083,7 @@
       "answerIndex": 3,
       "explanation": "Sturge-Weber syndrome links a facial port-wine stain (V1 distribution) with a leptomeningeal angioma, cortical calcification and atrophy on the same side. The EEG typically shows reduced amplitude and slowing over the affected hemisphere, with epileptiform discharges.",
       "memoryAid": "STURGE-WEBER = STAIN on the face, SUPPRESSED EEG on the same side.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1091,7 +1091,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1106,7 +1106,7 @@
       "answerIndex": 0,
       "explanation": "Rasmussen encephalitis is a chronic immune-mediated inflammation of one hemisphere in childhood. It causes drug-resistant focal seizures, often epilepsia partialis continua (continuous focal motor seizures), progressive hemiparesis and progressive hemispheric atrophy. The EEG shows slowing and epileptiform activity over the affected hemisphere. Hemispheric surgery is often needed.",
       "memoryAid": "RASMUSSEN = ONE hemisphere RUSTS away: continuous jerking (EPC) and growing weakness.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1114,7 +1114,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1129,7 +1129,7 @@
       "answerIndex": 1,
       "explanation": "Gelastic (laughing) seizures with central precocious puberty point to a hypothalamic hamartoma. The scalp EEG is often normal or non-specific because the lesion is deep; it may show generalized or frontotemporal discharges as the epilepsy progresses.",
       "memoryAid": "HAMARTOMA = HA-HA plus early hormones (puberty).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1137,7 +1137,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1152,7 +1152,7 @@
       "answerIndex": 3,
       "explanation": "Self-limited (benign) familial neonatal epilepsy is usually caused by KCNQ2 (less often KCNQ3) potassium channel variants. Seizures start around days 2-7 and remit within weeks to months (usually by 6 months), with normal development in most. KCNQ2 variants can also cause a severe early-onset encephalopathy.",
       "memoryAid": "KCNQ2 = 'K for Kin' (family) and K for potassium. Day 2-3, gone by months.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1160,7 +1160,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1175,7 +1175,7 @@
       "answerIndex": 2,
       "explanation": "In NREM sleep hypsarrhythmia often becomes more synchronous and fragmented, with bursts separated by lower-voltage periods (a modified pattern). In REM sleep it often lessens or disappears. Spasms cluster on waking, so recording sleep and the wake-up period is useful.",
       "memoryAid": "HYPS breaks into PIECES in NREM and RESTS in REM.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1183,7 +1183,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1198,7 +1198,7 @@
       "answerIndex": 2,
       "explanation": "Epilepsy with myoclonic-atonic seizures (Doose syndrome) typically starts at about 2-5 years in previously normal children, more often boys, with myoclonic-atonic drops. The EEG shows generalized 2-6 Hz spike- and polyspike-and-wave and often rhythmic 4-7 Hz parasagittal theta. Unlike LGS, tonic seizures are not prominent early and development was normal before onset.",
       "memoryAid": "DOOSE = DROPS in a NORMAL toddler boy. LGS = tonic seizures, delay, slow spike-wave.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1206,7 +1206,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1221,7 +1221,7 @@
       "answerIndex": 3,
       "explanation": "Both can have staring spells and generalized discharges. CAE has 3 Hz spike-and-wave on a normal background in a normally developing child, strongly provoked by hyperventilation. LGS has slower (under 2.5 Hz) spike-and-wave on a slow background, multiple seizure types (especially tonic) and cognitive impairment.",
       "memoryAid": "3 Hz and HAPPY (normal kid) = CAE. UNDER 2.5 Hz and STRUGGLING = LGS.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1229,7 +1229,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1244,7 +1244,7 @@
       "answerIndex": 2,
       "explanation": "Breath-holding spells are triggered by crying, pain or frustration, peak at 6-18 months, and are non-epileptic. Reduced brain oxygen causes EEG slowing and then flattening, sometimes with brief stiffening or jerks (an anoxic seizure), but no epileptiform discharges. They are linked with iron-deficiency anaemia.",
       "memoryAid": "BREATH-HOLDING = TRIGGER first (cry), then COLOUR change, then the EEG goes SLOW then FLAT, no spikes.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1252,7 +1252,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1267,7 +1267,7 @@
       "answerIndex": 2,
       "explanation": "Juvenile absence epilepsy begins around 9-13 years (range about 8-20). Absences are less frequent but often longer than in CAE, generalized tonic-clonic seizures are common, and the spike-and-wave is often slightly faster (3-4 Hz) with polyspikes. It tends to be lifelong, whereas CAE usually remits.",
       "memoryAid": "JUVENILE = fewer, longer absences, plus GTCs; slightly FASTER (3-4 Hz). CHILDHOOD = many short ones at 3 Hz.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1275,7 +1275,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1290,7 +1290,7 @@
       "answerIndex": 0,
       "explanation": "Early-onset absence epilepsy (before about 4 years), especially when drug-resistant or with movement disorders, should raise suspicion of GLUT1 deficiency syndrome (SLC2A1). Low CSF glucose relative to blood glucose supports it. The ketogenic diet provides ketones as an alternative brain fuel.",
       "memoryAid": "GLUT1 = brain can't GET GLUCOSE in: feed it KETONES. 'Absences under 4: check the sugar door.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1298,7 +1298,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1313,7 +1313,7 @@
       "answerIndex": 0,
       "explanation": "Carbamazepine (and oxcarbazepine, phenytoin, gabapentin, vigabatrin, tiagabine) can aggravate absence and myoclonic seizures in generalized epilepsies. Ethosuximide and valproate treat absences; valproate and levetiracetam treat myoclonic seizures.",
       "memoryAid": "'CARBAMAZEPINE CARRIES ABSENCES and JERKS further.' Sodium blockers are for FOCAL seizures.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1321,7 +1321,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-epileptiform-discharges",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1336,7 +1336,7 @@
       "answerIndex": 0,
       "explanation": "Centrotemporal spikes typically show a horizontal (tangential) dipole: negativity over the centrotemporal region and simultaneous positivity over the frontal region, because the generator lies in the lower Rolandic cortex oriented sideways. This is a supportive feature of the benign syndrome.",
       "memoryAid": "ROLANDIC spike LIES DOWN sideways: negative at the side (C/T), positive at the front.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1344,7 +1344,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1359,7 +1359,7 @@
       "answerIndex": 3,
       "explanation": "Epileptic myoclonus is time-locked to EEG discharges (spikes or polyspikes). Jerks without any EEG correlate in a normally developing child suggest a non-epileptic cause, such as benign sleep myoclonus, benign myoclonus of infancy or startle. Video-EEG with a muscle channel helps.",
       "memoryAid": "A JERK with NO SPIKE in a thriving child is usually NOT epilepsy.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1367,7 +1367,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-epileptiform-discharges",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-peds"
       ],
       "drillSet": "peds",
@@ -1382,7 +1382,7 @@
       "answerIndex": 2,
       "explanation": "In tuberous sclerosis complex, cortical tubers are multiple epileptogenic lesions, so the EEG often shows multifocal (or focal) spikes and slowing. In infancy, many evolve to infantile spasms with hypsarrhythmia. Associated features include ash-leaf macules, facial angiofibromas and cardiac rhabdomyomas.",
       "memoryAid": "TUBERS are MANY, so the spikes are MANY (multifocal). 'Ash leaf on the skin, spikes all over the brain.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1390,7 +1390,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-normal-eeg-rhythms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1405,7 +1405,7 @@
       "answerIndex": 3,
       "explanation": "Benzodiazepines produce increased beta activity (roughly 14-30 Hz, often about 20-25 Hz), most prominent over the frontal and central regions and symmetric. At higher doses they cause drowsiness, sleep and slowing. They also suppress epileptiform discharges and raise the photoparoxysmal threshold.",
       "memoryAid": "BENZOS make BETA: 'B for B'. Front-loaded and symmetric.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1413,7 +1413,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-focal-generalized-patterns",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1428,7 +1428,7 @@
       "answerIndex": 3,
       "explanation": "Drug-induced beta should be symmetric. Consistently less beta on one side points to that side: cortical dysfunction (for example a stroke) or something between cortex and electrode such as a subdural collection that damps fast activity. Increased fast activity on one side can mean a skull defect (breach rhythm) on that side.",
       "memoryAid": "LESS BETA = the LESSER (damaged) side. 'Fast activity fades over damage and fluid.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1436,7 +1436,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1451,7 +1451,7 @@
       "answerIndex": 3,
       "explanation": "At anaesthetic doses barbiturates (pentobarbital, thiopental), like propofol and midazolam, produce burst suppression: bursts of activity alternating with suppressed background. In refractory status epilepticus, infusions are often titrated to seizure suppression or burst suppression. At lower doses barbiturates cause prominent beta activity.",
       "memoryAid": "BARBITURATES: low dose = BETA, high dose = BURST suppression. 'Barbs go Beta, then Bursts.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1459,7 +1459,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1474,7 +1474,7 @@
       "answerIndex": 1,
       "explanation": "CNS depressant drugs (barbiturates, high-dose benzodiazepines, propofol and others) and hypothermia can produce a flat EEG that is reversible. Brain death evaluation requires excluding these confounders: drug levels must be cleared or below thresholds and core temperature normal.",
       "memoryAid": "Before calling it FLAT, rule out the DRUGS and the COLD (sedatives and hypothermia).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1482,7 +1482,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1497,7 +1497,7 @@
       "answerIndex": 1,
       "explanation": "Abrupt withdrawal of GABA-ergic sedatives (benzodiazepines, barbiturates) or alcohol lowers the seizure threshold. Withdrawal seizures and photoparoxysmal responses can appear, and generalized discharges may emerge. Alcohol withdrawal seizures usually occur about 6-48 hours after the last drink.",
       "memoryAid": "WITHDRAWAL WAKES the seizures: stopping a 'downer' fires the brain UP.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1505,7 +1505,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s4",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1520,7 +1520,7 @@
       "answerIndex": 3,
       "explanation": "Chloral hydrate is a sedative-hypnotic used for paediatric EEG sedation. It induces drowsiness and sleep with relatively little added beta (less than benzodiazepines or barbiturates) and preserves sleep architecture fairly well. It causes little suppression of epileptiform activity compared with benzodiazepines. Whether a child is sedated, and with what, is an institutional decision and must be documented.",
       "memoryAid": "CHLORAL = CALM child, hardly any BETA. Always WRITE the sedative and time on the record.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1528,7 +1528,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s4",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1543,7 +1543,7 @@
       "answerIndex": 0,
       "explanation": "Methohexital, a short-acting barbiturate, can activate interictal epileptiform discharges, especially in temporal lobe epilepsy, at low doses. Most other barbiturates and benzodiazepines suppress discharges.",
       "memoryAid": "METHOHEXITAL is the 'ME-THE-EXCITER': the odd barbiturate that BRINGS OUT spikes.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1551,7 +1551,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1566,7 +1566,7 @@
       "answerIndex": 2,
       "explanation": "Phenytoin causes little background change at therapeutic levels. At toxic levels it causes diffuse slowing and clinical cerebellar signs (nystagmus, ataxia, dysarthria), and very high levels can paradoxically increase seizures. Long-term use causes gingival hyperplasia and hirsutism.",
       "memoryAid": "PHENYTOIN toxicity = the 'CEREBELLAR drunk': nystagmus, ataxia, slurred speech, plus slowing.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1574,7 +1574,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1589,7 +1589,7 @@
       "answerIndex": 1,
       "explanation": "Valproate can cause hyperammonaemic encephalopathy even at normal drug levels, with lethargy, confusion and EEG slowing, sometimes with triphasic waves. Valproate otherwise changes the background little. Checking ammonia separates it from non-convulsive status.",
       "memoryAid": "VALPROATE + confusion = check AMMONIA. 'V for VAPOUR of ammonia.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1597,7 +1597,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1612,7 +1612,7 @@
       "answerIndex": 2,
       "explanation": "Ethosuximide blocks T-type calcium channels in thalamic neurons, which drive the 3 Hz thalamocortical rhythm of absence seizures. It is first-line for childhood absence epilepsy but does not protect against tonic-clonic seizures.",
       "memoryAid": "ETHOSUXIMIDE = 'ETHO-SUCKS-out ABSENCES' via the thalamic T-type (T for Thalamus, T for Three Hz).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1620,7 +1620,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1635,7 +1635,7 @@
       "answerIndex": 3,
       "explanation": "Vigabatrin irreversibly inhibits GABA transaminase. It is first-line for infantile spasms in tuberous sclerosis but can cause permanent peripheral (concentric) visual field loss, so vision is monitored. It can worsen absence and myoclonic seizures.",
       "memoryAid": "VIGABATRIN = VISION. 'Vigabatrin shrinks the View.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1643,7 +1643,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-eeg-syndromes-classification",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1658,7 +1658,7 @@
       "answerIndex": 0,
       "explanation": "ACTH or high-dose oral steroids (and vigabatrin) aim for electroclinical response: cessation of spasms and resolution of hypsarrhythmia on a follow-up EEG, ideally including sleep. Persistent hypsarrhythmia means incomplete response.",
       "memoryAid": "Treating WEST = the HYPS must go and the SPASMS must stop (both).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1666,7 +1666,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-normal-eeg-rhythms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1681,7 +1681,7 @@
       "answerIndex": 2,
       "explanation": "Tricyclic antidepressants (for example amitriptyline, imipramine) increase theta and beta and reduce alpha. They lower the seizure threshold; in overdose they cause slowing, epileptiform discharges, seizures and cardiac arrhythmias.",
       "memoryAid": "TRICYCLICS = TRIPLE trouble in overdose: SEIZURES, SLOWING and the HEART.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1689,7 +1689,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1704,7 +1704,7 @@
       "answerIndex": 1,
       "explanation": "Lithium can slow the background even at therapeutic levels and may accentuate epileptiform activity. Toxicity causes diffuse slowing, triphasic waves, sharp waves and sometimes seizures, often with tremor, ataxia and confusion. Toxicity can occur even with levels in the reported range.",
       "memoryAid": "LITHIUM LIGHTS UP the EEG: SLOWING, SHARPS and TRIPHASICS when toxic.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1712,7 +1712,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1727,7 +1727,7 @@
       "answerIndex": 0,
       "explanation": "Clozapine has the highest seizure risk of the antipsychotics, rising with dose. It commonly causes EEG slowing and epileptiform discharges. Phenothiazines such as chlorpromazine also lower the seizure threshold. High-potency drugs such as haloperidol carry a lower seizure risk.",
       "memoryAid": "CLOZAPINE = 'CLOSE to a seizure'. Higher dose, closer it gets.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1735,7 +1735,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1750,7 +1750,7 @@
       "answerIndex": 1,
       "explanation": "Cefepime (and other beta-lactams) can cause encephalopathy, myoclonus and non-convulsive status epilepticus, especially when kidney function is impaired and the drug accumulates. The EEG may show triphasic waves or generalized periodic discharges. Stopping the drug or adjusting the dose (sometimes dialysis) reverses it.",
       "memoryAid": "CEFEPIME + KIDNEYS failing = CONFUSION and periodic discharges. 'Cefe-pime Piles up.'",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1758,7 +1758,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1773,7 +1773,7 @@
       "answerIndex": 1,
       "explanation": "Propofol, a GABA-ergic anaesthetic, produces beta at low doses, slowing at moderate doses, and burst suppression or suppression at high doses. It is used for refractory status epilepticus. Involuntary movements and myoclonus can occur, especially at induction and emergence.",
       "memoryAid": "PROPOFOL: the same staircase as barbiturates: BETA → SLOW → BURST suppression.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1781,7 +1781,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-normal-eeg-rhythms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1796,7 +1796,7 @@
       "answerIndex": 2,
       "explanation": "Acute alcohol slows the posterior rhythm and increases theta, with more slowing at higher levels; very high levels can cause coma. In withdrawal, seizures and photoparoxysmal responses can appear.",
       "memoryAid": "ALCOHOL makes the brain SLOW (on the way in) and FIRE (on the way out, withdrawal).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1804,7 +1804,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1819,7 +1819,7 @@
       "answerIndex": 2,
       "explanation": "Stimulants such as cocaine and amphetamines increase arousal with more beta and less slow activity, and they lower the seizure threshold. Cocaine can also cause stroke and vasospasm, leading to focal abnormalities.",
       "memoryAid": "STIMULANTS SPEED the EEG and can SPARK seizures (and strokes).",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1827,7 +1827,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1842,7 +1842,7 @@
       "answerIndex": 1,
       "explanation": "Flumazenil competitively blocks benzodiazepine receptors. In people on long-term benzodiazepines, or who have taken a seizure-provoking co-ingestant such as a tricyclic, it can precipitate withdrawal and seizures.",
       "memoryAid": "FLUMAZENIL FLIPS the brake OFF: sudden withdrawal → seizures.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1850,7 +1850,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-sleep-graphoelements",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1865,7 +1865,7 @@
       "answerIndex": 1,
       "explanation": "Benzodiazepines increase spindle-like (sigma and beta) activity, shorten sleep latency, and reduce slow-wave sleep (N3) and REM. This matters when staging sleep in a sedated patient and when judging a reduced N3.",
       "memoryAid": "BENZOS: MORE spindles, LESS deep sleep and dreams.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1873,7 +1873,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-sleep-graphoelements",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1888,7 +1888,7 @@
       "answerIndex": 3,
       "explanation": "Most antidepressants suppress REM sleep and lengthen REM latency. When they are stopped, REM rebound can follow, with early REM periods that could be confused with narcolepsy. Medication history is essential when interpreting a sleep-onset REM period. Bupropion, trazodone and mirtazapine suppress REM little or not at all.",
       "memoryAid": "ANTIDEPRESSANTS ANNUL REM; stop them and REM RETURNS early.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1896,7 +1896,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-normal-eeg-rhythms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1911,7 +1911,7 @@
       "answerIndex": 3,
       "explanation": "Sedating antihistamines produce drowsiness and EEG changes of drowsiness and sleep. Children can react paradoxically with excitation. Overdose can cause seizures, delirium and anticholinergic signs.",
       "memoryAid": "ANTIHISTAMINE: SLEEPY usually, SEIZURES in overdose, WILD in some kids.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1919,7 +1919,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1934,7 +1934,7 @@
       "answerIndex": 1,
       "explanation": "Theophylline (a methylxanthine like caffeine) is an adenosine antagonist that lowers the seizure threshold. Toxicity causes tremor, arrhythmias and seizures that can be difficult to control.",
       "memoryAid": "THEOPHYLLINE = 'THE-O-FILL-up-on-caffeine': too much and the brain over-fires.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1942,7 +1942,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1957,7 +1957,7 @@
       "answerIndex": 2,
       "explanation": "Reducing antiepileptic drugs under supervision increases the likelihood of capturing habitual seizures for diagnosis or surgical localisation. It raises the risk of clusters, generalized seizures and status epilepticus, so seizure precautions and a rescue plan are essential.",
       "memoryAid": "TAPER to CAPTURE, but have the RESCUE ready.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1965,7 +1965,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -1980,7 +1980,7 @@
       "answerIndex": 0,
       "explanation": "GABA-ergic sedatives (benzodiazepines, barbiturates, propofol) follow a predictable staircase with rising dose: increased beta, then drowsiness and slowing, then burst suppression and finally suppression. Recognising the staircase helps you judge sedation depth.",
       "memoryAid": "The SEDATIVE STAIRCASE: BETA → SLOW → BURSTS → FLAT.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -1988,7 +1988,7 @@
       "domainId": "domain-1",
       "sectionId": "d1-neurophysiology-seizure-mechanisms",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -2003,7 +2003,7 @@
       "answerIndex": 3,
       "explanation": "Sodium channel blockers (lamotrigine, carbamazepine, oxcarbazepine, phenytoin) can worsen seizures in Dravet syndrome, which is usually caused by loss-of-function SCN1A (sodium channel) variants. Valproate, clobazam, stiripentol, fenfluramine and cannabidiol are used.",
       "memoryAid": "DRAVET: 'DON'T block the sodium'. Valproate and Clobazam are the 'VC' (very common) choices.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -2011,7 +2011,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -2026,7 +2026,7 @@
       "answerIndex": 3,
       "explanation": "A benzodiazepine trial during suspected non-convulsive status: resolution of the discharges together with clinical improvement supports NCSE. EEG improvement without clinical improvement is less conclusive, because benzodiazepines can also abolish triphasic waves in metabolic encephalopathy.",
       "memoryAid": "BENZO TRIAL: EEG better AND patient better = it was a SEIZURE. EEG better alone = maybe not.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -2034,7 +2034,7 @@
       "domainId": "domain-3",
       "sectionId": "d3-encephalopathy-differentials",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -2049,7 +2049,7 @@
       "answerIndex": 1,
       "explanation": "Lithium toxicity causes diffuse slowing, triphasic and sharp waves. These are reversible, but brain lithium clears more slowly than serum lithium, so EEG and clinical recovery can lag the serum level by days. Toxicity can also occur within the reported therapeutic range.",
       "memoryAid": "LITHIUM LINGERS: the brain clears it LATER than the blood, so the EEG recovers LATE.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     },
     {
@@ -2057,7 +2057,7 @@
       "domainId": "domain-2",
       "sectionId": "d2-s8",
       "topicTags": [
-        "three-day-drill",
+        "focus-drills",
         "drill-meds"
       ],
       "drillSet": "meds",
@@ -2072,7 +2072,1640 @@
       "answerIndex": 1,
       "explanation": "Barbiturates at high levels, especially with hypothermia, can suppress the EEG completely, mimicking electrocerebral inactivity; this is reversible as levels fall. Hence the ACNS requirement to exclude drug intoxication and hypothermia before using EEG for brain death.",
       "memoryAid": "PENTO-BARB + COLD = 'PRETEND flat'. Never confirm brain death until both are gone.",
-      "author": "NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a01",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Under ACNS Guideline 1, what is the minimum number of recording channels for a routine EEG?",
+      "options": [
+        "8 channels",
+        "16 channels",
+        "21 channels",
+        "12 channels"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guideline 1 sets 16 channels as the minimum for routine EEG, using all 21 electrodes of the 10-20 System. Twelve cerebral channels is the neonatal minimum (Guideline 5); 21 is the number of electrodes, not channels.",
+      "memoryAid": "SIXTEEN to SEE it: 16 channels, 21 electrodes.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a02",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "On the impedance check, one electrode reads 60 Ω. What does Guideline 1 suggest?",
+      "options": [
+        "An acceptable value for routine EEG but not for ECI",
+        "Amplifier saturation that needs a lower sensitivity",
+        "An ideal contact that needs no action",
+        "A possible short or salt bridge; check the site"
+      ],
+      "answerIndex": 3,
+      "explanation": "Guideline 1 accepts impedances up to 10 kΩ but warns that a value below 100 Ω suggests a short circuit, usually a gel or salt bridge between neighbouring electrodes. Impedances should also be balanced across electrodes.",
+      "memoryAid": "Too LOW is a LEAK: under 100 Ω = salt bridge. Up to 10 kΩ is fine.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a03",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which filter settings meet Guideline 1 for a routine recording?",
+      "options": [
+        "Low-frequency filter 0.1 Hz; high-frequency filter 15 Hz",
+        "Low-frequency filter no lower than 1 Hz; high-frequency filter no higher than 70 Hz",
+        "Low-frequency filter no higher than 1 Hz; high-frequency filter no lower than 70 Hz",
+        "Low-frequency filter 5 Hz; high-frequency filter 35 Hz"
+      ],
+      "answerIndex": 2,
+      "explanation": "Routine EEG must keep the bandwidth open: LFF no higher than 1 Hz (time constant at least 0.16 s) and HFF no lower than 70 Hz. Read the direction words carefully: 'no higher than' and 'no lower than' are limits in opposite directions. The 60 Hz notch is used only when other measures fail.",
+      "memoryAid": "ONE and SEVENTY, and keep the window WIDE: LFF ≤ 1, HFF ≥ 70.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a04",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which recording reference does Guideline 1 recommend for digital EEG?",
+      "options": [
+        "Linked ears (A1 joined to A2)",
+        "An average of all scalp electrodes",
+        "An extra electrode between Cz and Pz",
+        "Cz, the vertex electrode"
+      ],
+      "answerIndex": 2,
+      "explanation": "Recording referentially lets every montage be rebuilt afterwards. The reference should be an extra electrode, commonly between Cz and Pz. Linked ears are specifically discouraged as the recording reference.",
+      "memoryAid": "The reference lives BETWEEN Cz and Pz, and the EARS are BANNED.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a05",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How long should hyperventilation last under Guideline 1, and how much recording follows it?",
+      "options": [
+        "At least 3 minutes, with at least 1 minute of recording afterwards",
+        "At least 5 minutes, with 5 minutes afterwards",
+        "At least 1 minute, with no recording required afterwards",
+        "At least 2 minutes, with 30 seconds afterwards"
+      ],
+      "answerIndex": 0,
+      "explanation": "Guideline 1: HV for at least 3 min, with at least 1 min of baseline before and at least 1 min of recording after. Responses that persist after HV stops are clinically important, which is why the post-HV minute matters.",
+      "memoryAid": "HV 1-3-1: one minute before, THREE minutes of breathing, one minute after.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a06",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "When should photic stimulation be done relative to hyperventilation in an adult routine EEG?",
+      "options": [
+        "Before HV, or 3 or more minutes after it",
+        "During HV, to save recording time",
+        "Straight after HV, while slowing persists",
+        "Only after a normal HV response"
+      ],
+      "answerIndex": 0,
+      "explanation": "Guideline 1 places the photic lamp at least 30 cm from the face and runs photic before HV or at least 3 min after it, so HV effects do not contaminate the photic response. (In children, Guideline 5 puts HV at the start and photic at the end.)",
+      "memoryAid": "Lights and breathing do not MIX: photic first, or wait 3 minutes.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a07",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What calibration does Guideline 1 require at the start of a digital recording?",
+      "options": [
+        "A sine-wave sweep from 0.5 to 70 Hz",
+        "At least 10 seconds of square-wave calibration",
+        "No calibration, because digital systems are self-checking",
+        "A biologic calibration of 30 seconds"
+      ],
+      "answerIndex": 1,
+      "explanation": "At least 10 s of square-wave calibration at the start. Biologic calibration is not needed for digital systems. Afterwards, review 30 s on the system reference montage without the notch filter.",
+      "memoryAid": "TEN seconds of SQUARES before you start.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a08",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "During a routine EEG the patient has an electrographic seizure. What does Guideline 1 expect of the technologist?",
+      "options": [
+        "Explain the diagnosis to patient and family",
+        "Notify the reading physician and supervisor",
+        "Finish the study and leave it for the reader",
+        "Stop recording and start the next patient"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guideline 1 makes the technologist responsible for notifying the interpreting physician and supervisor of critical results, including electrographic or clinical seizures and other significant clinical events. Interpreting or telling the family the diagnosis is outside the technologist's scope.",
+      "memoryAid": "CRITICAL = CALL: seizure seen, physician told.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a09",
+      "domainId": "domain-2",
+      "sectionId": "d2-recording-procedures-patient-preparation",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How many montages should be viewed while recording under Guideline 1?",
+      "options": [
+        "At least 3, both bipolar and referential",
+        "Every montage stored on the system",
+        "At least 1 longitudinal bipolar montage",
+        "At least 2 referential montages"
+      ],
+      "answerIndex": 0,
+      "explanation": "View at least 3 montages during the recording, including at least one bipolar and one referential, and record both eyes open and eyes closed. Note state, stimuli, movements and patient effort.",
+      "memoryAid": "THREE views, both KINDS: bipolar AND referential.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a10",
+      "domainId": "domain-2",
+      "sectionId": "d2-montages-referencing",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "In the 10-10 nomenclature (Guideline 2), what are the old T3 and T4 called?",
+      "options": [
+        "F7 and F8",
+        "T7 and T8",
+        "T5 and T6",
+        "P7 and P8"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guideline 2 renamed T3/T4 to T7/T8 and T5/T6 to P7/P8. The old names remain acceptable. P with a number of 7 or more marks a posterior temporal site; 6 or less is parietal.",
+      "memoryAid": "T3-T4 went up to SEVEN-EIGHT; T5-T6 moved to the P row.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a11",
+      "domainId": "domain-2",
+      "sectionId": "d2-montages-referencing",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which 10-10 positions closely approximate the anterior temporal T1 and T2 electrodes?",
+      "options": [
+        "FT9 and FT10",
+        "T9 and T10",
+        "F9 and F10",
+        "P9 and P10"
+      ],
+      "answerIndex": 0,
+      "explanation": "FT9/FT10 closely approximate T1/T2. F9/F10, T9/T10 and P9/P10 sit 10% below the standard temporal row. The 10-10 system has more than 70 positions; the 10-5 system is not accepted by ACNS or IFCN.",
+      "memoryAid": "FT NINE = T ONE: 'Front-Temporal, low row'.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a12",
+      "domainId": "domain-2",
+      "sectionId": "d2-montages-referencing",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A montage is labelled LB-16.2. What does that mean under Guideline 3?",
+      "options": [
+        "A longitudinal bipolar montage with interelectrode distances of 2 cm",
+        "The second 16-channel longitudinal bipolar option",
+        "Lateral bipolar montage number 16",
+        "A 16-channel montage with a 2 µV/mm sensitivity"
+      ],
+      "answerIndex": 1,
+      "explanation": "The class (LB longitudinal bipolar, TB transverse bipolar, R referential) comes first; the number left of the point is the channel count and the number right of it is the alternative. There are no more than three alternatives per class and size.",
+      "memoryAid": "CLASS - CHANNELS . CHOICE: LB-16.2 = longitudinal, 16, option 2.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a13",
+      "domainId": "domain-2",
+      "sectionId": "d2-montages-referencing",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How does Guideline 3 order the channels on the display?",
+      "options": [
+        "Midline first, then left, then right",
+        "Posterior above anterior, and right above left",
+        "In alphabetical order of electrode names",
+        "Anterior above posterior, and left above right"
+      ],
+      "answerIndex": 3,
+      "explanation": "Montages use simple straight chains with equal interelectrode distances, anterior above posterior and left above right, with each channel's derivation labelled and a single ECG channel. Each recording should include at least one montage of each class (LB, TB and R).",
+      "memoryAid": "Read it like a PAGE: top is the FRONT, LEFT comes first.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a14",
+      "domainId": "domain-2",
+      "sectionId": "d2-montages-referencing",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Temporal lobe epilepsy is suspected. Which referential choice does the guideline discussion favour?",
+      "options": [
+        "An average reference that includes Fp1 and Fp2",
+        "Linked ears, since they balance both sides",
+        "Cz, since temporal fields often reach the ears",
+        "The ipsilateral ear, closest to the temporal lobe"
+      ],
+      "answerIndex": 2,
+      "explanation": "Temporal discharges often spread to A1/A2, so an ear reference becomes 'active' and distorts the picture. Cz is better here. Cz is a poor choice when sleep activity (vertex waves) is prominent; an ear reference suits a frontal focus. Average references often omit Fp1, Fp2, F7 and F8 to limit eye artifact.",
+      "memoryAid": "TEMPORAL spike? The EAR hears it too, so go to the TOP (Cz).",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a15",
+      "domainId": "domain-2",
+      "sectionId": "d2-timebase-sampling",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the minimum sampling rate for digital EEG under Guideline 4?",
+      "options": [
+        "200 samples/s (256 preferable)",
+        "128 samples/s (200 preferable)",
+        "256 samples/s (512 preferable)",
+        "100 samples/s (128 preferable)"
+      ],
+      "answerIndex": 2,
+      "explanation": "Guideline 4 sets at least 256 samples per second, with higher rates such as 512 preferable. Note the unit is samples per second, not Hz of bandwidth.",
+      "memoryAid": "TWO-FIVE-SIX to fix it in time; 512 is the nicer prize.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a16",
+      "domainId": "domain-2",
+      "sectionId": "d2-timebase-sampling",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What analogue-to-digital resolution does Guideline 4 require?",
+      "options": [
+        "16 bits per sample",
+        "12 bits per sample",
+        "10 bits per sample",
+        "8 bits per sample"
+      ],
+      "answerIndex": 0,
+      "explanation": "At least 16 bits per sample including the sign bit; most modern amplifiers use 24 bits.",
+      "memoryAid": "SIXTEEN channels, SIXTEEN bits.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a17",
+      "domainId": "domain-2",
+      "sectionId": "d2-timebase-sampling",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the Guideline 4 minimum common mode rejection ratio for each channel?",
+      "options": [
+        "90 dB",
+        "60 dB",
+        "90 Hz",
+        "1%"
+      ],
+      "answerIndex": 0,
+      "explanation": "CMRR is a ratio expressed in dB, and the minimum is 90 dB per channel (higher is better). A common distractor gives it in Hz. Interchannel crosstalk must be under 1% (40 dB down) and added noise under 1 µV peak to peak from 0.5 to 100 Hz.",
+      "memoryAid": "CMRR is in DECIBELS: NINETY dB rejects the noise.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a18",
+      "domainId": "domain-2",
+      "sectionId": "d2-timebase-sampling",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How large should one second be on screen, according to Guideline 4?",
+      "options": [
+        "25 to 35 mm",
+        "50 to 60 mm",
+        "5 mm",
+        "10 to 15 mm"
+      ],
+      "answerIndex": 0,
+      "explanation": "One second should occupy 25 to 35 mm, mirroring the old 30 mm/s paper speed. The display also needs at least 10 mm per channel for up to 21 channels, scales shown on screen and a time stamp on every page.",
+      "memoryAid": "About THIRTY mm a second, just like the old paper.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a19",
+      "domainId": "domain-2",
+      "sectionId": "d2-timebase-sampling",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which storage practice does Guideline 4 recommend?",
+      "options": [
+        "Only the vendor's own format",
+        "Optical discs for long studies",
+        "A public format such as EDF/EDF+",
+        "Raw data deleted after the report"
+      ],
+      "answerIndex": 2,
+      "explanation": "Guideline 4 advises against optical discs, recommends server storage for inpatient studies of 24 h or more, and requires the ability to read and write a public format such as EDF/EDF+ with a stand-alone viewer. Impedances, filters, gain, montage and any changes are logged automatically.",
+      "memoryAid": "EDF = Everyone Can Read the File.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a20",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What low-frequency filter does Guideline 5 specify for neonatal EEG?",
+      "options": [
+        "5 Hz, to cut sweat",
+        "1 Hz, as in adults",
+        "0.01 Hz fixed",
+        "0.3 to 0.6 Hz"
+      ],
+      "answerIndex": 3,
+      "explanation": "Neonatal records contain important very slow activity, so the LFF is lowered to 0.3 to 0.6 Hz rather than the adult 1 Hz. Sensitivity is usually 7 µV/mm.",
+      "memoryAid": "BABIES are SLOW: drop the LFF to about 0.5 Hz.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a21",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the minimum number of cerebral channels for a neonatal EEG under Guideline 5?",
+      "options": [
+        "At least 8 cerebral channels with no polygraphy",
+        "At least 21 cerebral channels",
+        "At least 12 cerebral channels plus polygraphic channels",
+        "At least 16 cerebral channels with no polygraphy"
+      ],
+      "answerIndex": 2,
+      "explanation": "Neonates (up to 4 to 8 weeks post-term) need at least 12 cerebral channels plus at least 2 polygraphic channels (16 or more helps). A reduced array is allowed, Cz is always included, and needle electrodes are never used.",
+      "memoryAid": "TWELVE for the TINY, plus the POLY (ECG, breathing, eyes, chin).",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a22",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How long should a neonatal EEG run when the pattern stays the same, under Guideline 5?",
+      "options": [
+        "30 minutes, recorded awake only",
+        "At least 60 min, with a full quiet-sleep epoch",
+        "At least 3 hours, with sedation for sleep",
+        "20 minutes, the same as an adult study"
+      ],
+      "answerIndex": 1,
+      "explanation": "20 to 30 min is usually insufficient in neonates. Record at least 60 min if the pattern is invariant, including a full epoch of quiet sleep, and never sedate a neonate to obtain sleep. Photic stimulation is not recommended.",
+      "memoryAid": "An HOUR for a BABY, and catch QUIET sleep.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a23",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "In a child's routine EEG, how does Guideline 5 order the activations?",
+      "options": [
+        "HV at the start, photic at the end",
+        "HV only once the child is asleep",
+        "Photic at the start, HV at the end",
+        "HV and photic together, mid-study"
+      ],
+      "answerIndex": 0,
+      "explanation": "Guideline 5 puts HV at the start and photic at the end for children; a second HV can follow at least 10 min after the first. Sensitivity may be reduced to 10 or 15 µV/mm when needed, with part run at about 7 µV/mm.",
+      "memoryAid": "Kids BREATHE first, FLASH last.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a24",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which age term does Guideline 5 use for neonates, following the American Academy of Pediatrics?",
+      "options": [
+        "Postmenstrual age = gestational age + chronological age",
+        "Corrected age = chronological age minus 40 weeks",
+        "Conceptional age = chronological age only",
+        "Conceptional age = gestational age + chronological age"
+      ],
+      "answerIndex": 0,
+      "explanation": "Record gestational, chronological and postmenstrual age in weeks. Postmenstrual age is gestational age plus chronological age; the AAP advises against the term conceptional age.",
+      "memoryAid": "POST-MENSTRUAL = GA + CA. 'Conceptional' is OUT.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a25",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What sensitivity does Guideline 6 require when recording for electrocerebral inactivity?",
+      "options": [
+        "2 µV peak to peak for 10 min",
+        "2 µV/mm for at least 30 min",
+        "10 µV/mm for at least 30 min",
+        "7 µV/mm for at least 20 min"
+      ],
+      "answerIndex": 1,
+      "explanation": "Record at 2 µV/mm or more sensitive (for example 1 µV/mm) for at least 30 min, with a calibration of 2 or 5 µV. Note the unit: 2 µV/mm is the sensitivity; 2 µV peak to peak is the voltage threshold for ECI.",
+      "memoryAid": "ECI = TWO and THIRTY: 2 µV/mm for 30 minutes.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a26",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What interelectrode distance does Guideline 6 require for ECI montages?",
+      "options": [
+        "Exactly 2.5 cm between every pair",
+        "At most 5 cm, using closely spaced pairs",
+        "At least 10 cm, using double-distance pairs such as Fp1-C3",
+        "Any distance, as long as all channels are referential"
+      ],
+      "answerIndex": 2,
+      "explanation": "Longer distances record more of a low-voltage field, so ECI montages use pairs at least 10 cm apart (double-distance links such as Fp1-C3 and C3-O1). A full electrode set including Fz, Cz and Pz is needed; a 1- or 2-channel device is not acceptable.",
+      "memoryAid": "TEN cm APART to hear a whisper.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a27",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How is the integrity of the whole recording system tested during an ECI study?",
+      "options": [
+        "Running the square-wave calibration alone",
+        "Touching each electrode to make an artifact",
+        "Raising the high-frequency filter to 100 Hz",
+        "Checking every impedance once at the start"
+      ],
+      "answerIndex": 1,
+      "explanation": "Touching each electrode in turn proves that every channel is connected and displaying. Impedances must be between 100 and 10,000 Ω; machine noise is checked with a 10,000 Ω resistor across the inputs, and an ECG and noncephalic (dorsum of the hand) monitor are added.",
+      "memoryAid": "TOUCH TEST: tap each lead, see it jump, then you know it is live.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a28",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which filter settings does Guideline 6 allow during an ECI recording?",
+      "options": [
+        "LFF 5 Hz to remove sweat; HFF 70 Hz",
+        "HFF no lower than 30 Hz; LFF no higher than 1 Hz",
+        "Notch on throughout; HFF and LFF unchanged",
+        "HFF 15 Hz to remove muscle; LFF 1 Hz"
+      ],
+      "answerIndex": 1,
+      "explanation": "HFF no lower than 30 Hz and LFF no higher than 1 Hz. If the notch filter is used, part of the record must also be made without it. Intense somatosensory, auditory and visual stimuli are applied and annotated.",
+      "memoryAid": "ECI filters: THIRTY up, ONE down, and show it once WITHOUT the notch.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a29",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "If ECI is in doubt, when should the study be repeated?",
+      "options": [
+        "30 min later, at any age",
+        "6 h later in adults, 24 h in children",
+        "24 h later in adults, 6 h in children",
+        "Never; a single study is always final"
+      ],
+      "answerIndex": 1,
+      "explanation": "Guideline 6: repeat after at least 6 h in adults and at least 24 h in neonates and children. Also document temperature, blood pressure, oxygen saturation, all medications, the last sedative dose and toxicology, because drugs and hypothermia can mimic ECI.",
+      "memoryAid": "SIX hours for grown-ups, a whole DAY for the young.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a30",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "In which section of a Guideline 7 report does premedication and its dose belong?",
+      "options": [
+        "Technical description",
+        "EEG description",
+        "History",
+        "Clinical correlation"
+      ],
+      "answerIndex": 0,
+      "explanation": "The five sections are History, Technical Description, EEG Description, Impression and Clinical Correlation. The technical description covers date and place, number of electrodes, 10-20 or 10-10 placement, extra or moved electrodes, premedication with dose, sleep deprivation and state.",
+      "memoryAid": "Five parts, H-T-E-I-C: 'Have The EEG Interpreted Clearly'.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a31",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How does Guideline 7 structure the Impression?",
+      "options": [
+        "A full description of the background, then the artifacts",
+        "Normal or abnormal first, then the main abnormalities ranked",
+        "The technologist's opinion, then the physician's",
+        "Treatment recommendations, then the diagnosis"
+      ],
+      "answerIndex": 1,
+      "explanation": "The impression states normal or abnormal first, then ranks the main abnormalities (preferably no more than three or four). The clinical correlation explains the meaning in plain language and gives no specific treatment orders.",
+      "memoryAid": "IMPRESSION: verdict FIRST, then the TOP three.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a32",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "According to Guideline 7, when should artifacts be mentioned in the report?",
+      "options": [
+        "Only when caused by equipment failure",
+        "When they mimic, swamp, block or help the reading",
+        "Every artifact, each listed with its time",
+        "Not at all, since artifacts are not cerebral"
+      ],
+      "answerIndex": 1,
+      "explanation": "Artifacts are reported when they mimic cerebral activity, are excessive, interfere (more than 50% of the tracing in more than 50% of electrodes) or are diagnostically useful.",
+      "memoryAid": "Report the artifact that FOOLS, FLOODS, BLOCKS or HELPS.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a33",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "The 2021 ACNS Critical Care EEG Terminology applies to which patients?",
+      "options": [
+        "All ages except neonates",
+        "Neonates only",
+        "Adults only",
+        "Children under 2 years only"
+      ],
+      "answerIndex": 0,
+      "explanation": "The 2021 terminology (Hirsch et al.) replaced the 2012 version and is used for all ages except neonates, who have a separate ACNS terminology. It added ESz, ESE, ECSz, ECSE, BIRDs, IIC, UI, identical bursts, CAPE and extreme delta brush.",
+      "memoryAid": "2021 is for EVERYONE but the NEWBORN.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a34",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Rhythmic delta is bilaterally synchronous and symmetric but limited to both frontal regions. What is Main Term 1?",
+      "options": [
+        "Multifocal",
+        "Bilateral independent",
+        "Generalized",
+        "Lateralized"
+      ],
+      "answerIndex": 2,
+      "explanation": "Generalized means any bilaterally synchronous and symmetric pattern, even with a restricted field such as bifrontal. A region at least 50% higher in voltage earns a predominance label: frontally, occipitally or midline predominant.",
+      "memoryAid": "SYNC + SYMMETRIC = G, even if it only covers the FRONT.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a35",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A bilateral pattern is synchronous but clearly and consistently higher on the right. How is it classed?",
+      "options": [
+        "Generalized",
+        "Bilateral independent",
+        "Lateralized",
+        "Unilateral independent"
+      ],
+      "answerIndex": 2,
+      "explanation": "Generalized must also be symmetric. A bilateral pattern clearly and consistently larger on one side (bilateral asymmetric), or with a consistent lead-in from the same side (bilateral asynchronous), is lateralized. Shifting predominance that is not consistently (over 80%) on one side stays generalized.",
+      "memoryAid": "LOPSIDED is LATERALIZED, even when both sides fire.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a36",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Two independent periodic patterns occur at the same time in the same hemisphere. Which Main Term 1 is used?",
+      "options": [
+        "BI (bilateral independent)",
+        "UI (unilateral independent)",
+        "L (lateralized)",
+        "Mf (multifocal)"
+      ],
+      "answerIndex": 1,
+      "explanation": "UI, new in 2021, is two independent patterns in the same hemisphere at the same time. BI is one in each hemisphere at the same time. Mf needs at least three independent lateralized patterns with at least one in each hemisphere.",
+      "memoryAid": "U = Unilateral = ONE side, TWO patterns. B = Both sides. Mf = Many (3+).",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a37",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How many independent lateralized patterns are needed for 'multifocal'?",
+      "options": [
+        "Three or more, with each hemisphere involved",
+        "Two or more, both in the same hemisphere",
+        "Four or more, located anywhere",
+        "Two, with one in each hemisphere"
+      ],
+      "answerIndex": 0,
+      "explanation": "Multifocal is at least three independent lateralized patterns, at least one in each hemisphere, all occurring at the same time. Independent patterns at different times (left one hour, right later) are two lateralized patterns, not BI or Mf.",
+      "memoryAid": "MULTI = THREE or more, and BOTH sides represented.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a38",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Sharp waves each followed by a slow wave repeat with a clear, flat interval between complexes. Which Main Term 2 fits?",
+      "options": [
+        "SW (spike-and-wave)",
+        "RDA (rhythmic delta activity)",
+        "BIRDs",
+        "PDs (periodic discharges)"
+      ],
+      "answerIndex": 3,
+      "explanation": "SW requires the slow wave to be followed immediately by the next complex, with no interval. Once there is a clear interval between discharges recurring at nearly regular intervals, the pattern is PDs.",
+      "memoryAid": "A GAP makes it PERIODIC. No gap = SW.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a39",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the minimum duration for a pattern to qualify as rhythmic or periodic?",
+      "options": [
+        "At least 10 seconds",
+        "At least 4 consecutive cycles",
+        "At least 3 consecutive cycles",
+        "At least 6 consecutive cycles"
+      ],
+      "answerIndex": 3,
+      "explanation": "At least 6 consecutive cycles (for example 1 Hz for 6 s, or 3 Hz for 2 s). Three cycles is the minimum for each step of evolution, a common source of confusion.",
+      "memoryAid": "SIX to COUNT, THREE to STEP.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a40",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How does the 2021 terminology define 'nearly regular' (rhythmic or periodic)?",
+      "options": [
+        "Each discharge has the same number of phases",
+        "Period varies under 10% across the pattern",
+        "Every cycle is exactly the same length",
+        "Period varies under 50% in most cycle pairs"
+      ],
+      "answerIndex": 3,
+      "explanation": "Rhythmic or periodic means the period varies by less than 50% from one cycle to the next in most (over 50%) cycle pairs. It does not require identical cycles, a fixed number of phases or a fixed duration.",
+      "memoryAid": "Under HALF a change, in more than HALF the pairs.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a41",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Rhythmic, regular 1.5 Hz delta is seen over the left hemisphere only. What is it named?",
+      "options": [
+        "Polymorphic delta",
+        "GRDA",
+        "LPDs",
+        "LRDA"
+      ],
+      "answerIndex": 3,
+      "explanation": "Lateralized (L) + rhythmic delta activity (RDA) = LRDA. RDA must have a fairly uniform shape and duration with no interval between waves, at 0.5 to 4 Hz; irregular or polymorphic delta is not RDA.",
+      "memoryAid": "Build the NAME like LEGO: where (L) + what (RDA).",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a42",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A pattern is present in 30% of a recording epoch. What is its prevalence?",
+      "options": [
+        "Continuous",
+        "Abundant",
+        "Occasional",
+        "Frequent"
+      ],
+      "answerIndex": 3,
+      "explanation": "Prevalence: continuous at least 90%; abundant 50 to 89%; frequent 10 to 49%; occasional 1 to 9%; rare under 1%.",
+      "memoryAid": "Prevalence 1-10-50-90: rare, occasional, FREQUENT, abundant, continuous.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a43",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A run of a pattern lasts 5 minutes. Which duration category applies?",
+      "options": [
+        "Intermediate (1 to 9.9 minutes)",
+        "Brief (10 to 59 seconds)",
+        "Long (10 to 59 minutes)",
+        "Very long (at least 1 hour)"
+      ],
+      "answerIndex": 0,
+      "explanation": "Duration: very long at least 1 h; long 10 to 59 min; intermediate 1 to 9.9 min; brief 10 to 59 s; very brief under 10 s.",
+      "memoryAid": "Seconds BRIEF, minutes MIDDLE, tens of minutes LONG, an hour VERY long.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a44",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A periodic discharge has a duration of 120 ms measured at the baseline. How is its sharpness classed?",
+      "options": [
+        "Sharp (70 to 200 ms)",
+        "Sharply contoured",
+        "Spiky (under 70 ms)",
+        "Blunt"
+      ],
+      "answerIndex": 0,
+      "explanation": "Sharpness applies to PDs and SW only and is measured at the baseline: spiky under 70 ms, sharp 70 to 200 ms, sharply contoured (sharp shape but too long), blunt (smooth or sinusoidal).",
+      "memoryAid": "Same cut-offs as spikes and sharp waves: 70 and 200 ms.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a45",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A pattern's discharges measure 90 µV peak to trough on longitudinal bipolar. Which absolute amplitude category applies?",
+      "options": [
+        "Medium (50 to 149 µV)",
+        "High (at least 150 µV)",
+        "Low (20 to 49 µV)",
+        "Very low (under 20 µV)"
+      ],
+      "answerIndex": 0,
+      "explanation": "Absolute amplitude: very low under 20 µV, low 20 to 49 µV, medium 50 to 149 µV, high at least 150 µV, measured peak to trough in longitudinal bipolar. Relative amplitude (PDs only) compares the discharge with the background between discharges: 2 or less, or more than 2.",
+      "memoryAid": "20-50-150: very low, low, MEDIUM, high.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a46",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which change counts as evolution under the 2021 terminology?",
+      "options": [
+        "A steady rise in amplitude over 2 minutes",
+        "A single 1 Hz change in frequency",
+        "Two 0.5 Hz steps one way, 3+ cycles each",
+        "Three back-and-forth changes in a minute"
+      ],
+      "answerIndex": 2,
+      "explanation": "Evolution needs at least two unequivocal sequential changes in one category (frequency, morphology or location), each step lasting at least 3 cycles, without the feature staying unchanged for 5 min or more. Amplitude change alone is not evolution. Back-and-forth changes are fluctuation.",
+      "memoryAid": "EVOLVING goes ONE WAY, TWO steps, 3 cycles each. Bigger is not evolving.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a47",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A pattern changes 1 to 1.5 to 1 to 1.5 Hz, each change within a minute of the last. How is it described?",
+      "options": [
+        "Static",
+        "Stimulus-induced",
+        "Fluctuating",
+        "Evolving"
+      ],
+      "answerIndex": 2,
+      "explanation": "Fluctuating means three or more changes no more than 1 min apart in frequency (at least 0.5 Hz), morphology or location (at least one interelectrode distance), without meeting the criteria for evolution. Static is neither evolving nor fluctuating.",
+      "memoryAid": "FLUCTUATING goes UP and DOWN like a yo-yo; EVOLVING marches ONE way.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a48",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "LPDs appear reproducibly each time the nurse rouses the patient. How is this coded?",
+      "options": [
+        "SI-LPDs",
+        "LPDs+S",
+        "Evolving LPDs",
+        "ST-LPDs"
+      ],
+      "answerIndex": 0,
+      "explanation": "Stimulus-induced (SI-) means reproducibly brought on or made worse by an alerting stimulus; stimulus-terminated (ST-) means reproducibly stopped. SIRPIDs is the umbrella term, but the specific pattern should be named, with the type of stimulus recorded.",
+      "memoryAid": "SI = Stimulus IN (starts it); ST = Stimulus sTops it.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a49",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which plus modifier can be applied to rhythmic delta activity but not to periodic discharges?",
+      "options": [
+        "+FR (fast and rhythmic delta)",
+        "+F (superimposed fast activity)",
+        "+R (superimposed rhythmic delta)",
+        "+S (associated spikes or sharp waves)"
+      ],
+      "answerIndex": 3,
+      "explanation": "+F (superimposed fast) applies to PDs or RDA; +R applies to PDs only; +S applies to RDA only; combined forms are +FR for PDs and +FS for RDA. Plus modifiers never apply to SW. A pattern that is both PDs and RDA with similar prominence is coded PDs+R, not RDA+S.",
+      "memoryAid": "PDs get R, RDA gets S; F fits both; SW gets NOTHING.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a50",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Abundant rhythmic delta with fast activity locked to each delta wave is called what?",
+      "options": [
+        "GRDA+S",
+        "BIRDs",
+        "Delta brush of prematurity, a normal variant",
+        "Extreme delta brush, a subtype of +F"
+      ],
+      "answerIndex": 3,
+      "explanation": "Extreme delta brush is a subtype of +F: abundant or continuous RDA+F (or blunt-delta PDs+F) with fast activity locked to the delta wave, classically described in anti-NMDA receptor encephalitis.",
+      "memoryAid": "EXTREME delta BRUSH = a fast BRISTLE riding EVERY delta wave.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a51",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the current 2021 name for the pattern once called FIRDA?",
+      "options": [
+        "Frontal intermittent PDs",
+        "FIRDA, which is still current",
+        "Frontal LRDA",
+        "Frontally predominant GRDA"
+      ],
+      "answerIndex": 3,
+      "explanation": "FIRDA became frontally predominant GRDA. Other replacements: PLEDs became LPDs, BIPLEDs became BIPDs, GPEDs became GPDs, semirhythmic delta became quasi-RDA, and 'subclinical' seizure became 'nonconvulsive'. The 'E' for epileptiform was dropped because many periodic patterns are not epileptic.",
+      "memoryAid": "Old letters OUT: PLEDs → LPDs, FIRDA → frontal GRDA, drop the E.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a52",
+      "domainId": "domain-3",
+      "sectionId": "d3-s3",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How does the 2021 terminology handle 'triphasic waves'?",
+      "options": [
+        "A separate Main Term 2",
+        "Another name for BIRDs",
+        "Obsolete, with no replacement",
+        "GPDs 'with triphasic morphology'"
+      ],
+      "answerIndex": 3,
+      "explanation": "Triphasic morphology is a minor modifier, not a pattern name: negative-positive-negative, each phase longer than the one before, with the positive phase highest.",
+      "memoryAid": "TRIPHASIC is a SHAPE, not a NAME: GPDs with triphasic morphology.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a53",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which pattern meets the 2021 definition of an electrographic seizure (ESz)?",
+      "options": [
+        "PDs at 1 Hz for 30 seconds",
+        "Discharges at 2 Hz for 8 seconds",
+        "Rhythmic delta lasting at least 5 s",
+        "Discharges over 2.5 Hz for 10 s or more"
+      ],
+      "answerIndex": 3,
+      "explanation": "ESz: epileptiform discharges averaging more than 2.5 Hz for at least 10 s (more than 25 discharges in 10 s), or any pattern with definite evolution lasting at least 10 s. PDs or SW above 2.5 Hz for 10 s or more are seizures, not PDs.",
+      "memoryAid": "Seizure 10 / 2.5 / 25: over 2.5 Hz, 10 seconds, 25 discharges.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a54",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "When does seizure activity become electrographic status epilepticus (ESE)?",
+      "options": [
+        "10 continuous min, or 20% of any hour",
+        "30 continuous minutes",
+        "5 minutes in total over 24 hours",
+        "Half of the whole recording"
+      ],
+      "answerIndex": 0,
+      "explanation": "ESE is ESz for at least 10 continuous minutes, or for a total of at least 20% of any 60-minute period. A frequent mistake is to give 30 minutes.",
+      "memoryAid": "TEN straight, or a FIFTH of an hour (12 minutes total).",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a55",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which statement about an electroclinical seizure (ECSz) is correct?",
+      "options": [
+        "Only when EEG improves and the patient does not",
+        "Any length, if a clinical sign is time-locked",
+        "Only when the rhythm is faster than 4 Hz",
+        "At least 10 s, the same as an ESz"
+      ],
+      "answerIndex": 1,
+      "explanation": "ECSz is any EEG pattern with a definite time-locked clinical correlate (any duration), or EEG and clinical improvement after a parenteral antiseizure medication. An ECSz can be shorter than 10 s; an ESz cannot. 'Nonconvulsive' is preferred over 'subclinical'.",
+      "memoryAid": "Clinical sign + EEG = seizure at ANY length. EEG alone needs 10 s.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a56",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "With bilateral tonic-clonic activity, how long must an electroclinical seizure last to be electroclinical status epilepticus?",
+      "options": [
+        "20% of any hour",
+        "30 continuous minutes",
+        "10 continuous minutes",
+        "5 continuous minutes"
+      ],
+      "answerIndex": 3,
+      "explanation": "ECSE is ECSz for at least 10 continuous minutes or at least 20% of any 60 minutes, but with bilateral tonic-clonic activity 5 continuous minutes is enough, matching the ILAE 2015 t1 of 5 min for tonic-clonic status (t2 30 min).",
+      "memoryAid": "CONVULSING? FIVE minutes is status.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a57",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which description fits BIRDs (brief potentially ictal rhythmic discharges)?",
+      "options": [
+        "Over 4 Hz, 0.5 to under 10 s, with evolution, a match or sharp contour",
+        "Periodic discharges at 1 Hz lasting more than 10 seconds",
+        "Any normal variant that lasts less than 10 seconds",
+        "Rhythmic delta under 4 Hz lasting about one minute"
+      ],
+      "answerIndex": 0,
+      "explanation": "BIRDs: focal or generalized rhythmic activity over 4 Hz (at least 6 waves at a regular rate), lasting 0.5 s to under 10 s, not a normal variant or part of burst suppression, without a definite clinical correlate, and with evolution, a match to the patient's discharges or seizures, or sharp contour. The same evolving rhythm for 10 s or more is a seizure.",
+      "memoryAid": "BIRDs are FAST and BRIEF: over 4 Hz, under 10 s.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a58",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "BIRDs that are sharply contoured but neither evolve nor match the patient's seizures are classed as what?",
+      "options": [
+        "A benign variant",
+        "Definite BIRDs",
+        "Possible BIRDs",
+        "An electrographic seizure"
+      ],
+      "answerIndex": 2,
+      "explanation": "Definite BIRDs show evolution, or the same morphology and location as the patient's interictal discharges or seizures. Sharply contoured BIRDs without either are possible BIRDs.",
+      "memoryAid": "EVOLVES or MATCHES = DEFINITE; only SHARP = POSSIBLE.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a59",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which pattern meets criterion A of the ictal-interictal continuum (IIC)?",
+      "options": [
+        "Periodic discharges averaging more than 1.0 and up to 2.5 Hz over 10 seconds",
+        "GRDA at 1.5 Hz with no plus modifier",
+        "Rare sporadic spikes",
+        "Periodic discharges averaging more than 2.5 Hz for 10 seconds"
+      ],
+      "answerIndex": 0,
+      "explanation": "IIC criterion A: any PD or SW pattern averaging more than 1.0 and up to 2.5 Hz over 10 s (more than 10 and up to 25 discharges in 10 s). Criterion B is 0.5 to 1 Hz with a plus modifier or fluctuation. Above 2.5 Hz for 10 s it is already a seizure, and IIC excludes anything meeting ESz or ESE.",
+      "memoryAid": "IIC sits BETWEEN 1 and 2.5 Hz: below a seizure, above plain PDs.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a60",
+      "domainId": "domain-3",
+      "sectionId": "d3-ictal-eeg-seizure-patterns",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Under IIC criterion C, which rhythmic delta pattern is excluded?",
+      "options": [
+        "LRDA",
+        "GRDA",
+        "BIRDA",
+        "MfRDA"
+      ],
+      "answerIndex": 1,
+      "explanation": "Criterion C covers lateralized RDA (LRDA, BIRDA, UIRDA, MfRDA) averaging more than 1 Hz for at least 10 s with a plus modifier or fluctuation. GRDA is not included. IIC is a purely electrographic term (possible ESz or ESE), not a diagnosis.",
+      "memoryAid": "IIC rhythmic delta must be ONE-SIDED: GRDA does not count.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a61",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "The left hemisphere is consistently 60% lower in voltage than the right on a referential montage. How is the symmetry classed?",
+      "options": [
+        "Symmetric",
+        "Marked asymmetry",
+        "It cannot be classed without a bipolar montage",
+        "Mild asymmetry"
+      ],
+      "answerIndex": 1,
+      "explanation": "Marked asymmetry is a voltage difference of 50% or more, or a frequency difference of more than 1 Hz. Mild is under 50% or 0.5 to 1 Hz. Voltage asymmetry is judged on an appropriate referential recording, because bipolar subtraction can hide or create asymmetry.",
+      "memoryAid": "HALF or more = MARKED; check it REFERENTIALLY.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a62",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Which rule applies to the posterior dominant rhythm in the 2021 terminology?",
+      "options": [
+        "It counts whether or not it blocks with eye opening",
+        "It is measured in the first half-second after eye closure",
+        "It must block with eye opening; measured over 1 s after closure",
+        "It is reported to the nearest 2 Hz, without reactivity"
+      ],
+      "answerIndex": 2,
+      "explanation": "The PDR must attenuate with eye opening to qualify. Measure it more than 1 s after eye closure to avoid alpha squeak, and report it to the nearest 0.5 Hz as present, absent or unclear.",
+      "memoryAid": "WAIT ONE SECOND after closing: squeak first, true rhythm after.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a63",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Bursts of 2 s alternate with 8 s of suppression. How is continuity classed?",
+      "options": [
+        "Suppression",
+        "Burst suppression",
+        "Nearly continuous",
+        "Discontinuous"
+      ],
+      "answerIndex": 1,
+      "explanation": "Continuity by percentage of the record attenuated or suppressed: continuous under 1%, nearly continuous 1 to 9%, discontinuous 10 to 49%, burst attenuation or suppression 50 to 99%, attenuation or suppression over 99%. Here 8 of every 10 s (80%) is suppressed.",
+      "memoryAid": "Continuity 1-10-50-99.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a64",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What is the difference between 'suppression' and 'attenuation' in the 2021 terminology?",
+      "options": [
+        "Suppression < 20 µV; attenuation < 50 µV whatever the background",
+        "They are synonyms used for the same low-voltage periods",
+        "Suppression lasts longer; voltage does not separate the two",
+        "Suppression < 10 µV; attenuation ≥ 10 µV but < 50% of background"
+      ],
+      "answerIndex": 3,
+      "explanation": "Suppression: lower-voltage periods under 10 µV. Attenuation: lower-voltage periods of at least 10 µV but under 50% of the higher-voltage background. For overall voltage, suppressed means all activity under 10 µV and low means most activity under 20 µV.",
+      "memoryAid": "UNDER 10 = SUPPRESSED. Above 10 but under half = ATTENUATED.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a65",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "What makes a waveform a 'burst' rather than a 'discharge'?",
+      "options": [
+        "It is higher than 150 µV",
+        "It lasts at least 2 s regardless of phases",
+        "It lasts at least 0.5 s and has at least 4 phases",
+        "It is followed by suppression"
+      ],
+      "answerIndex": 2,
+      "explanation": "A burst averages at least 0.5 s and has at least 4 phases (at least 3 baseline crossings); shorter or with fewer phases it is a discharge. Bursts can last up to 30 s, and burst and interburst durations are reported.",
+      "memoryAid": "BURST = half a second and FOUR phases.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a66",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "When are bursts called 'identical' in the 2021 terminology?",
+      "options": [
+        "First 0.5 s matches in all channels in over 90% of bursts",
+        "Bursts recur at exactly 10-second intervals",
+        "At least two bursts in the record contain spikes",
+        "Every burst has the same peak amplitude throughout"
+      ],
+      "answerIndex": 0,
+      "explanation": "Identical bursts (new in 2021): the first 0.5 s or more of each burst, or of each stereotyped cluster, looks similar in all channels in over 90% of bursts. Highly epileptiform bursts have 2 or more spikes or sharp waves in most bursts at 1 Hz or faster, or a rhythmic ictal-appearing pattern.",
+      "memoryAid": "IDENTICAL = the same OPENING half-second, 9 times in 10.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a67",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "During reactivity testing, only eye-blink and muscle artifact appear after a sternal rub. How is this recorded?",
+      "options": [
+        "SIRPIDs-only, because a stimulus was given",
+        "Reactive if the artifact lasts over 1 s",
+        "Unreactive: artifact alone does not count",
+        "Reactive, because the patient moved"
+      ],
+      "answerIndex": 2,
+      "explanation": "Reactivity is a change in cerebral EEG activity (voltage or frequency, including attenuation) after stimulation. Muscle or eye-blink artifact alone does not count. Use escalating visual, auditory, tactile and noxious stimuli, annotate each, repeat a second round of noxious stimuli if unreactive, and record sedatives and paralytics.",
+      "memoryAid": "REACTIVITY lives in the BRAIN waves, not in the BLINKS.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a68",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Two background patterns, each at least 10 s long, alternate regularly for at least 6 cycles. What is this called?",
+      "options": [
+        "CAPE",
+        "Fluctuation",
+        "Burst suppression",
+        "State changes"
+      ],
+      "answerIndex": 0,
+      "explanation": "CAPE: two background patterns, each at least 10 s, alternating regularly for at least 6 cycles. State changes (which replaced 'variability') need at least 2 sustained background types related to alertness or stimulation, each lasting at least 60 s.",
+      "memoryAid": "CAPE = a 10-second SWING, six times over.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a69",
+      "domainId": "domain-3",
+      "sectionId": "d3-encephalopathy-differentials",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "Sporadic epileptiform discharges occur about twice a minute. What is their prevalence category?",
+      "options": [
+        "Abundant (at least 1 per 10 s)",
+        "Frequent (at least 1 per minute but under 1 per 10 s)",
+        "Occasional (at least 1 per hour but under 1 per minute)",
+        "Rare (under 1 per hour)"
+      ],
+      "answerIndex": 1,
+      "explanation": "Sporadic discharges: abundant at least 1 per 10 s (not periodic); frequent at least 1 per minute but under 1 per 10 s; occasional at least 1 per hour but under 1 per minute; rare under 1 per hour.",
+      "memoryAid": "Per 10 s ABUNDANT, per minute FREQUENT, per hour OCCASIONAL.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a70",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "How often should the technologist check recording quality during continuous ICU EEG (2015 consensus)?",
+      "options": [
+        "Once a week",
+        "At least twice daily",
+        "Once at hook-up only",
+        "Only when the physician asks"
+      ],
+      "answerIndex": 1,
+      "explanation": "Stay at the bedside for the first 20 min and test reactivity, then check recording quality at least twice daily, impedance and scalp daily, and re-gel as needed. Physicians review the first 30 to 60 min as soon as possible, then at least twice daily, with a written report at least every 24 h.",
+      "memoryAid": "cEEG: 20 minutes at the bed, TWICE a day the check, a report EVERY day.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
+      "qaStatus": "UNREVIEWED"
+    },
+    {
+      "id": "drill-a71",
+      "domainId": "domain-2",
+      "sectionId": "d2-s8",
+      "topicTags": [
+        "focus-drills",
+        "drill-acns"
+      ],
+      "drillSet": "acns",
+      "difficulty": "medium",
+      "stem": "A patient for cEEG has a right craniotomy. How should the electrodes be placed?",
+      "options": [
+        "Leave the whole right hemisphere unrecorded",
+        "Use needle electrodes over the defect",
+        "Place electrodes over the bone flap as usual",
+        "Move the left homologue to match; note the defect"
+      ],
+      "answerIndex": 3,
+      "explanation": "Use at least 16 electrodes, note skull defects, drains and bolts, and when an electrode must be moved, move its homologue symmetrically so the hemispheres can still be compared. Over a skull defect, a breach effect (higher-amplitude, sharper, faster activity) is expected and its location should be given.",
+      "memoryAid": "MOVE ONE, MOVE ITS TWIN: keep left and right comparable.",
+      "author": "NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)",
       "qaStatus": "UNREVIEWED"
     }
   ]

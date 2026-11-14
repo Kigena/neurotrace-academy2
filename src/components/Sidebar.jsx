@@ -97,11 +97,11 @@ function Sidebar({ isOpen, onClose }) {
               </svg>
               Workflow
             </NavLink>
-            <NavLink to="/drill" className={navLinkClasses} onClick={handleNavClick}>
+            <NavLink to="/focus-drills" className={navLinkClasses} onClick={handleNavClick}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
               </svg>
-              Three-Day Drill
+              Focus Drills
             </NavLink>
           </div>
 

@@ -20,9 +20,9 @@ import { BLUEPRINT_KEY, BLUEPRINT_SOURCE, DOMAINS, getBlueprint } from '../bluep
 
 export const LEGACY_ORIGIN = 'legacy-neurolinea-bank';
 export const CHALLENGE_ORIGIN = 'neurolinea-challenge-bank';
-export const DRILL_ORIGIN = 'neurolinea-three-day-drill';
+export const DRILL_ORIGIN = 'neurolinea-focus-drills';
 export const BANKS = ['foundation', 'challenge', 'drill'];
-export const DRILL_SETS = ['neuro', 'peds', 'meds'];
+export const DRILL_SETS = ['neuro', 'peds', 'meds', 'acns'];
 const COMPETENCIES = ['foundation', 'technical', 'montage', 'troubleshooting', 'clinical'];
 const SAFE_ID = /^[A-Za-z0-9_-]{1,120}$/;
 

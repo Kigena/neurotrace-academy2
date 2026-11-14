@@ -95,7 +95,7 @@ function IncorrectCard({ item }) {
         {mode !== "retry" && (
           <>
             <span className="rounded bg-slate-100 px-2 py-0.5 text-slate-700">{sectionTitle(item.sectionId)}</span>
-            {item.topicTags.filter((t) => !t.startsWith("drill-") && t !== "three-day-drill").slice(0, 4).map((t) => (
+            {item.topicTags.filter((t) => !t.startsWith("drill-") && t !== "focus-drills").slice(0, 4).map((t) => (
               <span key={t} className="rounded bg-slate-50 px-2 py-0.5 text-slate-500">#{tagTitle(t)}</span>
             ))}
           </>
@@ -247,7 +247,7 @@ function ReviewIncorrect() {
         <div>
           <h1 className="text-2xl font-bold text-slate-900">Review Incorrect</h1>
           <p className="text-sm text-slate-600 max-w-3xl">
-            Every question you last answered wrong, from the question bank, Challenge Bank, mock exams and the Three-Day Drill,
+            Every question you last answered wrong, from the question bank, Challenge Bank, mock exams and Focus Drills,
             grouped by ABRET domain and section so you can see exactly where your weak spots are. The weakest domain comes first.
             A correct retry takes a question off this list; the original wrong answer stays in your history.
           </p>

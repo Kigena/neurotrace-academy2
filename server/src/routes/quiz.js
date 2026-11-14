@@ -50,7 +50,7 @@ const POOL_FIELDS = 'questionId domainId sectionId topicTags difficulty origin.s
 const CONTENT_FIELDS = 'questionId domainId sectionId topicTags difficulty stem options version bank cognitiveLevel competency';
 
 // Questions withheld from every session until revised.
-// The Three-Day Drill bank is never served here: it has its own page.
+// The Focus Drills bank is never served here: it has its own page.
 const SERVABLE = { status: 'active', qaStatus: { $nin: ['NEEDS_REVISION', 'REJECTED'] }, bank: { $ne: 'drill' } };
 // Standard sessions (practice, timed, mocks, weak areas) use the foundation
 // bank; the Challenge Bank is served only by "Challenge me" while its pilot

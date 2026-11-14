@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// Build the Three-Day Drill import file from the drill's source module.
+// Build the Focus Drills import file from the drill's source module.
 //
 // Usage (from server/):
 //   node scripts/buildDrillBank.mjs
 //
 // Reads ../src/data/drill/drillQuestions.js (where option 0 is the correct
-// answer) and writes src/data/drill/three-day-drill.json in the importer's
+// answer) and writes src/data/drill/focus-drills.json in the importer's
 // format. The correct option is moved to a position derived from the id, so
 // the stored answer key is balanced and the output is the same on every run.
 // Each question also gets the ABRET domain and section it tests, which is how
@@ -19,13 +19,14 @@ import { fileURLToPath } from 'url';
 const serverRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const { DRILL } = await import(new URL('../../src/data/drill/drillQuestions.js', import.meta.url));
 
-const SET_OF = { neuro: 'neuro', peds: 'peds', meds: 'meds' };
+const SET_OF = { neuro: 'neuro', peds: 'peds', meds: 'meds', acns: 'acns' };
 
 // Default section per drill set, then per-question overrides.
 const DEFAULT_SECTION = {
     neuro: 'd1-neuroanatomy-eeg-localization',
     peds: 'd3-eeg-syndromes-classification',
     meds: 'd1-neurophysiology-seizure-mechanisms',
+    acns: 'd2-s8',
 };
 const SECTION_OVERRIDES = {
     // Neuroanatomy and correlation
@@ -64,13 +65,14 @@ function seededOrder(id, n) {
 }
 
 const questions = DRILL.map((q) => {
-    const sectionId = SECTION_OVERRIDES[q.id] || DEFAULT_SECTION[q.t];
+    // ACNS questions carry their own section (sec) in the source.
+    const sectionId = q.sec || SECTION_OVERRIDES[q.id] || DEFAULT_SECTION[q.t];
     const order = seededOrder(q.id, q.o.length);
     return {
         id: `drill-${q.id}`,
         domainId: domainOf(sectionId),
         sectionId,
-        topicTags: ['three-day-drill', `drill-${q.t}`],
+        topicTags: ['focus-drills', `drill-${q.t}`],
         drillSet: SET_OF[q.t],
         difficulty: 'medium',
         stem: q.q,
@@ -78,21 +80,21 @@ const questions = DRILL.map((q) => {
         answerIndex: order.indexOf(0),
         explanation: q.why,
         memoryAid: q.mem,
-        author: 'NeuroLinea Three-Day Drill (AI-drafted, fact-checked; requires expert review)',
+        author: 'NeuroLinea Focus Drills (AI-drafted, fact-checked; requires expert review)',
         qaStatus: 'UNREVIEWED',
     };
 });
 
 const out = {
     version: '1.0.0',
-    generatedAt: '2026-11-13',
+    generatedAt: '2026-11-14',
     bank: 'drill',
-    description: 'The Three-Day Drill: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, and medication effects on the EEG. Kept apart from the main question bank and served only on the drill page.',
+    description: 'Focus Drills: neuroanatomy and clinical correlation, paediatric epilepsy syndromes, medication effects on the EEG, and the ACNS guidelines (2016 Guidelines 1-7, 2021 Critical Care EEG Terminology, 2015 cEEG consensus). Kept apart from the main question bank and served only on the drill page.',
     totalQuestions: questions.length,
     questions,
 };
 
-const target = path.join(serverRoot, 'src', 'data', 'drill', 'three-day-drill.json');
+const target = path.join(serverRoot, 'src', 'data', 'drill', 'focus-drills.json');
 fs.mkdirSync(path.dirname(target), { recursive: true });
 fs.writeFileSync(target, `${JSON.stringify(out, null, 2)}\n`);
 const positions = questions.reduce((m, q) => ({ ...m, [q.answerIndex]: (m[q.answerIndex] || 0) + 1 }), {});

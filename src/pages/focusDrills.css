@@ -1,4 +1,4 @@
-/* Three-Day Drill: the original drill design, scoped under .tdd so it keeps its look inside the app. */
+/* Focus Drills: the original drill design, scoped under .tdd so it keeps its look inside the app. */
 .tdd {
   --paper: #f4f7f6; --card: #ffffff; --ink: #14211f; --muted: #5b6b68; --line: #d9e2e0;
   --accent: #0e7c6b; --accent-soft: #e3f3ef; --mem: #9a4a07; --mem-bg: #fff3df;
@@ -23,7 +23,7 @@
 .tdd-head { display: grid; gap: 6px; }
 .tdd-count { font-family: var(--font-mono); font-size: .85rem; color: var(--muted); }
 .tdd-days { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
-@media (min-width: 1100px) { .tdd-days { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+@media (min-width: 640px) { .tdd-days { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .tdd-day { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px; display: grid; gap: 8px; text-align: left; font: inherit; color: inherit; cursor: pointer; }
 .tdd-day:hover { border-color: var(--accent); }
 .tdd-day[aria-pressed="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent) inset; }

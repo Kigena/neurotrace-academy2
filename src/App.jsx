@@ -21,7 +21,7 @@ import NeuroSyndromes from "./pages/NeuroSyndromes.jsx";
 import NeurologyEssentials from "./pages/NeurologyEssentials.jsx";
 import LabSafety from "./pages/LabSafety.jsx";
 import SleepStaging from "./pages/SleepStaging.jsx";
-import ThreeDayDrill from "./pages/ThreeDayDrill.jsx";
+import FocusDrills from "./pages/FocusDrills.jsx";
 import ProfessionalPractice from "./pages/ProfessionalPractice.jsx";
 import PatternsReview from "./pages/PatternsReview.jsx";
 import AcnsGuide from "./pages/AcnsGuide.jsx";
@@ -265,9 +265,10 @@ function AppContent() {
               </ProtectedRoute>
             } />
 
-            <Route path="/drill" element={
+            <Route path="/drill" element={<Navigate to="/focus-drills" replace />} />
+            <Route path="/focus-drills" element={
               <ProtectedRoute>
-                <ThreeDayDrill />
+                <FocusDrills />
               </ProtectedRoute>
             } />
 

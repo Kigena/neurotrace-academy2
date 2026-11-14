@@ -11,13 +11,14 @@ import { attemptSource, weaknessBreakdown } from '../src/routes/study.js';
 setupTestDb();
 const app = makeApp();
 const serverRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const drillFile = loadSourceFile(path.join(serverRoot, 'src', 'data', 'drill', 'three-day-drill.json'));
+const drillFile = loadSourceFile(path.join(serverRoot, 'src', 'data', 'drill', 'focus-drills.json'));
+const TOTAL = drillFile.questions.length;
 
 let key;
 beforeAll(async () => {
     await seedFixtureBank(40);
     const report = await importQuestions({ data: drillFile, sourceFile: 'drill', bank: 'drill' });
-    expect(report).toMatchObject({ inserted: 90, failed: 0, reconciled: true });
+    expect(report).toMatchObject({ inserted: TOTAL, failed: 0, reconciled: true });
     key = new Map(drillFile.questions.map((q) => [q.id, q]));
 });
 
@@ -26,9 +27,10 @@ const post = (u, url, body) => request(app).post(url).set(bearer(u.token)).send(
 const wrongIndex = (id) => (key.get(id).answerIndex + 1) % 4;
 
 describe('drill import file', () => {
-    it('has 30 questions per set, ABRET domains and a balanced answer key', () => {
+    it('has the four sets, ABRET domains and a balanced answer key', () => {
         const qs = drillFile.questions;
         for (const set of ['neuro', 'peds', 'meds']) expect(qs.filter((q) => q.drillSet === set)).toHaveLength(30);
+        expect(qs.filter((q) => q.drillSet === 'acns').length).toBeGreaterThanOrEqual(60);
         for (const q of qs) {
             expect(q.domainId).toMatch(/^domain-[1-4]$/);
             expect(q.sectionId.startsWith(`d${q.domainId.slice(-1)}-`)).toBe(true);
@@ -40,11 +42,11 @@ describe('drill import file', () => {
 
     it('is idempotent and rejects drill questions without a set or memory aid', async () => {
         const again = await importQuestions({ data: drillFile, sourceFile: 'drill', bank: 'drill', dryRun: true });
-        expect(again).toMatchObject({ inserted: 0, unchanged: 90, failed: 0 });
+        expect(again).toMatchObject({ inserted: 0, unchanged: TOTAL, failed: 0 });
         const bad = { questions: [{ ...drillFile.questions[0], id: 'drill-bad', drillSet: undefined, memoryAid: '' }] };
         const r = await importQuestions({ data: bad, bank: 'drill', dryRun: true });
         expect(r.failed).toBe(1);
-        expect(await Question.countDocuments({ bank: 'drill' })).toBe(90);
+        expect(await Question.countDocuments({ bank: 'drill' })).toBe(TOTAL);
     });
 });
 
@@ -64,7 +66,7 @@ describe('drill API', () => {
     it('serves the questions without answers and scores on the server', async () => {
         const u = await registerUser(app);
         const { body } = await get(u, '/api/drill/questions');
-        expect(body.questions).toHaveLength(90);
+        expect(body.questions).toHaveLength(TOTAL);
         expect(body.questions[0]).not.toHaveProperty('answerIndex');
         expect(body.questions[0]).not.toHaveProperty('explanation');
         expect(body.questions[0]).not.toHaveProperty('memoryAid');

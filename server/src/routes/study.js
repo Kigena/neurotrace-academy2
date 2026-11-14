@@ -110,7 +110,7 @@ async function sectionDomainMap() {
 router.get('/dashboard', async (req, res) => {
     try {
         const [events, mocks, sectionDomains, activeSession, challengeAvailable] = await Promise.all([
-            // The Three-Day Drill stays out of mastery, readiness and reviews.
+            // Focus Drills stay out of mastery, readiness and reviews.
             ownEvents(req.user.id).then((all) => all.filter((e) => e.bank !== 'drill')),
             mockResults(req.user.id),
             sectionDomainMap(),
